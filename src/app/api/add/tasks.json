@@ -1,0 +1,512 @@
+[
+  {
+    "hi": "मेरा नाम सिया है.",
+    "en": "My name is Sia.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "यह मेरा घर है।",
+    "en": "This is my house.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "तुम कहाँ हो?",
+    "en": "Where are you?",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "मैं स्कूल जा रहा हूँ।",
+    "en": "I am going to school.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "मुझे आम पसंद है.",
+    "en": "I like mangoes.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "सूरज चमक रहा है।",
+    "en": "The sun is shining.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "आप खेलना चाहते हैं?",
+    "en": "Do you want to play?",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "मेरी माँ काम कर रही है.",
+    "en": "My mother is working.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "यह किताब अच्छी है.",
+    "en": "This book is good.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "मुझे खाना पसंद है।",
+    "en": "I like food.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "क्या आप मेरी मदद करेंगे?",
+    "en": "Will you help me?",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "वह बहुत प्यारा है.",
+    "en": "He is very cute.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "मैंने एक नया खिलौना खरीदा.",
+    "en": "I bought a new toy.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "आपका दोस्त कौन है?",
+    "en": "Who is your friend?",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "वो स्कूल में है।",
+    "en": "She is at school.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "आज मौसम बहुत अच्छा है.",
+    "en": "The weather is very nice today.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "मैंने आज एक नई किताब पढ़ी।",
+    "en": "I read a new book today.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "क्या तुम्हें चॉकलेट पसंद है?",
+    "en": "Do you like chocolate?",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "मेरे पास एक पेंसिल है।.",
+    "en": "I have a pencil.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "मुझे दोस्तों के साथ घूमना अच्छा लगता है।",
+    "en": "I enjoy hanging out with friends.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "यह बाहर बारिश है।.",
+    "en": "It is raining outside.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "मैं चित्र खींच रहा हूँ।.",
+    "en": "I enjoy drawing pictures.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "आप कितने पुराने हैं?",
+    "en": "How old are you?",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "वह स्कूल के बाद खेलते हैं।.",
+    "en": "He plays after school.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "मेरे दोस्त ने मुझे एक उपहार दिया।.",
+    "en": "My friend gave me a gift.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "कृपया शांत रहें।.",
+    "en": "Please be quiet.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "आज मेरा जन्मदिन है।.",
+    "en": "Today is my birthday.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "मेरी बहन बहुत बुद्धिमान है।.",
+    "en": "My sister is very intelligent.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "क्या आपको किताबें पढ़ना पसंद है?",
+    "en": "Do you like to read books?",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "मैंने अपने पालतू कुत्ते को खिलाया।.",
+    "en": "I fed my pet dog.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "हमें एक साथ काम करना चाहिए।.",
+    "en": "We should work together.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "आपके स्कूल में कितने छात्र हैं?",
+    "en": "How many students are there in your school?",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "सूर्य पश्चिम में स्थित है।.",
+    "en": "The sun is setting in the west.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "मुझे बहुत अच्छा निशान मिला।.",
+    "en": "I got very good marks.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "वह हमेशा मेरे साथ खेलते हैं।.",
+    "en": "He always plays with me.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "मैं पार्क जाना चाहता हूँ।.",
+    "en": "I want to go to the park.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "कुत्ते छाल है।.",
+    "en": "The dog is barking.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "मैं अपने परिवार से प्यार करता हूँ।.",
+    "en": "I love my family.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "क्या आप आज एक फिल्म देखना चाहते हैं?",
+    "en": "Would you like to watch a movie today?",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "आपका पसंदीदा गेम क्या है?",
+    "en": "What is your favorite game?",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "मैं एक सुंदर फूल हूँ।.",
+    "en": "I have a beautiful flower.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "वह किताबें पढ़ने में बहुत अच्छा है।.",
+    "en": "He is very good at reading books.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "हमें पर्यावरण की रक्षा करनी चाहिए।.",
+    "en": "We should protect the environment.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "आपको अपने स्वास्थ्य का ध्यान रखना चाहिए।.",
+    "en": "You should take care of your health.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "बच्चे पार्क में खेल रहे हैं।.",
+    "en": "The children are playing in the park.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "मेरी माँ हमेशा मेरी मदद करती है।.",
+    "en": "My mother always helps me.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "क्या आप अगले सप्ताह छुट्टी पर जा रहे हैं?",
+    "en": "Are you going on vacation next week?",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "मेरे शिक्षक हमें नई बातें सिखाते हैं।.",
+    "en": "My teachers teach us new things.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "हम सभी एक साथ अध्ययन करते हैं।.",
+    "en": "We all study together.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "मैं वास्तव में संगीत सुनना पसंद करता हूँ।.",
+    "en": "I really like listening to music.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "आप क्या करना चाहते हैं?",
+    "en": "What do you like to do?",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "आपका नाम क्या है?",
+    "en": "What is your name?",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "यह पुस्तक बहुत रोचक है।.",
+    "en": "This book is very interesting.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "मुझे हिंदी सीखना पसंद है।.",
+    "en": "I like to learn Hindi.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "क्या आप मेरी मदद कर सकते हैं?",
+    "en": "Can you help me?",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "मुझे खेलना पसंद है।.",
+    "en": "I like to play.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "वह एक बहुत अच्छा गायक है।.",
+    "en": "She is a very good singer.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "हम अपने देश पर गर्व करते हैं।.",
+    "en": "We are proud of our country.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "यह एक सुंदर दिन है।.",
+    "en": "It is a beautiful day.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "मैं चाय पीना चाहता हूँ।.",
+    "en": "I want to drink tea.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "क्या आप फिल्म देखना चाहते हैं?",
+    "en": "Do you want to watch a movie?",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "मैं घर पर हूँ।.",
+    "en": "I am at home.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "यह काम बहुत मुश्किल है।.",
+    "en": "This work is very difficult.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "कृपया ध्यान दें।.",
+    "en": "Please pay attention.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "क्या आप स्कूल में खुश हैं?",
+    "en": "Are you happy at school?",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "मुझे अपनी पढ़ाई के साथ मदद की आवश्यकता है।.",
+    "en": "I need help with my studies.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "आज क्या खास है?",
+    "en": "What is special today?",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "मुझे फिल्में देखना पसंद है।.",
+    "en": "I like watching movies.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "वह मेरा सबसे अच्छा दोस्त है।.",
+    "en": "He is my best friend.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "क्या हम पार्क में खेल सकते हैं?",
+    "en": "Can we play in the park?",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "क्या आप छुट्टियों के दौरान यात्रा करेंगे?",
+    "en": "Will you travel during the holidays?",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "मेरी माँ खाना पका रही है।.",
+    "en": "My mother is cooking food.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "उसने मुझे एक कहानी सुनाई।.",
+    "en": "She told me a story.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "यहाँ भोजन बहुत अच्छा है।.",
+    "en": "The food here is very good.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "आपके पास कितना पैसा है?",
+    "en": "How much money do you have?",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "आपको अपनी पढ़ाई पर ध्यान देना चाहिए।.",
+    "en": "You should focus on your studies.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "हम छुट्टियों के दौरान यात्रा करेंगे।.",
+    "en": "We will travel during the holidays.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "क्या आप चॉकलेट खाना चाहते हैं?",
+    "en": "Do you want to eat chocolate?",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "आज स्कूल में एक कार्यक्रम है।.",
+    "en": "There is a program at school today.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "मैं हमेशा सच कहता हूँ।.",
+    "en": "I always tell the truth.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "यदि आप कठिन अध्ययन करते हैं तो आपको अच्छे अंक मिलेंगे।.",
+    "en": "If you study hard, you will get good marks.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "मुझे आशा है कि आप जल्द ही ठीक हो जाएं।.",
+    "en": "I hope you recover soon.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "वह अपनी कक्षा में सबसे तेज धावक हैं।.",
+    "en": "He is the fastest runner in his class.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "यदि आप समय पर आए थे, तो आप परीक्षा में भाग ले सकते हैं।.",
+    "en": "If you had arrived on time, you could have attended the exam.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "मैंने उसे बताया कि उन्होंने अपनी किताबों को घर पर छोड़ दिया था।.",
+    "en": "I told him that he had left his books at home.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "यह विषय उतना मुश्किल नहीं है जितना लोग सोचते हैं।.",
+    "en": "This subject is not as difficult as people think.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "उन्होंने मुझे अपनी गलती को सही करने के लिए प्रोत्साहित किया।.",
+    "en": "He encouraged me to correct my mistake.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "मेरे दोस्त ने मुझे अपने जन्मदिन की पार्टी में आमंत्रित किया।.",
+    "en": "My friend invited me to his birthday party.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "आपको अपने लक्ष्य को प्राप्त करने के लिए लगातार काम करना होगा।.",
+    "en": "You will have to work consistently to achieve your goal.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "वह हमेशा दूसरों की मदद करने के लिए तैयार है।.",
+    "en": "He is always ready to help others.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "क्या आप मुझे बता सकते हैं कि यह कैसे काम किया जाता है?",
+    "en": "Can you tell me how this work is done?",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "उन्होंने मुझे बताया कि वह अगले महीने विदेश जा रहा है।.",
+    "en": "He told me that he is going abroad next month.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "आपकी मेहनत और ईमानदारी आपके भविष्य को उज्ज्वल करेगी।.",
+    "en": "Your hard work and honesty will brighten your future.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "वह परीक्षा में अच्छे अंक प्राप्त करने के लिए लगातार मेहनत कर रहा है।.",
+    "en": "He is working hard consistently to get good marks in the exam.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "वह विदेश में अध्ययन करने के लिए बहुत उत्साहित है।.",
+    "en": "He is very excited to study abroad.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "वह अभी भी अपने पुराने दोस्तों के साथ संपर्क में रहता है।.",
+    "en": "He still keeps in touch with his old friends.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "क्या आप अगले सप्ताह तक इस कार्य को पूरा करने में मदद कर सकते हैं?",
+    "en": "Can you help me complete this task by next week?",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "वह अक्सर नए कामों को जानने के लिए खुद को चुनौती देता है।.",
+    "en": "He often challenges himself to learn new things.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "कठिनाइयों के बावजूद, वह अपने लक्ष्यों को प्राप्त करने में सफल रहा।.",
+    "en": "Despite the difficulties, he succeeded in achieving his goals.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "मेहनत के बावजूद, वह सफलता हासिल करने में असमर्थ था।.",
+    "en": "Despite working hard, he was unable to achieve success.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "आपके द्वारा लगाए गए प्रयासों का परिणाम आपके सामने होगा।.",
+    "en": "The result of the effort you have put in will be in front of you.",
+    "difficulty": "easy"
+  },
+  {
+    "hi": "इस सफलता के लिए आपको बहुत मेहनत करनी होगी।.",
+    "en": "You have to work very hard for this success.",
+    "difficulty": "easy"
+  }
+]
