@@ -9,12 +9,10 @@ import axios from "axios";
 export async function POST(req) {
     const formData = await req.formData()
     const en = formData.get("en")?.trim()
-    const difficulty = formData.get("difficulty")?.trim()?.toLowerCase()
 
   const task = {
     hi: null,
-    en,
-    difficulty,
+    en
   };
 
   try {
@@ -40,7 +38,7 @@ export async function POST(req) {
     .then((raw) => JSON.parse(raw));
   if (!tasks.find((obj) => obj.en === en) && task.hi) {
     tasks.push(task);
-    await fs.writeFile("C:/Users/Gaming pc/projects/learn-hindi/src/app/api/add/tasks.json", JSON.stringify(tasks, null, 2), "utf-8");
+    await fs.writeFile("C:/Users/Gaming pc/projects/learn-hindi/src/app/api/add/tasks.json", JSON.stringify(tasks.sort((a, b) => a.hi.length - b.hi.length), null, 2), "utf-8");
   }
 
   return NextResponse.json({ task });

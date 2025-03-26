@@ -11,12 +11,20 @@ import pronunciation from "./pronunciation.json"
 export async function GET(req) {
 
     const { searchParams } = new URL(req.url)
-    let question_number = searchParams.get("question_number")
-    question_number = Number(question_number)
+    let difficulty = searchParams.get("difficulty")
+
+    let tasks_in_difficulty
+    if (difficulty === "easy" || !difficulty) {
+      tasks_in_difficulty = tasks.filter(row => row.hi.length < 30)
+    } else if (difficulty === "medium") {
+      tasks_in_difficulty = tasks.filter(row => row.hi.length < 60)
+    } else if (difficulty === "hard") {
+      tasks_in_difficulty = tasks.filter(row => row.hi.length < 90)
+    }
+
+    const task = tasks_in_difficulty[Math.floor(Math.random() * tasks_in_difficulty.length)]
 
     const tokenizer = new natural.AggressiveTokenizer()
-
-    const task = tasks[question_number]
 
     // const prompt = "Generate a simple Hindi sentence and provide its English translation in JSON format like: { \"hi\": \"HINDI SENTENCE\", \"en\": \"ENGLISH TRANSLATION\" }"
 
@@ -35,7 +43,7 @@ export async function GET(req) {
     const ideal = {
         hi: task.hi,
         hi_tokens: task.hi?.replace(/[।.,]/g, '')?.split(" ").map((token, order) => {
-          const target = pronunciation.find(obj => obj.hi === token)
+          const target = pronunciation.find(obj => obj.hi === token?.replace(/[?]/g, ''))
           return { word: token, word_transliterated: target?.en_transliteration || transliterate(token)?.toLowerCase(), order }
         }),
         en: task.en,

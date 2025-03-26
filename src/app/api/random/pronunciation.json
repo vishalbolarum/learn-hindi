@@ -9,6 +9,50 @@
         "en_transliteration": "chaahie"
     },
     {
+        "hi": "बच्चा",
+        "en_transliteration": "bachcha"
+    },
+    {
+        "hi": "सीखना",
+        "en_transliteration": "seekhana"
+    },
+    {
+        "hi": "सबसे",
+        "en_transliteration": "sabase"
+    },
+    {
+        "hi": "कब",
+        "en_transliteration": "kab"
+    },
+    {
+        "hi": "नई",
+        "en_transliteration": "naee"
+    },
+    {
+        "hi": "पका",
+        "en_transliteration": "paka"
+    },
+    {
+        "hi": "चमक",
+        "en_transliteration": "chamak"
+    },
+    {
+        "hi": "पहनती",
+        "en_transliteration": "pahanatee"
+    },
+    {
+        "hi": "समय",
+        "en_transliteration": "samay"
+    },
+    {
+        "hi": "रहें",
+        "en_transliteration": "rahen"
+    },
+    {
+        "hi": "चल",
+        "en_transliteration": "chal"
+    },
+    {
         "hi": "चित्र",
         "en": [
             "picture",
@@ -18,12 +62,94 @@
         "en_transliteration": "chitr"
     },
     {
+        "hi": "कहाँ",
+        "en_transliteration": "kahaan"
+    },
+    {
         "hi": "खींच",
         "en": [
             "pull",
             "stab"
         ],
         "en_transliteration": "kheench"
+    },
+    {
+        "hi": "कक्षा",
+        "en_transliteration": "kaksha"
+    },
+    {
+        "hi": "जल्द",
+        "en_transliteration": "jald",
+        "en": [
+            "soon"
+        ]
+    },
+    {
+        "hi": "कार्यक्रम",
+        "en_transliteration": "kaaryakram",
+        "en": [
+            "program"
+        ]
+    },
+    {
+        "hi": "कहता",
+        "en_transliteration": "kahata"
+    },
+    {
+        "hi": "सच",
+        "en_transliteration": "sach"
+    },
+    {
+        "hi": "देना",
+        "en_transliteration": "dena",
+        "en": [
+            "give"
+        ]
+    },
+    {
+        "hi": "पढ़ाई",
+        "en_transliteration": "padhaee",
+        "en": [
+            "studies"
+        ]
+    },
+    {
+        "hi": "ध्यान",
+        "en_transliteration": "dhyaan",
+        "en": [
+            "attention"
+        ]
+    },
+    {
+        "hi": "पर",
+        "en_transliteration": "par"
+    },
+    {
+        "hi": "भोजन",
+        "en_transliteration": "bhojan"
+    },
+    {
+        "hi": "यहाँ",
+        "en_transliteration": "yahaan"
+    },
+    {
+        "hi": "कहानी",
+        "en_transliteration": "kahaanee"
+    },
+    {
+        "hi": "करेंगे",
+        "en_transliteration": "karenge"
+    },
+    {
+        "hi": "आवश्यकता",
+        "en_transliteration": "aavashyakata"
+    },
+    {
+        "hi": "कृपया",
+        "en": [
+            "please"
+        ],
+        "en_transliteration": "krpaya"
     },
     {
         "hi": "मदद",
@@ -76,7 +202,32 @@
         "en_transliteration": "parivaar"
     },
     {
+        "hi": "गर्व",
+        "en_transliteration": "garv"
+    },
+    {
         "hi": "चाहते",
         "en_transliteration": "chaahate"
+    },
+    {
+        "hi": "लगाए",
+        "en": [
+            "put",
+            "set",
+            "interpolate"
+        ],
+        "en_transliteration": "lagae"
+    },
+    {
+        "hi": "परिणाम",
+        "en_transliteration": "parinaam"
+    },
+    {
+        "hi": "रोचक",
+        "en_transliteration": "rochak"
+    },
+    {
+        "hi": "चाय",
+        "en_transliteration": "chaay"
     }
 ]
