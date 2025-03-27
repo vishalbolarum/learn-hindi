@@ -17,9 +17,9 @@ export async function GET(req) {
     if (difficulty === "easy" || !difficulty) {
       tasks_in_difficulty = tasks.filter(row => row.hi.length < 30)
     } else if (difficulty === "medium") {
-      tasks_in_difficulty = tasks.filter(row => row.hi.length < 60)
+      tasks_in_difficulty = tasks.filter(row => row.hi.length >= 30 && row.hi.length < 60)
     } else if (difficulty === "hard") {
-      tasks_in_difficulty = tasks.filter(row => row.hi.length < 90)
+      tasks_in_difficulty = tasks.filter(row => row.hi.length >= 60 && row.hi.length < 90)
     }
 
     const task = tasks_in_difficulty[Math.floor(Math.random() * tasks_in_difficulty.length)]

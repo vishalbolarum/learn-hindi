@@ -4,7 +4,11 @@
     "en": "What happened?"
   },
   {
-    "hi": "तुम कहाँ हो?",
+    "hi": "आप कब आओगे?",
+    "en": "When will you come?"
+  },
+  {
+    "hi": "आप कहां हैं?",
     "en": "Where are you?"
   },
   {
@@ -12,15 +16,11 @@
     "en": "What is the time?"
   },
   {
-    "hi": "आप कब आएंगे?",
-    "en": "When will you come?"
-  },
-  {
     "hi": "आप कैसे हैं?",
     "en": "How are you?"
   },
   {
-    "hi": "मैं खुश हूँ।.",
+    "hi": "मैं खुश हूं।",
     "en": "I am happy."
   },
   {
@@ -28,15 +28,11 @@
     "en": "This is my house."
   },
   {
-    "hi": "आकाश नीला है।.",
+    "hi": "आसमान नीला है।",
     "en": "The sky is blue."
   },
   {
-    "hi": "कुत्ते छाल है।.",
-    "en": "The dog is barking."
-  },
-  {
-    "hi": "मैं घर पर हूँ।.",
+    "hi": "मैं घर पर हूं।",
     "en": "I am at home."
   },
   {
@@ -44,47 +40,79 @@
     "en": "What is special today?"
   },
   {
-    "hi": "मुझे आम पसंद है.",
-    "en": "I like mangoes."
+    "hi": "वह मेरी बहन है।",
+    "en": "She is my sister."
   },
   {
     "hi": "सूरज चमक रहा है।",
     "en": "The sun is shining."
   },
   {
-    "hi": "वो स्कूल में है।",
+    "hi": "वह स्कूल में है।",
     "en": "She is at school."
   },
   {
-    "hi": "मेरा नाम सिया है.",
-    "en": "My name is Sia."
+    "hi": "कृपया शांत रहें।",
+    "en": "Please be quiet."
   },
   {
-    "hi": "कृपया शांत रहें।.",
-    "en": "Please be quiet."
+    "hi": "कृपया ध्यान दें।",
+    "en": "Please pay attention."
+  },
+  {
+    "hi": "वह बहुत लंबा है।",
+    "en": "He is very tall."
+  },
+  {
+    "hi": "बच्चा सो रहा है।",
+    "en": "The baby is sleeping."
+  },
+  {
+    "hi": "वह कार महँगी है।",
+    "en": "That car is expensive."
+  },
+  {
+    "hi": "फूल खिल रहे हैं।",
+    "en": "The flowers are blooming."
+  },
+  {
+    "hi": "मुझे भूख लगी है।",
+    "en": "I am hungry."
+  },
+  {
+    "hi": "बच्चा रो रहा है।",
+    "en": "The child is crying."
+  },
+  {
+    "hi": "आपको क्या चाहिए?",
+    "en": "What do you want?"
+  },
+  {
+    "hi": "ट्रेन कब आती है?",
+    "en": "When does the train arrive?"
+  },
+  {
+    "hi": "मुझे आम पसंद हैं।",
+    "en": "I like mangoes."
+  },
+  {
+    "hi": "मेरा नाम सिया है।",
+    "en": "My name is Sia."
   },
   {
     "hi": "आपका नाम क्या है?",
     "en": "What is your name?"
   },
   {
-    "hi": "कृपया ध्यान दें।.",
-    "en": "Please pay attention."
-  },
-  {
-    "hi": "वह बहुत लंबा है।.",
-    "en": "He is very tall."
-  },
-  {
-    "hi": "बच्चा सो रहा है।.",
-    "en": "The baby is sleeping."
-  },
-  {
-    "hi": "तुम कहाँ रहते हो?",
+    "hi": "आप कहाँ रहते हैं?",
     "en": "Where do you live?"
   },
   {
-    "hi": "यह किताब अच्छी है.",
+    "hi": "मैं कल थक गया था।",
+    "en": "I was tired yesterday."
+  },
+  {
+    "hi": "यह किताब अच्छी है।",
     "en": "This book is good."
   },
   {
@@ -92,7 +120,7 @@
     "en": "I like food."
   },
   {
-    "hi": "वह बहुत प्यारा है.",
+    "hi": "वह बहुत प्यारा है।",
     "en": "He is very cute."
   },
   {
@@ -100,119 +128,183 @@
     "en": "Who is your friend?"
   },
   {
-    "hi": "यह बाहर बारिश है।.",
-    "en": "It is raining outside."
-  },
-  {
-    "hi": "मैं कल थक गया था।.",
-    "en": "I was tired yesterday."
-  },
-  {
-    "hi": "आप खेलना चाहते हैं?",
-    "en": "Do you want to play?"
-  },
-  {
-    "hi": "आप मेरे दोस्त हैं।.",
+    "hi": "आप मेरे दोस्त हैं।",
     "en": "You are my friend."
   },
   {
-    "hi": "आप कितने पुराने हैं?",
-    "en": "How old are you?"
+    "hi": "आप बहुत दयालु हैं।",
+    "en": "You are very kind."
   },
   {
-    "hi": "आज मेरा जन्मदिन है।.",
+    "hi": "कुत्ता भौंक रहा है।",
+    "en": "The dog is barking."
+  },
+  {
+    "hi": "आज मेरा जन्मदिन है।",
     "en": "Today is my birthday."
   },
   {
-    "hi": "मुझे खेलना पसंद है।.",
+    "hi": "मुझे खेलना पसंद है।",
     "en": "I like to play."
   },
   {
-    "hi": "यह एक सुंदर दिन है।.",
-    "en": "It is a beautiful day."
+    "hi": "वह बहुत होशियार है।",
+    "en": "He is very smart."
   },
   {
-    "hi": "मैं स्कूल जा रहा हूँ।",
-    "en": "I am going to school."
+    "hi": "इसकी लागत कितनी है?",
+    "en": "How much does this cost?"
   },
   {
-    "hi": "वे बाहर खेल रहे हैं।.",
+    "hi": "आप कहां जा रहे हैं?",
+    "en": "Where are you going?"
+  },
+  {
+    "hi": "आप कितने साल के हैं?",
+    "en": "How old are you?"
+  },
+  {
+    "hi": "वे बाहर खेल रहे हैं।",
     "en": "They are playing outside."
   },
   {
-    "hi": "मेरा फोन टूट गया है।.",
+    "hi": "मेरा फ़ोन टूट गया है।",
     "en": "My phone is broken."
   },
   {
-    "hi": "तुम्हे देरी क्यों हुई?",
-    "en": "Why are you late?"
+    "hi": "तुम सुंदर लग रही हो।",
+    "en": "You look beautiful."
   },
   {
-    "hi": "आज मौसम बहुत अच्छा है.",
+    "hi": "बाहर बारिश हो रही है।",
+    "en": "It is raining outside."
+  },
+  {
+    "hi": "यह एक खूबसूरत दिन है।",
+    "en": "It is a beautiful day."
+  },
+  {
+    "hi": "मैं स्कूल जा रहा हूं।",
+    "en": "I am going to school."
+  },
+  {
+    "hi": "वह रोज स्कूल जाता है।",
+    "en": "He goes to school every day."
+  },
+  {
+    "hi": "यह एक खूबसूरत जगह है।",
+    "en": "This is a beautiful place."
+  },
+  {
+    "hi": "वह बहुत बुद्धिमान है।",
+    "en": "She is very intelligent."
+  },
+  {
+    "hi": "वे जल्दी सो जाते हैं।",
+    "en": "They go to bed early."
+  },
+  {
+    "hi": "आपको कौन बुला रहा है?",
+    "en": "Who is calling you?"
+  },
+  {
+    "hi": "आप बहुत मज़ाकिया हैं।",
+    "en": "You are very funny."
+  },
+  {
+    "hi": "यह सड़क बहुत लंबी है।",
+    "en": "This road is very long."
+  },
+  {
+    "hi": "आज मौसम बहुत अच्छा है।",
     "en": "The weather is very nice today."
-  },
-  {
-    "hi": "मैं एक सुंदर फूल हूँ।.",
-    "en": "I have a beautiful flower."
-  },
-  {
-    "hi": "वह एक सख्त शिक्षक है।.",
-    "en": "She is a strict teacher."
-  },
-  {
-    "hi": "आपका भाई क्या करता है?",
-    "en": "What job does your brother do?"
   },
   {
     "hi": "क्या यह आपकी किताब है?",
     "en": "Is this your book?"
   },
   {
-    "hi": "मेरी माँ काम कर रही है.",
-    "en": "My mother is working."
-  },
-  {
-    "hi": "मेरे पास एक पेंसिल है।.",
+    "hi": "मेरे पास एक पेंसिल है।",
     "en": "I have a pencil."
   },
   {
-    "hi": "आप क्या करना चाहते हैं?",
-    "en": "What do you like to do?"
+    "hi": "मुझे आइसक्रीम पसंद है।",
+    "en": "I like ice cream."
+  },
+  {
+    "hi": "हमें थोड़ा पानी चाहिए।",
+    "en": "We need some water."
+  },
+  {
+    "hi": "मैं संगीत सुन रहा हूं।",
+    "en": "I am listening to music."
+  },
+  {
+    "hi": "वह लड़का बहुत नटखट है।",
+    "en": "That boy is very naughty."
+  },
+  {
+    "hi": "आप देर से क्यों आए हैं?",
+    "en": "Why are you late?"
   },
   {
     "hi": "आपके पास कितना पैसा है?",
     "en": "How much money do you have?"
   },
   {
-    "hi": "मैं हमेशा सच कहता हूँ।.",
+    "hi": "मैं हमेशा सच बोलता हूं।",
     "en": "I always tell the truth."
   },
   {
-    "hi": "मुझे आइसक्रीम पसंद है।.",
-    "en": "I like ice cream."
+    "hi": "मैं चाय पीना चाहता हूं।",
+    "en": "I want to drink tea."
+  },
+  {
+    "hi": "यह काम बहुत मुश्किल है।",
+    "en": "This work is very difficult."
+  },
+  {
+    "hi": "सूरज पूर्व में उगता है।",
+    "en": "The sun rises in the east."
+  },
+  {
+    "hi": "हम सब एक साथ पढ़ते हैं।",
+    "en": "We all study together."
+  },
+  {
+    "hi": "मुझे बहुत प्यास लगी है।",
+    "en": "I am very thirsty."
+  },
+  {
+    "hi": "मैं आपको कल कॉल करूंगा।",
+    "en": "I will call you tomorrow."
+  },
+  {
+    "hi": "वह शाम को कॉफी पीता है।",
+    "en": "He drinks coffee in the evening."
+  },
+  {
+    "hi": "वह एक फ़िल्म देख रहा है।",
+    "en": "He is watching a movie."
+  },
+  {
+    "hi": "क्या आप खेलना चाहते हैं?",
+    "en": "Do you want to play?"
+  },
+  {
+    "hi": "वह एक सख्त शिक्षिका हैं।",
+    "en": "She is a strict teacher."
+  },
+  {
+    "hi": "मेरी मां काम कर रही हैं।",
+    "en": "My mother is working."
   },
   {
     "hi": "क्या आप मेरी मदद करेंगे?",
     "en": "Will you help me?"
   },
   {
-    "hi": "मैं चित्र खींच रहा हूँ।.",
-    "en": "I enjoy drawing pictures."
-  },
-  {
-    "hi": "यह पुस्तक बहुत रोचक है।.",
-    "en": "This book is very interesting."
-  },
-  {
-    "hi": "मैं चाय पीना चाहता हूँ।.",
-    "en": "I want to drink tea."
-  },
-  {
-    "hi": "यह काम बहुत मुश्किल है।.",
-    "en": "This work is very difficult."
-  },
-  {
-    "hi": "वह पार्क में चल रही है।.",
+    "hi": "वह पार्क में टहल रही है।",
     "en": "She is walking in the park."
   },
   {
@@ -220,139 +312,163 @@
     "en": "Do you like music?"
   },
   {
-    "hi": "आपका पसंदीदा गेम क्या है?",
-    "en": "What is your favorite game?"
-  },
-  {
-    "hi": "यहाँ भोजन बहुत अच्छा है।.",
-    "en": "The food here is very good."
-  },
-  {
-    "hi": "आपके पास एक सुंदर घर है।.",
+    "hi": "आपके पास एक सुंदर घर है।",
     "en": "You have a beautiful house."
   },
   {
-    "hi": "वह हर दिन स्कूल जाता है।.",
-    "en": "He goes to school every day."
+    "hi": "हम सबसे अच्छे दोस्त हैं।",
+    "en": "We are best friends."
   },
   {
-    "hi": "मैंने एक नया खिलौना खरीदा.",
-    "en": "I bought a new toy."
+    "hi": "वह एक अख़बार पढ़ रही है।",
+    "en": "She is reading a newspaper."
   },
   {
-    "hi": "मैंने आज एक नई किताब पढ़ी।",
+    "hi": "मेरे पास एक सुंदर फूल है।",
+    "en": "I have a beautiful flower."
+  },
+  {
+    "hi": "यह किताब बहुत दिलचस्प है।",
+    "en": "This book is very interesting."
+  },
+  {
+    "hi": "मैंने आज एक नई किताब पढ़ी।",
     "en": "I read a new book today."
   },
   {
-    "hi": "मैं पार्क जाना चाहता हूँ।.",
+    "hi": "मैं पार्क जाना चाहता हूं।",
     "en": "I want to go to the park."
   },
   {
-    "hi": "मुझे हिंदी सीखना पसंद है।.",
-    "en": "I like to learn Hindi."
+    "hi": "वह बहुत अच्छी गायिका हैं।",
+    "en": "She is a very good singer."
   },
   {
-    "hi": "वह एक बहुत अच्छा गायक है।.",
-    "en": "She is a very good singer."
+    "hi": "उसने मुझे एक कहानी सुनाई।",
+    "en": "She told me a story."
+  },
+  {
+    "hi": "हम जाने के लिए तैयार हैं।",
+    "en": "We are ready to go."
+  },
+  {
+    "hi": "वह स्कूल के बाद खेलता है।",
+    "en": "He plays after school."
+  },
+  {
+    "hi": "क्या आपको चॉकलेट पसंद है?",
+    "en": "Do you like chocolate?"
+  },
+  {
+    "hi": "मेरी बहन बहुत होशियार है।",
+    "en": "My sister is very intelligent."
+  },
+  {
+    "hi": "हमें अपने देश पर गर्व है।",
+    "en": "We are proud of our country."
+  },
+  {
+    "hi": "मुझे तुम्हारी याद आती है।",
+    "en": "I miss you."
+  },
+  {
+    "hi": "मैं जल्द ही आपसे मिलूंगा।",
+    "en": "I will see you soon."
+  },
+  {
+    "hi": "मैंने एक नया खिलौना खरीदा।",
+    "en": "I bought a new toy."
   },
   {
     "hi": "क्या आप स्कूल में खुश हैं?",
     "en": "Are you happy at school?"
   },
   {
-    "hi": "मेरी माँ खाना पका रही है।.",
+    "hi": "मेरी मां खाना बना रही हैं।",
     "en": "My mother is cooking food."
   },
   {
-    "hi": "उसने मुझे एक कहानी सुनाई।.",
-    "en": "She told me a story."
-  },
-  {
-    "hi": "हम जाने के लिए तैयार हैं।.",
-    "en": "We are ready to go."
-  },
-  {
-    "hi": "वह एक लाल पोशाक पहनती है।.",
-    "en": "She wears a red dress."
-  },
-  {
-    "hi": "आपका बेटा कितना पुराना है?",
+    "hi": "आपका बेटा कितने साल का है?",
     "en": "How old is your son?"
   },
   {
-    "hi": "सूर्य पूर्व में बढ़ता है।.",
-    "en": "The sun rises in the east."
+    "hi": "वह रोज घर की सफाई करती है।",
+    "en": "She cleans the house daily."
   },
   {
-    "hi": "वह स्कूल के बाद खेलते हैं।.",
-    "en": "He plays after school."
+    "hi": "आपका पसंदीदा खेल कौन सा है?",
+    "en": "What is your favorite game?"
   },
   {
-    "hi": "सूर्य पश्चिम में स्थित है।.",
-    "en": "The sun is setting in the west."
+    "hi": "यहां का खाना बहुत अच्छा है।",
+    "en": "The food here is very good."
   },
   {
-    "hi": "मेरे पेट में दर्द होता है।.",
-    "en": "My stomach hurts."
-  },
-  {
-    "hi": "क्या तुम्हें चॉकलेट पसंद है?",
-    "en": "Do you like chocolate?"
-  },
-  {
-    "hi": "मेरी बहन बहुत बुद्धिमान है।.",
-    "en": "My sister is very intelligent."
-  },
-  {
-    "hi": "हमें एक साथ काम करना चाहिए।.",
-    "en": "We should work together."
-  },
-  {
-    "hi": "मुझे बहुत अच्छा निशान मिला।.",
-    "en": "I got very good marks."
-  },
-  {
-    "hi": "मुझे फिल्में देखना पसंद है।.",
+    "hi": "मुझे फ़िल्में देखना पसंद है।",
     "en": "I like watching movies."
   },
   {
-    "hi": "वह स्वादिष्ट भोजन पकाती है।.",
+    "hi": "वह स्वादिष्ट खाना बनाती है।",
     "en": "She cooks delicious food."
   },
   {
-    "hi": "वह हमेशा मेरे साथ खेलते हैं।.",
+    "hi": "वह हमेशा मेरे साथ खेलता है।",
     "en": "He always plays with me."
   },
   {
-    "hi": "बच्चे पार्क में खेल रहे हैं।.",
+    "hi": "मैं थका हुआ महसूस करता हूं।",
+    "en": "I feel tired."
+  },
+  {
+    "hi": "पंछी आसमान में उड़ रहे हैं।",
+    "en": "The birds are flying in the sky."
+  },
+  {
+    "hi": "मेरे पेट में दर्द हो रहा है।",
+    "en": "My stomach hurts."
+  },
+  {
+    "hi": "बच्चे पार्क में खेल रहे हैं।",
     "en": "The children are playing in the park."
+  },
+  {
+    "hi": "वह मेरा सबसे अच्छा दोस्त है।",
+    "en": "He is my best friend."
+  },
+  {
+    "hi": "कंप्यूटर काम नहीं कर रहा है।",
+    "en": "The computer is not working."
+  },
+  {
+    "hi": "आपको क्या करना अच्छा लगता है?",
+    "en": "What do you like to do?"
+  },
+  {
+    "hi": "वह लाल रंग की पोशाक पहनती है।",
+    "en": "She wears a red dress."
   },
   {
     "hi": "क्या आप मेरी मदद कर सकते हैं?",
     "en": "Can you help me?"
   },
   {
-    "hi": "वह मेरा सबसे अच्छा दोस्त है।.",
-    "en": "He is my best friend."
-  },
-  {
-    "hi": "कंप्यूटर काम नहीं कर रहा है।.",
-    "en": "The computer is not working."
-  },
-  {
-    "hi": "हम 8 बजे रात्रिभोज खाते हैं।.",
-    "en": "We eat dinner at 8 pm."
-  },
-  {
-    "hi": "कौन आपका सबसे अच्छा दोस्त है?",
+    "hi": "आपका सबसे अच्छा दोस्त कौन है?",
     "en": "Who is your best friend?"
   },
   {
-    "hi": "हम अपने देश पर गर्व करते हैं।.",
-    "en": "We are proud of our country."
+    "hi": "आज स्कूल में एक कार्यक्रम है।",
+    "en": "There is a program at school today."
   },
   {
-    "hi": "क्या आप फिल्म देखना चाहते हैं?",
+    "hi": "तुम्हारा भाई क्या काम करता है?",
+    "en": "What job does your brother do?"
+  },
+  {
+    "hi": "हमें साथ मिलकर काम करना चाहिए।",
+    "en": "We should work together."
+  },
+  {
+    "hi": "क्या आप फ़िल्म देखना चाहते हैं?",
     "en": "Do you want to watch a movie?"
   },
   {
@@ -360,120 +476,152 @@
     "en": "Do you want to eat chocolate?"
   },
   {
-    "hi": "आज स्कूल में एक कार्यक्रम है।.",
-    "en": "There is a program at school today."
+    "hi": "वे मॉल में खरीदारी कर रहे हैं।",
+    "en": "They are shopping at the mall."
   },
   {
-    "hi": "आपके स्कूल में कितने छात्र हैं?",
-    "en": "How many students are there in your school?"
+    "hi": "वे रात में टेलीविजन देखते हैं।",
+    "en": "They watch television at night."
   },
   {
-    "hi": "हम सभी एक साथ अध्ययन करते हैं।.",
-    "en": "We all study together."
+    "hi": "मैं लाइब्रेरी में पढ़ रहा हूं।",
+    "en": "I am studying in the library."
+  },
+  {
+    "hi": "मुझे संगीत सुनना बहुत पसंद है।",
+    "en": "I really like listening to music."
+  },
+  {
+    "hi": "मुझे अपनी पढ़ाई में मदद चाहिए।",
+    "en": "I need help with my studies."
+  },
+  {
+    "hi": "मुझे हिंदी सीखना अच्छा लगता है।",
+    "en": "I like to learn Hindi."
+  },
+  {
+    "hi": "सूरज पश्चिम में अस्त हो रहा है।",
+    "en": "The sun is setting in the west."
   },
   {
     "hi": "क्या हम पार्क में खेल सकते हैं?",
     "en": "Can we play in the park?"
   },
   {
-    "hi": "वे मॉल में खरीदारी कर रहे हैं।.",
-    "en": "They are shopping at the mall."
-  },
-  {
-    "hi": "वे रात में टेलीविजन देखते हैं।.",
-    "en": "They watch television at night."
-  },
-  {
-    "hi": "क्या आपको किताबें पढ़ना पसंद है?",
+    "hi": "क्या आपको किताबें पढ़ना पसंद है?",
     "en": "Do you like to read books?"
   },
   {
-    "hi": "क्या आपने दोपहर का भोजन खाया है?",
+    "hi": "मुझे चित्र बनाने में मजा आता है।",
+    "en": "I enjoy drawing pictures."
+  },
+  {
+    "hi": "क्या आपने दोपहर का खाना खाया है?",
     "en": "Have you eaten lunch?"
   },
   {
-    "hi": "मेरी माँ हमेशा मेरी मदद करती है।.",
+    "hi": "हम रविवार को पार्क में जाते हैं।",
+    "en": "We go to the park on Sundays."
+  },
+  {
+    "hi": "वह काम करने के लिए कार चलाता है।",
+    "en": "He drives a car to work."
+  },
+  {
+    "hi": "मुझे बहुत अच्छे मार्क्स मिले हैं।",
+    "en": "I got very good marks."
+  },
+  {
+    "hi": "मेरी मां हमेशा मेरी मदद करती हैं।",
     "en": "My mother always helps me."
   },
   {
-    "hi": "कर सकते हैं मुझे पानी की बोतल है?",
-    "en": "Can I have a bottle of water please?"
-  },
-  {
-    "hi": "मेरे दोस्त ने मुझे एक उपहार दिया।.",
+    "hi": "मेरे दोस्त ने मुझे एक तोहफा दिया।",
     "en": "My friend gave me a gift."
   },
   {
-    "hi": "मैं आमतौर पर सुबह जल्दी उठता हूँ।.",
+    "hi": "मैं आमतौर पर सुबह जल्दी उठता हूं।",
     "en": "I usually wake up early in the morning."
   },
   {
-    "hi": "मेरे पिता को टेनिस खेलना पसंद है।.",
-    "en": "My father loves to play tennis."
-  },
-  {
-    "hi": "मेरे भाई को खेल देखने से नफरत है।.",
+    "hi": "मेरे भाई को खेल देखने से नफरत है।",
     "en": "My brother hates watching sports."
   },
   {
-    "hi": "मैंने अपने पालतू कुत्ते को खिलाया।.",
-    "en": "I fed my pet dog."
+    "hi": "हम रात 8 बजे रात का खाना खाते हैं।",
+    "en": "We eat dinner at 8 pm."
   },
   {
-    "hi": "मैं अपने परिवार से प्यार करता हूँ।.",
+    "hi": "मैं अपने परिवार से प्यार करता हूं।",
     "en": "I love my family."
   },
   {
-    "hi": "हमें पर्यावरण की रक्षा करनी चाहिए।.",
+    "hi": "हमें पर्यावरण की रक्षा करनी चाहिए।",
     "en": "We should protect the environment."
   },
   {
-    "hi": "क्या आप आज एक फिल्म देखना चाहते हैं?",
-    "en": "Would you like to watch a movie today?"
-  },
-  {
-    "hi": "वह किताबें पढ़ने में बहुत अच्छा है।.",
-    "en": "He is very good at reading books."
-  },
-  {
-    "hi": "मैं पुस्तकालय में पढ़ाई कर रहा हूँ।.",
-    "en": "I am studying in the library."
-  },
-  {
-    "hi": "आपको अपनी पढ़ाई पर ध्यान देना चाहिए।.",
-    "en": "You should focus on your studies."
-  },
-  {
-    "hi": "हम छुट्टियों के दौरान यात्रा करेंगे।.",
-    "en": "We will travel during the holidays."
-  },
-  {
-    "hi": "वह अपनी कक्षा में सबसे तेज धावक हैं।.",
-    "en": "He is the fastest runner in his class."
-  },
-  {
-    "hi": "मेरे शिक्षक हमें नई बातें सिखाते हैं।.",
-    "en": "My teachers teach us new things."
-  },
-  {
-    "hi": "मुझे आशा है कि आप जल्द ही ठीक हो जाएं।.",
-    "en": "I hope you recover soon."
-  },
-  {
-    "hi": "मेरे पिता एक कारखाने में काम करते हैं।.",
-    "en": "My father works in a factory."
-  },
-  {
-    "hi": "मेरा चाचा एक कार्यालय में काम करता है।.",
+    "hi": "मेरे मामा एक ऑफ़िस में काम करते हैं।",
     "en": "My uncle works in an office."
   },
   {
-    "hi": "मुझे दोस्तों के साथ घूमना अच्छा लगता है।",
-    "en": "I enjoy hanging out with friends."
+    "hi": "आपके स्कूल में कितने विद्यार्थी हैं?",
+    "en": "How many students are there in your school?"
   },
   {
-    "hi": "आपको अपने स्वास्थ्य का ध्यान रखना चाहिए।.",
+    "hi": "क्या आप आज कोई फ़िल्म देखना चाहेंगे?",
+    "en": "Would you like to watch a movie today?"
+  },
+  {
+    "hi": "वह किताबें पढ़ने में बहुत अच्छे हैं।",
+    "en": "He is very good at reading books."
+  },
+  {
+    "hi": "आपको अपनी पढ़ाई पर ध्यान देना चाहिए।",
+    "en": "You should focus on your studies."
+  },
+  {
+    "hi": "हम छुट्टियों के दौरान यात्रा करेंगे।",
+    "en": "We will travel during the holidays."
+  },
+  {
+    "hi": "वह अपनी कक्षा में सबसे तेज धावक हैं।",
+    "en": "He is the fastest runner in his class."
+  },
+  {
+    "hi": "मैं हर सुबह अपने दाँत ब्रश करता हूँ।",
+    "en": "I brush my teeth every morning."
+  },
+  {
+    "hi": "मेरे शिक्षक हमें नई चीजें सिखाते हैं।",
+    "en": "My teachers teach us new things."
+  },
+  {
+    "hi": "मेरे पिता को टेनिस खेलना बहुत पसंद है।",
+    "en": "My father loves to play tennis."
+  },
+  {
+    "hi": "मैंने अपने पालतू कुत्ते को खाना खिलाया।",
+    "en": "I fed my pet dog."
+  },
+  {
+    "hi": "मेरे पिता एक फैक्ट्री में काम करते हैं।",
+    "en": "My father works in a factory."
+  },
+  {
+    "hi": "मुझे उम्मीद है कि आप जल्द ठीक हो जाएंगे।",
+    "en": "I hope you recover soon."
+  },
+  {
+    "hi": "आपको अपने स्वास्थ्य का ध्यान रखना चाहिए।",
     "en": "You should take care of your health."
+  },
+  {
+    "hi": "कृपया क्या मुझे पानी की बोतल मिल सकती है?",
+    "en": "Can I have a bottle of water please?"
+  },
+  {
+    "hi": "मुझे दोस्तों के साथ घूमने में मजा आता है।",
+    "en": "I enjoy hanging out with friends."
   },
   {
     "hi": "क्या आप अगले सप्ताह छुट्टी पर जा रहे हैं?",
@@ -484,91 +632,83 @@
     "en": "Will you travel during the holidays?"
   },
   {
-    "hi": "मैं वास्तव में संगीत सुनना पसंद करता हूँ।.",
-    "en": "I really like listening to music."
-  },
-  {
-    "hi": "मुझे अपनी पढ़ाई के साथ मदद की आवश्यकता है।.",
-    "en": "I need help with my studies."
-  },
-  {
-    "hi": "इस सफलता के लिए आपको बहुत मेहनत करनी होगी।.",
+    "hi": "इस सफलता के लिए आपको बहुत मेहनत करनी होगी।",
     "en": "You have to work very hard for this success."
   },
   {
-    "hi": "वह हमेशा दूसरों की मदद करने के लिए तैयार है।.",
+    "hi": "वह दूसरों की मदद करने के लिए हमेशा तैयार रहता है।",
     "en": "He is always ready to help others."
   },
   {
-    "hi": "यह विषय उतना मुश्किल नहीं है जितना लोग सोचते हैं।.",
+    "hi": "यह विषय उतना मुश्किल नहीं है जितना लोग सोचते हैं।",
     "en": "This subject is not as difficult as people think."
   },
   {
-    "hi": "वह विदेश में अध्ययन करने के लिए बहुत उत्साहित है।.",
+    "hi": "वह विदेश में पढ़ाई करने के लिए बहुत उत्साहित हैं।",
     "en": "He is very excited to study abroad."
   },
   {
-    "hi": "मेहनत के बावजूद, वह सफलता हासिल करने में असमर्थ था।.",
-    "en": "Despite working hard, he was unable to achieve success."
-  },
-  {
-    "hi": "आपकी मेहनत और ईमानदारी आपके भविष्य को उज्ज्वल करेगी।.",
-    "en": "Your hard work and honesty will brighten your future."
-  },
-  {
-    "hi": "क्या आप मुझे बता सकते हैं कि यह कैसे काम किया जाता है?",
-    "en": "Can you tell me how this work is done?"
-  },
-  {
-    "hi": "उन्होंने मुझे बताया कि वह अगले महीने विदेश जा रहा है।.",
+    "hi": "उसने मुझे बताया कि वह अगले महीने विदेश जा रहा है।",
     "en": "He told me that he is going abroad next month."
   },
   {
-    "hi": "यदि आप कठिन अध्ययन करते हैं तो आपको अच्छे अंक मिलेंगे।.",
-    "en": "If you study hard, you will get good marks."
-  },
-  {
-    "hi": "यदि आप समय पर आए थे, तो आप परीक्षा में भाग ले सकते हैं।.",
-    "en": "If you had arrived on time, you could have attended the exam."
-  },
-  {
-    "hi": "आपके द्वारा लगाए गए प्रयासों का परिणाम आपके सामने होगा।.",
+    "hi": "आपने जो प्रयास किए हैं उसका परिणाम आपके सामने होगा।",
     "en": "The result of the effort you have put in will be in front of you."
   },
   {
-    "hi": "वह अभी भी अपने पुराने दोस्तों के साथ संपर्क में रहता है।.",
+    "hi": "आपकी मेहनत और ईमानदारी आपके भविष्य को उज्जवल बनाएगी।",
+    "en": "Your hard work and honesty will brighten your future."
+  },
+  {
+    "hi": "वह अभी भी अपने पुराने दोस्तों के संपर्क में रहता है।",
     "en": "He still keeps in touch with his old friends."
   },
   {
-    "hi": "वह अक्सर नए कामों को जानने के लिए खुद को चुनौती देता है।.",
+    "hi": "वह अक्सर नई चीजें सीखने के लिए खुद को चुनौती देता है।",
     "en": "He often challenges himself to learn new things."
   },
   {
-    "hi": "उन्होंने मुझे अपनी गलती को सही करने के लिए प्रोत्साहित किया।.",
-    "en": "He encouraged me to correct my mistake."
+    "hi": "क्या आप मुझे बता सकते हैं कि यह काम कैसे किया जाता है?",
+    "en": "Can you tell me how this work is done?"
   },
   {
-    "hi": "मेरे दोस्त ने मुझे अपने जन्मदिन की पार्टी में आमंत्रित किया।.",
-    "en": "My friend invited me to his birthday party."
+    "hi": "अगर आप मेहनत से पढ़ाई करेंगे तो आपको अच्छे अंक मिलेंगे।",
+    "en": "If you study hard, you will get good marks."
   },
   {
-    "hi": "आपको अपने लक्ष्य को प्राप्त करने के लिए लगातार काम करना होगा।.",
-    "en": "You will have to work consistently to achieve your goal."
-  },
-  {
-    "hi": "मैंने उसे बताया कि उन्होंने अपनी किताबों को घर पर छोड़ दिया था।.",
+    "hi": "मैंने उसे बताया कि उसने अपनी किताबें घर पर छोड़ दी हैं।",
     "en": "I told him that he had left his books at home."
   },
   {
-    "hi": "क्या आप अगले सप्ताह तक इस कार्य को पूरा करने में मदद कर सकते हैं?",
-    "en": "Can you help me complete this task by next week?"
+    "hi": "कड़ी मेहनत करने के बावजूद भी वह सफलता हासिल नहीं कर पाए।",
+    "en": "Despite working hard, he was unable to achieve success."
   },
   {
-    "hi": "कठिनाइयों के बावजूद, वह अपने लक्ष्यों को प्राप्त करने में सफल रहा।.",
+    "hi": "उन्होंने मुझे अपनी गलती सुधारने के लिए प्रोत्साहित किया।",
+    "en": "He encouraged me to correct my mistake."
+  },
+  {
+    "hi": "अपने लक्ष्य को हासिल करने के लिए आपको लगातार काम करना होगा।",
+    "en": "You will have to work consistently to achieve your goal."
+  },
+  {
+    "hi": "मेरे दोस्त ने मुझे अपने जन्मदिन की पार्टी में आमंत्रित किया।",
+    "en": "My friend invited me to his birthday party."
+  },
+  {
+    "hi": "यदि आप समय पर पहुंच जाते, तो आप परीक्षा में शामिल हो सकते थे।",
+    "en": "If you had arrived on time, you could have attended the exam."
+  },
+  {
+    "hi": "परीक्षा में अच्छे अंक लाने के लिए वह लगातार मेहनत कर रहे हैं।",
+    "en": "He is working hard consistently to get good marks in the exam."
+  },
+  {
+    "hi": "कठिनाइयों के बावजूद, वह अपने लक्ष्यों को प्राप्त करने में सफल रहे।",
     "en": "Despite the difficulties, he succeeded in achieving his goals."
   },
   {
-    "hi": "वह परीक्षा में अच्छे अंक प्राप्त करने के लिए लगातार मेहनत कर रहा है।.",
-    "en": "He is working hard consistently to get good marks in the exam."
+    "hi": "क्या आप अगले सप्ताह तक इस कार्य को पूरा करने में मेरी मदद कर सकते हैं?",
+    "en": "Can you help me complete this task by next week?"
   }
 ]
