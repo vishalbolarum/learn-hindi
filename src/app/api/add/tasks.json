@@ -710,5 +710,1365 @@
   {
     "hi": "क्या आप अगले सप्ताह तक इस कार्य को पूरा करने में मेरी मदद कर सकते हैं?",
     "en": "Can you help me complete this task by next week?"
+  },
+  {
+    "hi": "ज़रूर! यहां 25 सरल अंग्रेजी वाक्यों की एक सरणी दी गई है:",
+    "en": "Sure! Here is an array of 25 simple English sentences:"
+  },
+  {
+    "hi": "वह रोज सुबह कॉफी पीती है।",
+    "en": "She drinks coffee every morning."
+  },
+  {
+    "hi": "बिल्ली चटाई पर बैठ गई।",
+    "en": "The cat sat on the mat."
+  },
+  {
+    "hi": "वह लाल रंग की कार चलाता है।",
+    "en": "He drives a red car."
+  },
+  {
+    "hi": "हम साथ-साथ स्कूल जाते हैं।",
+    "en": "We walk to school together."
+  },
+  {
+    "hi": "उन्हें फुटबॉल खेलना बहुत पसंद है।",
+    "en": "They love to play soccer."
+  },
+  {
+    "hi": "किताब मेज़ पर है।",
+    "en": "The book is on the table."
+  },
+  {
+    "hi": "वह खूबसूरती से गाती है।",
+    "en": "She sings beautifully."
+  },
+  {
+    "hi": "कुत्ता अजनबियों पर भौंकता है।",
+    "en": "The dog barks at strangers."
+  },
+  {
+    "hi": "वह रोज अखबार पढ़ता है।",
+    "en": "He reads the newspaper daily."
+  },
+  {
+    "hi": "हम कल पार्क गए थे।",
+    "en": "We went to the park yesterday."
+  },
+  {
+    "hi": "वसंत में फूल खिलते हैं।",
+    "en": "The flowers bloom in spring."
+  },
+  {
+    "hi": "वह अक्सर अपनी पत्रिका में लिखती हैं।",
+    "en": "She writes in her journal often."
+  },
+  {
+    "hi": "बच्चे बाहर खेल रहे हैं।",
+    "en": "The children are playing outside."
+  },
+  {
+    "hi": "वह नीली जैकेट पहनता है।",
+    "en": "He wears a blue jacket."
+  },
+  {
+    "hi": "वे हर शाम रात का खाना पकाते हैं।",
+    "en": "They cook dinner every evening."
+  },
+  {
+    "hi": "आसमान साफ और नीला है।",
+    "en": "The sky is clear and blue."
+  },
+  {
+    "hi": "वह साप्ताहिक रूप से अपनी दादी से मिलने जाती है।",
+    "en": "She visits her grandmother weekly."
+  },
+  {
+    "hi": "पानी ठंडा है।",
+    "en": "The water is cold."
+  },
+  {
+    "hi": "वह वीकेंड पर फ़िल्में देखता है।",
+    "en": "He watches movies on weekends."
+  },
+  {
+    "hi": "पक्षी सुबह चहचहाते हैं।",
+    "en": "The birds chirp in the morning."
+  },
+  {
+    "hi": "हम साथ में नाश्ता करते हैं।",
+    "en": "We eat breakfast together."
+  },
+  {
+    "hi": "वह पार्टी में डांस करती है।",
+    "en": "She dances at the party."
+  },
+  {
+    "hi": "दोपहर में घंटी बजती है।",
+    "en": "The bell rings at noon."
+  },
+  {
+    "hi": "वह परिदृश्यों को चित्रित करता है।",
+    "en": "He paints landscapes."
+  },
+  {
+    "hi": "सूरज बहुत चमक रहा है।",
+    "en": "The sun is shining brightly."
+  },
+  {
+    "hi": "उसे किताबें पढ़ना पसंद है।",
+    "en": "She likes to read books."
+  },
+  {
+    "hi": "कुत्ता जोर से भौंकने लगा।",
+    "en": "The dog barked loudly."
+  },
+  {
+    "hi": "वह गिटार अच्छी तरह से बजाता है।",
+    "en": "He plays the guitar well."
+  },
+  {
+    "hi": "वे पार्क में गए।",
+    "en": "They went to the park."
+  },
+  {
+    "hi": "चिड़िया ने एक मधुर गीत गाया।",
+    "en": "The bird sang a sweet song."
+  },
+  {
+    "hi": "उसने एक स्वादिष्ट केक बेक किया।",
+    "en": "She baked a delicious cake."
+  },
+  {
+    "hi": "जॉन अपनी बाइक से स्कूल जाता है।",
+    "en": "John rides his bike to school."
+  },
+  {
+    "hi": "बच्चे बाहर खेल रहे हैं।",
+    "en": "The kids are playing outside."
+  },
+  {
+    "hi": "वह रोज सुबह कॉफी पीता है।",
+    "en": "He drinks coffee every morning."
+  },
+  {
+    "hi": "रात में तारे टिमटिमाते थे।",
+    "en": "The stars twinkled at night."
+  },
+  {
+    "hi": "वह मंच पर शान से नृत्य करती है।",
+    "en": "She dances gracefully on stage."
+  },
+  {
+    "hi": "अप्रैल में भारी बारिश होती है।",
+    "en": "It rains heavily in April."
+  },
+  {
+    "hi": "शिक्षक ने बोर्ड पर लिखा था।",
+    "en": "The teacher wrote on the board."
+  },
+  {
+    "hi": "उन्होंने एक मजेदार फिल्म देखी।",
+    "en": "They watched a funny movie."
+  },
+  {
+    "hi": "बच्चा शांति से सो गया।",
+    "en": "The baby slept peacefully."
+  },
+  {
+    "hi": "शेफ ने स्वादिष्ट भोजन पकाया।",
+    "en": "The chef cooked a tasty meal."
+  },
+  {
+    "hi": "पेड़ों के बीच से हवा धीरे से बह रही थी।",
+    "en": "The wind blew gently through the trees."
+  },
+  {
+    "hi": "लड़की के पास लाल रंग का गुब्बारा है।",
+    "en": "The girl has a red balloon."
+  },
+  {
+    "hi": "उसने टूटी हुई कुर्सी को ठीक किया।",
+    "en": "He fixed the broken chair."
+  },
+  {
+    "hi": "उसने एक सुंदर चित्र बनाया।",
+    "en": "She painted a beautiful picture."
+  },
+  {
+    "hi": "कार लाल बत्ती पर रुक गई।",
+    "en": "The car stopped at the red light."
+  },
+  {
+    "hi": "पेड़ों से पत्ते गिर गए।",
+    "en": "The leaves fell from the trees."
+  },
+  {
+    "hi": "वह वीकेंड पर फुटबॉल खेलता है।",
+    "en": "He plays soccer on weekends."
+  },
+  {
+    "hi": "वे कल पार्क गए थे।",
+    "en": "They went to the park yesterday."
+  },
+  {
+    "hi": "वह अपने खाली समय में पेंटिंग करना पसंद करती हैं।",
+    "en": "She likes to paint in her free time."
+  },
+  {
+    "hi": "वह रोज़ाना एक अख़बार पढ़ता है।",
+    "en": "He reads a newspaper daily."
+  },
+  {
+    "hi": "दरवाज़ा खुला हुआ है।",
+    "en": "The door is open."
+  },
+  {
+    "hi": "कल रात भारी बारिश हुई।",
+    "en": "It rained heavily last night."
+  },
+  {
+    "hi": "सेब मीठे और कुरकुरे होते हैं।",
+    "en": "Apples are sweet and crunchy."
+  },
+  {
+    "hi": "उन्होंने कल रात एक फ़िल्म देखी।",
+    "en": "He watched a movie last night."
+  },
+  {
+    "hi": "उसने लाल रंग की ड्रेस पहनी थी।",
+    "en": "She wore a red dress."
+  },
+  {
+    "hi": "कार बाहर पार्क की गई है।",
+    "en": "The car is parked outside."
+  },
+  {
+    "hi": "वे अक्सर अपने दादा-दादी से मिलने जाते हैं।",
+    "en": "They visit their grandparents often."
+  },
+  {
+    "hi": "वह काम करते समय संगीत सुनता है।",
+    "en": "He listens to music while working."
+  },
+  {
+    "hi": "उसने एक स्वादिष्ट केक बनाया।",
+    "en": "She made a delicious cake."
+  },
+  {
+    "hi": "बच्चा चुपचाप सो रहा है।",
+    "en": "The baby is sleeping quietly."
+  },
+  {
+    "hi": "सड़क लंबी और घुमावदार है।",
+    "en": "The road is long and winding."
+  },
+  {
+    "hi": "वह पहाड़ों में लंबी पैदल यात्रा का आनंद लेता है।",
+    "en": "He enjoys hiking in the mountains."
+  },
+  {
+    "hi": "वह पियानो बजाना सीख रही है।",
+    "en": "She is learning to play the piano."
+  },
+  {
+    "hi": "उसे किताबें पढ़ना बहुत पसंद है।",
+    "en": "She loves to read books."
+  },
+  {
+    "hi": "हम आज पार्क गए।",
+    "en": "We went to the park today."
+  },
+  {
+    "hi": "रात भर बारिश होती रही।",
+    "en": "It rained all night long."
+  },
+  {
+    "hi": "पेड़ों में पक्षी गा रहे हैं।",
+    "en": "Birds are singing in the trees."
+  },
+  {
+    "hi": "मुझे कॉफ़ी पीना पसंद है।",
+    "en": "I like to drink coffee."
+  },
+  {
+    "hi": "वे फ़िल्मों में जा रहे हैं।",
+    "en": "They are going to the movies."
+  },
+  {
+    "hi": "फूल से मीठी खुशबू आती है।",
+    "en": "The flower smells sweet."
+  },
+  {
+    "hi": "वह नीली कलम से लिखते हैं।",
+    "en": "He writes with a blue pen."
+  },
+  {
+    "hi": "बच्चे फुटबॉल खेल रहे हैं।",
+    "en": "The kids are playing soccer."
+  },
+  {
+    "hi": "उसके पास एक नई लाल पोशाक है।",
+    "en": "She has a new red dress."
+  },
+  {
+    "hi": "केक का स्वाद बहुत स्वादिष्ट होता है।",
+    "en": "The cake tastes delicious."
+  },
+  {
+    "hi": "वह तेज कार चलाता है।",
+    "en": "He drives a fast car."
+  },
+  {
+    "hi": "वे एक नया घर बना रहे हैं।",
+    "en": "They are building a new house."
+  },
+  {
+    "hi": "वह शान से नाचती है।",
+    "en": "She dances gracefully."
+  },
+  {
+    "hi": "घड़ी चुपचाप टिक जाती है।",
+    "en": "The clock ticks quietly."
+  },
+  {
+    "hi": "बाहर बर्फबारी हो रही है।",
+    "en": "It is snowing outside."
+  },
+  {
+    "hi": "उन्होंने दोपहर के भोजन में एक सेब खाया।",
+    "en": "He ate an apple for lunch."
+  },
+  {
+    "hi": "शिक्षक हमें होमवर्क देता है।",
+    "en": "The teacher gives us homework."
+  },
+  {
+    "hi": "शेर जंगल का राजा है।",
+    "en": "The lion is the king of the jungle."
+  },
+  {
+    "hi": "हमने तूफान के बाद एक इंद्रधनुष देखा।",
+    "en": "We saw a rainbow after the storm."
+  },
+  {
+    "hi": "बिल्ली चटाई पर सो गई।",
+    "en": "The cat slept on the mat."
+  },
+  {
+    "hi": "सूरज पश्चिम में अस्त होता है।",
+    "en": "The sun sets in the west."
+  },
+  {
+    "hi": "उसे किताबें पढ़ना पसंद है।",
+    "en": "He likes to read books."
+  },
+  {
+    "hi": "वह बच्चे को देखकर मुस्कुराई।",
+    "en": "She smiled at the baby."
+  },
+  {
+    "hi": "कार लाल है।",
+    "en": "The car is red."
+  },
+  {
+    "hi": "वह हर दिन दौड़ता है।",
+    "en": "He runs every day."
+  },
+  {
+    "hi": "उन्होंने साथ में रात का खाना पकाया।",
+    "en": "They cooked dinner together."
+  },
+  {
+    "hi": "चिड़िया भोर में गाती है।",
+    "en": "The bird sings at dawn."
+  },
+  {
+    "hi": "यहां अक्सर बारिश होती है।",
+    "en": "It rains often here."
+  },
+  {
+    "hi": "बच्चा खिलौनों से खेलता था।",
+    "en": "The child played with toys."
+  },
+  {
+    "hi": "वह अपनी पत्रिका में लिखते हैं।",
+    "en": "He writes in his journal."
+  },
+  {
+    "hi": "तारे चमकते हैं।",
+    "en": "The stars shine brightly."
+  },
+  {
+    "hi": "वह नीले रंग की पोशाक पहनती है।",
+    "en": "She wears a blue dress."
+  },
+  {
+    "hi": "वे केक के साथ जन्मदिन मनाते हैं।",
+    "en": "They celebrate birthdays with cake."
+  },
+  {
+    "hi": "नदी धीरे से बहती है।",
+    "en": "The river flows gently."
+  },
+  {
+    "hi": "वह सुंदर चित्र बनाती है।",
+    "en": "She paints beautiful pictures."
+  },
+  {
+    "hi": "हवा धीरे से बहती है।",
+    "en": "The wind blows softly."
+  },
+  {
+    "hi": "वे वीकेंड पर फ़िल्में देखते हैं।",
+    "en": "They watch movies on weekends."
+  },
+  {
+    "hi": "घड़ी धीरे-धीरे टिक जाती है।",
+    "en": "The clock ticks slowly."
+  },
+  {
+    "hi": "उसने कार को तेज़ी से चलाया।",
+    "en": "He drove the car fast."
+  },
+  {
+    "hi": "पक्षी आसमान में उड़ते हैं।",
+    "en": "Birds fly in the sky."
+  },
+  {
+    "hi": "मैंने दोपहर के भोजन में एक सेब खाया।",
+    "en": "I ate an apple for lunch."
+  },
+  {
+    "hi": "बच्चा अभी सो रहा है।",
+    "en": "The baby is sleeping now."
+  },
+  {
+    "hi": "उन्होंने कल फुटबॉल खेला था।",
+    "en": "They played soccer yesterday."
+  },
+  {
+    "hi": "हम पार्क में गए।",
+    "en": "We went to the park."
+  },
+  {
+    "hi": "फोन दो बार बज गया।",
+    "en": "The phone rang twice."
+  },
+  {
+    "hi": "उन्होंने एक छोटा सा घर बनाया।",
+    "en": "He built a small house."
+  },
+  {
+    "hi": "रात में तारे टिमटिमाते हैं।",
+    "en": "The stars twinkle at night."
+  },
+  {
+    "hi": "मैंने एक नई साइकिल खरीदी।",
+    "en": "I bought a new bicycle."
+  },
+  {
+    "hi": "उन्होंने पार्टी में डांस किया।",
+    "en": "They danced at the party."
+  },
+  {
+    "hi": "मछलियाँ तालाब में तैरती हैं।",
+    "en": "The fish swim in the pond."
+  },
+  {
+    "hi": "उसे हरा रंग बहुत पसंद है।",
+    "en": "She loves the color green."
+  },
+  {
+    "hi": "उसे एक खोया हुआ बटुआ मिला।",
+    "en": "He found a lost wallet."
+  },
+  {
+    "hi": "हमने साथ में एक फ़िल्म देखी।",
+    "en": "We watched a movie together."
+  },
+  {
+    "hi": "वह हर वीकेंड फुटबॉल खेलता है।",
+    "en": "He plays soccer every weekend."
+  },
+  {
+    "hi": "कुत्ता रात में जोर से भौंकता था।",
+    "en": "The dog barked loudly at night."
+  },
+  {
+    "hi": "उसने एक पेड़ की तस्वीर बनाई।",
+    "en": "She painted a picture of a tree."
+  },
+  {
+    "hi": "बच्चा अपनी माँ को देखकर मुस्कुराया।",
+    "en": "The baby smiled at her mother."
+  },
+  {
+    "hi": "वह रोज एक सेब खाता है।",
+    "en": "He eats an apple every day."
+  },
+  {
+    "hi": "उन्होंने पार्टी में एक गाना गाया।",
+    "en": "She sang a song at the party."
+  },
+  {
+    "hi": "उन्होंने एक नई साइकिल खरीदी।",
+    "en": "He bought a new bicycle."
+  },
+  {
+    "hi": "आसमान में तारे टिमटिमाते हैं।",
+    "en": "The stars twinkle in the sky."
+  },
+  {
+    "hi": "बच्चे बगीचे में खेलते थे।",
+    "en": "The children played in the garden."
+  },
+  {
+    "hi": "पढ़ाई के दौरान उन्होंने संगीत सुना।",
+    "en": "He listened to music while studying."
+  },
+  {
+    "hi": "चिड़िया घर के ऊपर से उड़ गई।",
+    "en": "The bird flew over the house."
+  },
+  {
+    "hi": "उसे समुद्र तट पर एक खोल मिला।",
+    "en": "She found a shell on the beach."
+  },
+  {
+    "hi": "उसने एक कप गर्म कॉफ़ी पी ली।",
+    "en": "He drank a cup of hot coffee."
+  },
+  {
+    "hi": "लड़के ने गेंद को जोर से लात मारी।",
+    "en": "The boy kicked the ball hard."
+  },
+  {
+    "hi": "उन्होंने इवेंट में लाल रंग की ड्रेस पहनी थी।",
+    "en": "She wore a red dress to the event."
+  },
+  {
+    "hi": "पहाड़ियों के ऊपर बादल तैरने लगे।",
+    "en": "The clouds floated above the hills."
+  },
+  {
+    "hi": "उन्होंने एक सेकंड से रेस जीती।",
+    "en": "He won the race by a second."
+  },
+  {
+    "hi": "बिल्ली के बच्चे ने तितली का पीछा किया।",
+    "en": "The kitten chased the butterfly."
+  },
+  {
+    "hi": "उसने द्वीप का नक्शा बनाया।",
+    "en": "She drew a map of the island."
+  },
+  {
+    "hi": "बिल्ली चटाई पर सोती है।",
+    "en": "The cat sleeps on the mat."
+  },
+  {
+    "hi": "वह सुबह कॉफी पीती है।",
+    "en": "She drinks coffee in the morning."
+  },
+  {
+    "hi": "आज आसमान नीला है।",
+    "en": "The sky is blue today."
+  },
+  {
+    "hi": "वह हर शाम अपने कुत्ते को टहलाता है।",
+    "en": "He walks his dog every evening."
+  },
+  {
+    "hi": "बच्चे स्कूल के बाद पार्क में खेलते हैं।",
+    "en": "The kids play in the park after school."
+  },
+  {
+    "hi": "वे छह बजे रात का खाना खाते हैं।",
+    "en": "They eat dinner at six o'clock."
+  },
+  {
+    "hi": "चिड़िया एक मधुर गीत गाती है।",
+    "en": "The bird sings a sweet song."
+  },
+  {
+    "hi": "वह अपनी पत्रिका में रोज़ाना लिखती हैं।",
+    "en": "She writes in her journal daily."
+  },
+  {
+    "hi": "वसंत में फूल खिलते हैं।",
+    "en": "The flowers bloom in the spring."
+  },
+  {
+    "hi": "वह हर दिन काम करने के लिए ड्राइव करता है।",
+    "en": "He drives to work each day."
+  },
+  {
+    "hi": "वे शुक्रवार रात को एक फ़िल्म देखते हैं।",
+    "en": "They watch a movie on Friday night."
+  },
+  {
+    "hi": "बारिश धीरे से छत पर गिरती है।",
+    "en": "The rain falls gently on the roof."
+  },
+  {
+    "hi": "बच्चा जोकर पर हंसता है।",
+    "en": "The baby laughs at the clown."
+  },
+  {
+    "hi": "वह गर्मियों के दौरान झील में तैरता है।",
+    "en": "He swims in the lake during summer."
+  },
+  {
+    "hi": "चिमनी में आग जलती है।",
+    "en": "The fire burns bright in the fireplace."
+  },
+  {
+    "hi": "वे सोने से पहले किताबें पढ़ते हैं।",
+    "en": "They read books before bedtime."
+  },
+  {
+    "hi": "पेड़ों के बीच से हवा धीरे से बहती है।",
+    "en": "The wind blows softly through the trees."
+  },
+  {
+    "hi": "हॉल में घड़ी जोर से बजती है।",
+    "en": "The clock ticks loudly in the hall."
+  },
+  {
+    "hi": "वह एक शौक के तौर पर मॉडल हवाई जहाज बनाता है।",
+    "en": "He builds model airplanes as a hobby."
+  },
+  {
+    "hi": "कार हाईवे से नीचे की ओर गति करती है।",
+    "en": "The car speeds down the highway."
+  },
+  {
+    "hi": "वह अपने परिवार के लिए स्वादिष्ट भोजन बनाती है।",
+    "en": "She cooks delicious meals for her family."
+  },
+  {
+    "hi": "रात के आसमान में तारे टिमटिमाते हैं।",
+    "en": "The stars twinkle in the night sky."
+  },
+  {
+    "hi": "हम पार्क की ओर चल दिए।",
+    "en": "We walked to the park."
+  },
+  {
+    "hi": "वह पियानो बजा रहा है।",
+    "en": "He is playing the piano."
+  },
+  {
+    "hi": "उसे धूप के दिन बहुत पसंद हैं।",
+    "en": "She loves sunny days."
+  },
+  {
+    "hi": "हमने कल रात एक फ़िल्म देखी।",
+    "en": "We watched a movie last night."
+  },
+  {
+    "hi": "वह आज लाल रंग की पोशाक पहनती है।",
+    "en": "She wears a red dress today."
+  },
+  {
+    "hi": "चिड़िया आसमान में उड़ती है।",
+    "en": "The bird flies in the sky."
+  },
+  {
+    "hi": "मुझे कुछ किराने का सामान खरीदने की ज़रूरत है।",
+    "en": "I need to buy some groceries."
+  },
+  {
+    "hi": "वे हर गर्मियों में पूल में तैरते हैं।",
+    "en": "They swim in the pool every summer."
+  },
+  {
+    "hi": "उनके पास टिकटों का अच्छा संग्रह है।",
+    "en": "He has a nice collection of stamps."
+  },
+  {
+    "hi": "वह हर रात अपनी डायरी में लिखती है।",
+    "en": "She writes in her diary every night."
+  },
+  {
+    "hi": "हमें संगीत सुनने में मजा आता है।",
+    "en": "We enjoy listening to music."
+  },
+  {
+    "hi": "बच्चा दूध के लिए रोया।",
+    "en": "The baby cried for milk."
+  },
+  {
+    "hi": "वह लकड़ी की छोटी नावें बनाता है।",
+    "en": "He builds small wooden boats."
+  },
+  {
+    "hi": "वह अपनी बाइक से स्कूल जाती है।",
+    "en": "She rides her bike to school."
+  },
+  {
+    "hi": "आज रात चांद पूरा हो गया है।",
+    "en": "The moon is full tonight."
+  },
+  {
+    "hi": "हम रविवार को शतरंज खेलते हैं।",
+    "en": "We play chess on Sundays."
+  },
+  {
+    "hi": "उसने स्वादिष्ट भोजन पकाया।",
+    "en": "She cooked a delicious meal."
+  },
+  {
+    "hi": "वह हर सुबह पाँच मील दौड़ता है।",
+    "en": "He runs five miles every morning."
+  },
+  {
+    "hi": "फूल वसंत में खिलता है।",
+    "en": "The flower blooms in spring."
+  },
+  {
+    "hi": "बिल्ली सोफे पर सो गई।",
+    "en": "The cat slept on the couch."
+  },
+  {
+    "hi": "उसे किताबें पढ़ने में मजा आता है।",
+    "en": "She enjoys reading books."
+  },
+  {
+    "hi": "वे पार्क की ओर चल दिए।",
+    "en": "They walked to the park."
+  },
+  {
+    "hi": "हमने साथ में रात का खाना पकाया।",
+    "en": "We cooked dinner together."
+  },
+  {
+    "hi": "बच्चा धीरे से गिड़गिड़ाया।",
+    "en": "The baby giggled softly."
+  },
+  {
+    "hi": "उसने खिड़की खोली।",
+    "en": "She opened the window."
+  },
+  {
+    "hi": "फूल खूबसूरती से खिल गए।",
+    "en": "The flowers bloomed beautifully."
+  },
+  {
+    "hi": "हम समुद्र तट पर गए।",
+    "en": "We went to the beach."
+  },
+  {
+    "hi": "वह गाना बजानेवालों में गाती है।",
+    "en": "She sings in the choir."
+  },
+  {
+    "hi": "उन्होंने अपने दोस्त को एक पत्र लिखा।",
+    "en": "He wrote a letter to his friend."
+  },
+  {
+    "hi": "उसने चॉकलेट केक बेक किया।",
+    "en": "She baked a chocolate cake."
+  },
+  {
+    "hi": "अचानक फोन की घंटी बजी।",
+    "en": "The phone rang suddenly."
+  },
+  {
+    "hi": "उन्होंने बाड़ को हरा रंग दिया।",
+    "en": "He painted the fence green."
+  },
+  {
+    "hi": "पेड़ से पत्ते गिर गए।",
+    "en": "The leaves fell from the tree."
+  },
+  {
+    "hi": "वे मजाक पर हँसे।",
+    "en": "They laughed at the joke."
+  },
+  {
+    "hi": "किसान ने मकई की खेती की।",
+    "en": "The farmer planted corn."
+  },
+  {
+    "hi": "वह मैदान के उस पार भागा।",
+    "en": "He ran across the field."
+  },
+  {
+    "hi": "वह रोज सुबह चाय पीती है।",
+    "en": "She drinks tea every morning."
+  },
+  {
+    "hi": "वे पार्क में फुटबॉल खेलते थे।",
+    "en": "They played soccer in the park."
+  },
+  {
+    "hi": "वे टहलने गए।",
+    "en": "They went for a walk."
+  },
+  {
+    "hi": "मैं अपनी पत्रिका में रोज लिखता हूं।",
+    "en": "I write in my journal daily."
+  },
+  {
+    "hi": "हम गर्मियों के दौरान यात्रा करते हैं।",
+    "en": "We travel during the summer."
+  },
+  {
+    "hi": "वह पुराने सिक्के इकट्ठा करता है।",
+    "en": "He collects old coins."
+  },
+  {
+    "hi": "वह परिदृश्यों को चित्रित करती है।",
+    "en": "She paints landscapes."
+  },
+  {
+    "hi": "वे पूल में तैरते हैं।",
+    "en": "They swim in the pool."
+  },
+  {
+    "hi": "मैंने अपनी पसंदीदा कलम खो दी।",
+    "en": "I lost my favorite pen."
+  },
+  {
+    "hi": "वह कृपा से नाचता है।",
+    "en": "He dances with grace."
+  },
+  {
+    "hi": "उसे पियानो बजाने में मजा आता है।",
+    "en": "She enjoys playing piano."
+  },
+  {
+    "hi": "हम कॉफी शॉप में मिले थे।",
+    "en": "We met at the coffee shop."
+  },
+  {
+    "hi": "वह एक बैंक में काम करता है।",
+    "en": "He works at a bank."
+  },
+  {
+    "hi": "वे आज समुद्र तट पर गए।",
+    "en": "They went to the beach today."
+  },
+  {
+    "hi": "पिज्जा का स्वाद बहुत स्वादिष्ट होता है।",
+    "en": "The pizza tastes delicious."
+  },
+  {
+    "hi": "उसे एक चमकदार सिक्का मिला।",
+    "en": "He found a shiny coin."
+  },
+  {
+    "hi": "हवा भयंकर रूप से बह रही थी।",
+    "en": "The wind blew fiercely."
+  },
+  {
+    "hi": "बच्चा खुशी से हँसा।",
+    "en": "The baby laughed happily."
+  },
+  {
+    "hi": "मैं अपनी बाइक से स्कूल जाता हूं।",
+    "en": "I ride my bike to school."
+  },
+  {
+    "hi": "मछली तालाब में तैरती है।",
+    "en": "The fish swims in the pond."
+  },
+  {
+    "hi": "वह मस्ती के लिए तस्वीरें खींचता है।",
+    "en": "He draws pictures for fun."
+  },
+  {
+    "hi": "घड़ी जोर से बजती है।",
+    "en": "The clock ticks loudly."
+  },
+  {
+    "hi": "कुकीज़ से अद्भुत खुशबू आती है।",
+    "en": "The cookies smell amazing."
+  },
+  {
+    "hi": "वे शुक्रवार को फ़िल्में देखते हैं।",
+    "en": "They watch movies on Fridays."
+  },
+  {
+    "hi": "बारिश धीरे से गिरती है।",
+    "en": "The rain falls gently."
+  },
+  {
+    "hi": "वह शॉवर में गाता है।",
+    "en": "He sings in the shower."
+  },
+  {
+    "hi": "नींबू का स्वाद खट्टा होता है।",
+    "en": "The lemon tastes sour."
+  },
+  {
+    "hi": "वह अपनी डायरी में कविताएँ लिखती हैं।",
+    "en": "She writes poems in her diary."
+  },
+  {
+    "hi": "आज बारिश हो रही है।",
+    "en": "It is raining today."
+  },
+  {
+    "hi": "वह काम करने के लिए अपनी कार चलाता था।",
+    "en": "He drove his car to work."
+  },
+  {
+    "hi": "वे वीकेंड पर फुटबॉल खेलते हैं।",
+    "en": "They play soccer on weekends."
+  },
+  {
+    "hi": "वह स्वादिष्ट केक बनाती है।",
+    "en": "She makes delicious cakes."
+  },
+  {
+    "hi": "उन्होंने कल रेस जीती।",
+    "en": "He won the race yesterday."
+  },
+  {
+    "hi": "हम एक छोटे से शहर में रहते हैं।",
+    "en": "We live in a small town."
+  },
+  {
+    "hi": "उसने नीली ड्रेस पहनी थी।",
+    "en": "She wore a blue dress."
+  },
+  {
+    "hi": "उन्होंने एक सुंदर गीत गाया।",
+    "en": "They sang a beautiful song."
+  },
+  {
+    "hi": "चिड़िया उड़ गई।",
+    "en": "The bird flew away."
+  },
+  {
+    "hi": "उसके पास एक पालतू कछुआ है।",
+    "en": "She has a pet turtle."
+  },
+  {
+    "hi": "उसे झील में मछली पकड़ने में मजा आता है।",
+    "en": "He enjoys fishing at the lake."
+  },
+  {
+    "hi": "उन्होंने पिछले सप्ताह संग्रहालय का दौरा किया।",
+    "en": "They visited the museum last week."
+  },
+  {
+    "hi": "बच्चे हँसते और खेलते थे।",
+    "en": "The children laughed and played."
+  },
+  {
+    "hi": "उसने एक नई बाइक खरीदी।",
+    "en": "She bought a new bike."
+  },
+  {
+    "hi": "बादलों ने आसमान को ढँक लिया।",
+    "en": "The clouds covered the sky."
+  },
+  {
+    "hi": "वह अपनी नोटबुक में कहानियाँ लिखते हैं।",
+    "en": "He writes stories in his notebook."
+  },
+  {
+    "hi": "वह अपने खाली समय में लैंडस्केप पेंट करती है।",
+    "en": "She paints landscapes in her free time."
+  },
+  {
+    "hi": "रात में तारे चमकते हैं।",
+    "en": "The stars shine brightly at night."
+  },
+  {
+    "hi": "सेब पेड़ से गिर गया।",
+    "en": "The apple fell from the tree."
+  },
+  {
+    "hi": "हमें फ़िल्में देखने में मजा आता है।",
+    "en": "We enjoy watching movies."
+  },
+  {
+    "hi": "मैं घर पर अपनी चाबियां भूल गया।",
+    "en": "I forgot my keys at home."
+  },
+  {
+    "hi": "वह काम करने के लिए अपनी बाइक की सवारी करता है।",
+    "en": "He rides his bike to work."
+  },
+  {
+    "hi": "वे रविवार को फुटबॉल खेलते हैं।",
+    "en": "They play soccer on Sundays."
+  },
+  {
+    "hi": "उसे कल एक नई नौकरी मिली।",
+    "en": "She found a new job yesterday."
+  },
+  {
+    "hi": "उसे पिज़्ज़ा खाना बहुत पसंद है।",
+    "en": "He loves eating pizza."
+  },
+  {
+    "hi": "हम पिछले सप्ताह के अंत में समुद्र तट पर चले गए।",
+    "en": "We drove to the beach last weekend."
+  },
+  {
+    "hi": "वह पढ़ने के लिए चश्मा पहनती है।",
+    "en": "She wears glasses to read."
+  },
+  {
+    "hi": "चिड़िया तेजी से उड़ गई।",
+    "en": "The bird flew away quickly."
+  },
+  {
+    "hi": "वह तैरना सीख रहा है।",
+    "en": "He is learning to swim."
+  },
+  {
+    "hi": "उसने एक सुंदर चित्र बनाया।",
+    "en": "She painted a lovely picture."
+  },
+  {
+    "hi": "बच्चा चैन से सो रहा है।",
+    "en": "The baby is sleeping peacefully."
+  },
+  {
+    "hi": "उन्होंने आज संग्रहालय का दौरा किया।",
+    "en": "They visited the museum today."
+  },
+  {
+    "hi": "मैंने एक नई जोड़ी जूते खरीदे।",
+    "en": "I bought a new pair of shoes."
+  },
+  {
+    "hi": "वह हर सुबह दौड़ता है।",
+    "en": "He runs every morning."
+  },
+  {
+    "hi": "चिड़िया ने एक गीत गाया।",
+    "en": "The bird sang a song."
+  },
+  {
+    "hi": "मेरे पास लाल रंग की साइकिल है।",
+    "en": "I have a red bicycle."
+  },
+  {
+    "hi": "पश्चिम में सूरज डूबता है।",
+    "en": "The sun set in the west."
+  },
+  {
+    "hi": "हम रविवार को कुकीज़ बेक करते हैं।",
+    "en": "We bake cookies on Sunday."
+  },
+  {
+    "hi": "वह पियानो को खूबसूरती से बजाती है।",
+    "en": "She plays the piano beautifully."
+  },
+  {
+    "hi": "वह रोज कॉफी पीता है।",
+    "en": "He drinks coffee every day."
+  },
+  {
+    "hi": "मुझे पहाड़ों में लंबी पैदल यात्रा करने में मजा आता है।",
+    "en": "I enjoy hiking in the mountains."
+  },
+  {
+    "hi": "वे साप्ताहिक रूप से अपने दादा-दादी से मिलने जाते हैं।",
+    "en": "They visit their grandparents weekly."
+  },
+  {
+    "hi": "वह अपनी पत्रिका में कविता लिखती हैं।",
+    "en": "She writes poetry in her journal."
+  },
+  {
+    "hi": "वह परिदृश्य को एक शौक के रूप में चित्रित करता है।",
+    "en": "He paints landscapes as a hobby."
+  },
+  {
+    "hi": "दूध फर्श पर फैल गया।",
+    "en": "The milk spilled on the floor."
+  },
+  {
+    "hi": "वह लाइब्रेरी में पढ़ता है।",
+    "en": "He studies in the library."
+  },
+  {
+    "hi": "वे अपनी कार्यशाला में मिट्टी के बर्तन बनाते हैं।",
+    "en": "They make pottery in their workshop."
+  },
+  {
+    "hi": "वह काम करने के लिए अपनी साइकिल की सवारी करता है।",
+    "en": "He rides his bicycle to work."
+  },
+  {
+    "hi": "पक्षी सुबह गाते हैं।",
+    "en": "Birds sing in the morning."
+  },
+  {
+    "hi": "उन्होंने पौधों को रोज पानी पिलाया।",
+    "en": "He watered the plants daily."
+  },
+  {
+    "hi": "रात में तारे चमकते हैं।",
+    "en": "The stars shine at night."
+  },
+  {
+    "hi": "बच्चे खुशी से हँसे।",
+    "en": "The children laughed happily."
+  },
+  {
+    "hi": "एक खरगोश लॉन के पार कूद गया।",
+    "en": "A rabbit hopped across the lawn."
+  },
+  {
+    "hi": "घड़ी दीवार पर टिक जाती है।",
+    "en": "The clock ticks on the wall."
+  },
+  {
+    "hi": "उसने अपनी सहेली को एक पत्र लिखा।",
+    "en": "She wrote a letter to her friend."
+  },
+  {
+    "hi": "नदी समुद्र में बहती है।",
+    "en": "The river flows to the sea."
+  },
+  {
+    "hi": "उन्होंने बाड़ को सफेद रंग से रंग दिया।",
+    "en": "They painted the fence white."
+  },
+  {
+    "hi": "कॉफ़ी गर्म और मज़बूत थी।",
+    "en": "The coffee was hot and strong."
+  },
+  {
+    "hi": "वह घर पर अपनी चाबी भूल गया।",
+    "en": "He forgot his keys at home."
+  },
+  {
+    "hi": "ट्रैफिक लाइट पर कार रुक गई।",
+    "en": "The car stopped at the traffic light."
+  },
+  {
+    "hi": "उसे फुटपाथ पर एक पैसा मिला।",
+    "en": "She found a penny on the sidewalk."
+  },
+  {
+    "hi": "पेड़ हवा में बह गया।",
+    "en": "The tree swayed in the breeze."
+  },
+  {
+    "hi": "उसने पेड़ से ताज़े सेब तोड़े।",
+    "en": "He picked fresh apples from the tree."
+  },
+  {
+    "hi": "उन्होंने चांदनी के नीचे नृत्य किया।",
+    "en": "They danced under the moonlight."
+  },
+  {
+    "hi": "टिम अच्छी तरह से गिटार बजाता है।",
+    "en": "Tim plays the guitar well."
+  },
+  {
+    "hi": "केक बहुत स्वादिष्ट था।",
+    "en": "The cake was delicious."
+  },
+  {
+    "hi": "वह रोजाना पक्षियों को खाना खिलाते हैं।",
+    "en": "He feeds the birds daily."
+  },
+  {
+    "hi": "बारिश अचानक रुक गई।",
+    "en": "The rain stopped suddenly."
+  },
+  {
+    "hi": "लिसा सुंदर कला को चित्रित करती है।",
+    "en": "Lisa paints beautiful art."
+  },
+  {
+    "hi": "घड़ी बारह बज गई।",
+    "en": "The clock struck twelve."
+  },
+  {
+    "hi": "बेन एक फ़िल्म देख रहा है।",
+    "en": "Ben is watching a movie."
+  },
+  {
+    "hi": "कार को धोने की जरूरत है।",
+    "en": "The car needs washing."
+  },
+  {
+    "hi": "उसने लाल रंग की ड्रेस खरीदी।",
+    "en": "She bought a red dress."
+  },
+  {
+    "hi": "जैक हर सुबह दौड़ता है।",
+    "en": "Jack runs every morning."
+  },
+  {
+    "hi": "वे समुद्र के किनारे रहते हैं।",
+    "en": "They live by the ocean."
+  },
+  {
+    "hi": "एम्मा खूबसूरती से गाती है।",
+    "en": "Emma sings beautifully."
+  },
+  {
+    "hi": "वह रोज कॉफी पीता है।",
+    "en": "He drinks coffee daily."
+  },
+  {
+    "hi": "तारे चमक रहे हैं।",
+    "en": "The stars are shining."
+  },
+  {
+    "hi": "दरवाजे की घंटी दो बार बजी।",
+    "en": "The doorbell rang twice."
+  },
+  {
+    "hi": "सैम अपनी पत्रिका में लिखते हैं।",
+    "en": "Sam writes in his journal."
+  },
+  {
+    "hi": "बच्चा मोटे तौर पर मुस्कुराया।",
+    "en": "The baby smiled broadly."
+  },
+  {
+    "hi": "बिल्ली चटाई पर बैठती है।",
+    "en": "The cat sits on the mat."
+  },
+  {
+    "hi": "उसे फुटबॉल खेलना पसंद है।",
+    "en": "He likes to play soccer."
+  },
+  {
+    "hi": "वे रोजाना पार्क जाते हैं।",
+    "en": "They walk to the park daily."
+  },
+  {
+    "hi": "कुत्ता रात में जोर से भौंकता है।",
+    "en": "The dog barks loudly at night."
+  },
+  {
+    "hi": "बादल छाए आसमान से बारिश होती है।",
+    "en": "Rain falls from the cloudy sky."
+  },
+  {
+    "hi": "तारे ऊपर से चमकते हैं।",
+    "en": "The stars shine brightly above."
+  },
+  {
+    "hi": "वह अपने दोस्त को एक पत्र लिखती है।",
+    "en": "She writes a letter to her friend."
+  },
+  {
+    "hi": "पेड़ों से एक हल्की हवा बहती है।",
+    "en": "A gentle breeze blows through the trees."
+  },
+  {
+    "hi": "वह रात के खाने के बाद टेलीविजन देखता है।",
+    "en": "He watches television after dinner."
+  },
+  {
+    "hi": "बेकर रोजाना ताजी रोटी बनाता है।",
+    "en": "The baker makes fresh bread daily."
+  },
+  {
+    "hi": "बच्चा पालने में सोता है।",
+    "en": "The baby sleeps in the crib."
+  },
+  {
+    "hi": "मछुआरा जल्दी मछली पकड़ता है।",
+    "en": "The fisherman catches fish early."
+  },
+  {
+    "hi": "वह जीवंत रंगों से पेंट करती है।",
+    "en": "She paints with vibrant colors."
+  },
+  {
+    "hi": "ट्रेन स्टेशन पर आती है।",
+    "en": "The train arrives at the station."
+  },
+  {
+    "hi": "वे दुनिया भर में यात्रा करते हैं।",
+    "en": "They travel around the world."
+  },
+  {
+    "hi": "शिक्षक अच्छी तरह से अंग्रेजी सिखाता है।",
+    "en": "The teacher teaches English well."
+  },
+  {
+    "hi": "वह हर दिन काम करने के लिए ड्राइव करता है।",
+    "en": "He drives to work every day."
+  },
+  {
+    "hi": "वह पढ़ाई के दौरान संगीत सुनती है।",
+    "en": "She listens to music while studying."
+  },
+  {
+    "hi": "केक ओवन में बेक होता है।",
+    "en": "The cake bakes in the oven."
+  },
+  {
+    "hi": "वह समुंदर के किनारे सीशेल बेचती है।",
+    "en": "She sells seashells by the seashore."
+  },
+  {
+    "hi": "जॉन हर रात एक किताब पढ़ता है।",
+    "en": "John reads a book every night."
+  },
+  {
+    "hi": "मैं रविवार को कुकीज़ बेक करता हूं।",
+    "en": "I bake cookies on Sundays."
+  },
+  {
+    "hi": "हम कल चिड़ियाघर गए थे।",
+    "en": "We went to the zoo yesterday."
+  },
+  {
+    "hi": "अन्ना रोज सुबह कॉफी पीती हैं।",
+    "en": "Anna drinks coffee every morning."
+  },
+  {
+    "hi": "टॉम सुंदर चित्र बनाता है।",
+    "en": "Tom paints beautiful pictures."
+  },
+  {
+    "hi": "वह रोजाना पार्क में टहलता है।",
+    "en": "He jogs around the park daily."
+  },
+  {
+    "hi": "वह अपने दोस्त को पत्र लिखती है।",
+    "en": "She writes letters to her friend."
+  },
+  {
+    "hi": "आज हवा धीरे चल रही है।",
+    "en": "The wind blows softly today."
+  },
+  {
+    "hi": "मुझे चॉकलेट केक खाना बहुत पसंद है।",
+    "en": "I love eating chocolate cake."
+  },
+  {
+    "hi": "हम गर्मियों के दौरान झील में तैरते हैं।",
+    "en": "We swim in the lake during summer."
+  },
+  {
+    "hi": "बच्चे बगीचे में खेलते हैं।",
+    "en": "The kids play in the garden."
+  },
+  {
+    "hi": "वह चर्च के गायक मंडली में गाती है।",
+    "en": "She sings in the church choir."
+  },
+  {
+    "hi": "पेड़ लंबा और मजबूत होता है।",
+    "en": "The tree grows tall and strong."
+  },
+  {
+    "hi": "वे अक्सर नए देशों की यात्रा करते हैं।",
+    "en": "They travel to new countries often."
+  },
+  {
+    "hi": "वह बड़ी ऊर्जा के साथ नाचता है।",
+    "en": "He dances with great energy."
   }
 ]

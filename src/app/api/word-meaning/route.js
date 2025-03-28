@@ -1,6 +1,11 @@
 import { NextResponse } from "next/server";
 import axios from "axios";
 import pronunciation from "../random/pronunciation.json";
+import { TranslateClient, TranslateTextCommand } from "@aws-sdk/client-translate";
+
+const translateClient = new TranslateClient({
+  region: "us-east-1"
+})
 
 // Reference: https://www.jagranjosh.com/articles/hindi-to-english-sentences-translation-1727443305-1
 
@@ -17,22 +22,16 @@ export async function GET(req) {
       word_translated: actual[0],
     });
   } else {
-    const {
-      data: { translatedText },
-    } = await axios({
-      method: "post",
-      url: "https://libretranslate.com/translate",
-      data: {
-        q: word,
-        source,
-        target,
-        format: "text",
-        api_key: process.env.LIBRETRANSLATE,
-      },
-    });
+
+    const response = await translateClient.send(new TranslateTextCommand({
+      Text: word,
+      SourceLanguageCode: "hi", // e.g., "en"
+      TargetLanguageCode: "en", // e.g., "es"
+  }))
+
     return NextResponse.json({
       word,
-      word_translated: translatedText?.toLowerCase(),
+      word_translated: response?.TranslatedText?.toLowerCase()?.trim(),
     });
   }
 }

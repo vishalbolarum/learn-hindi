@@ -116,8 +116,12 @@ export default function Home() {
   return (
     <main className="px-4">
       <div className="my-8">
-        <h1 className="my-4 text-5xl">Learn Hindi</h1>
-        <div className="my-4 text-slate-400">Translate this Hindi sentence into English.</div>
+        <h1 className="my-2 text-5xl">Learn Hindi</h1>
+        <div className="my-2 text-slate-400">Translate this Hindi sentence into English.</div>
+      </div>
+
+      <div className="py-2">
+
       </div>
       
       {hiToEn ? (
@@ -126,7 +130,7 @@ export default function Home() {
             {task?.hi_tokens?.map(obj => (
               <div className="inline-block mr-4" key={obj.order} onClick={() => copyTranslateSpeak(obj)}>
                 <div>{obj?.word}</div>
-                <div className="text-sm text-center select-none">{obj?.word_transliterated}</div>
+                <div className="text-sm text-slate-400 text-center select-none">{obj?.word_transliterated}</div>
                 <div className="text-sm my-2 text-center select-none text-green-500">{obj?.word_translated}</div>
               </div>
             ))}
@@ -150,12 +154,12 @@ export default function Home() {
 
         {!hiToEn && (
           <div>
-            <div className="flex flex-wrap gap-2 p-2 my-8 w-full min-h-32 border border-slate-500">
+            <div className="flex flex-wrap gap-2 p-2 my-6 w-full min-h-32 border border-slate-500">
               {answer?.map(obj => (
                 <div className="h-fit cursor-pointer select-none" key={obj.order}>
                   <div className="bg-slate-800 h-fit rounded px-2 py-2 cursor-pointer select-none"  onClick={() => removeWord(obj)}>
                       <div className="text-2xl text-center">{obj.word}</div>
-                      {!hiToEn && <div className="text-center text-slate-300 select-none">{obj?.word_transliterated}</div>}
+                      {!hiToEn && <div className="text-center text-xs text-slate-300 select-none">{obj?.word_transliterated}</div>}
                     </div>
                     {!hiToEn && <Image className="invert h-4 w-4 mx-auto my-2 opacity-30 hover:opacity-100 cursor-pointer" src="https://cdn-icons-png.flaticon.com/512/9321/9321839.png" width={0} height={0} alt="" onClick={() => copyText(obj.word)}/>}
                 </div>
@@ -167,7 +171,7 @@ export default function Home() {
                 <div key={obj.order}>
                     <div className="bg-slate-800 h-fit rounded px-2 py-2 cursor-pointer select-none"  onClick={() => chooseWord(obj)}>
                       <div className="text-2xl text-center">{obj.word}</div>
-                      {!hiToEn && <div className="text-center text-slate-300">{obj?.word_transliterated}</div>}
+                      {!hiToEn && <div className="text-center text-xs text-slate-300">{obj?.word_transliterated}</div>}
                     </div>
                     {!hiToEn && <Image className="invert h-4 w-4 mx-auto my-2 opacity-30 hover:opacity-100 cursor-pointer" src="https://cdn-icons-png.flaticon.com/512/9321/9321839.png" width={0} height={0} alt="" onClick={() => copyText(obj.word)}/>}
                 </div>
