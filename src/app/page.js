@@ -98,6 +98,7 @@ export default function Home() {
 
   const copyTranslateSpeak = async obj => {
     speak(obj.word)
+    await copyText(obj.word)
     const { data } = await axios({
       url: "/api/word-meaning",
       params: {
@@ -114,8 +115,8 @@ export default function Home() {
   }, [])
 
   return (
-    <main className="px-4">
-      <div className="my-8">
+    <main className="px-4 min-h-screen">
+      <div className="py-6">
         <h1 className="my-2 text-5xl">Learn Hindi</h1>
         <div className="my-2 text-slate-400">Translate this Hindi sentence into English.</div>
       </div>
@@ -180,8 +181,8 @@ export default function Home() {
           </div>
         )}
     
-        <div className="flex justify-between mt-32">
-          <button className="bg-red-700 p-2 rounded-lg">Regenerate</button>
+        <div className="flex justify-between mt-32 fixed bottom-0 left-0 p-4 w-full">
+          <button className="bg-red-700 p-2 rounded-lg">Skip</button>
           <button className="bg-green-700 p-2 rounded-lg" type="submit">Check</button>
         </div>
       </form>
