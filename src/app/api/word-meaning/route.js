@@ -4,7 +4,11 @@ import pronunciation from "../random/pronunciation.json";
 import { TranslateClient, TranslateTextCommand } from "@aws-sdk/client-translate";
 
 const translateClient = new TranslateClient({
-  region: "us-east-1"
+  region: process.env.NEXT_AWS_REGION,
+  credentials: {
+    accessKeyId: process.env.NEXT_AWS_ACCESS_KEY_ID,
+    secretAccessKey: process.env.NEXT_AWS_SECRET_ACCESS_KEY
+  }
 })
 
 // Reference: https://www.jagranjosh.com/articles/hindi-to-english-sentences-translation-1727443305-1
