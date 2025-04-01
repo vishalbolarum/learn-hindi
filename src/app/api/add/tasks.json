@@ -2106,5 +2106,17 @@
   {
     "hi": "क्या आप अगले सप्ताह तक इस कार्य को पूरा करने में मेरी मदद कर सकते हैं?",
     "en": "Can you help me complete this task by next week?"
+  },
+  {
+    "hi": "यह कॉफ़ी बहुत मीठी है.",
+    "en": "This coffee is too sweet."
+  },
+  {
+    "hi": "आपको अधिक नमक डालने की ज़रूरत है.",
+    "en": "You need to add more salt."
+  },
+  {
+    "hi": "मैं गरीब होकर थक गया हूं।",
+    "en": "I'm tired of being poor."
   }
 ]
