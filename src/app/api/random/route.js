@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { transliterate } from "transliteration";
 import tasks from "../add/tasks.json";
 import pronunciation from "./pronunciation.json";
+import natural from "natural";
 
 // Reference: https://www.jagranjosh.com/articles/hindi-to-english-sentences-translation-1727443305-1
 
@@ -28,8 +29,7 @@ export async function GET(req) {
 				Math.floor(Math.random() * tasks_in_difficulty.length)
 			];
 
-      console.log(tasks)
-
+		const tokenizer = new natural.AggressiveTokenizer();
 		// const prompt = "Generate a simple Hindi sentence and provide its English translation in JSON format like: { \"hi\": \"HINDI SENTENCE\", \"en\": \"ENGLISH TRANSLATION\" }"
 
 		// const response = await openai.chat.completions.create({
@@ -62,17 +62,16 @@ export async function GET(req) {
 					};
 				}),
 			en: task.en,
-			en_tokens: task.en
-				?.toLowerCase()
-				.split(" ")
+			en_tokens: tokenizer
+				.tokenize(task.en?.toLowerCase())
 				.map((token, order) => ({
-					word: token.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, ""),
+					word: token,
 					word_transliterated: transliterate(token)?.toLowerCase(),
 					order,
 				})),
 		};
 
-    console.log(ideal)
+		console.log(ideal);
 
 		return NextResponse.json({ task: ideal });
 	} catch (error) {
