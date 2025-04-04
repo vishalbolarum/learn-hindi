@@ -48,7 +48,7 @@ export default function HomeComponent() {
         speak(data.task.hi)
       }
     } catch (err) {
-
+      console.log(err.toString())
     }
   }
 
