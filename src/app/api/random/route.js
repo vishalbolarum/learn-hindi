@@ -1,5 +1,4 @@
 import { NextResponse } from 'next/server';
-import natural from "natural"
 import { transliterate } from 'transliteration';
 import OpenAI from "openai"
 const openai = new OpenAI()
@@ -24,8 +23,6 @@ export async function GET(req) {
 
     const task = tasks_in_difficulty[Math.floor(Math.random() * tasks_in_difficulty.length)]
 
-    const tokenizer = new natural.AggressiveTokenizer()
-
     // const prompt = "Generate a simple Hindi sentence and provide its English translation in JSON format like: { \"hi\": \"HINDI SENTENCE\", \"en\": \"ENGLISH TRANSLATION\" }"
 
     // const response = await openai.chat.completions.create({
@@ -47,7 +44,7 @@ export async function GET(req) {
           return { word: token, word_transliterated: target?.en_transliteration || transliterate(token)?.toLowerCase(), order }
         }),
         en: task.en,
-        en_tokens: tokenizer.tokenize(task.en?.toLowerCase()).map((token, order) => ({ word: token, word_transliterated: transliterate(token)?.toLowerCase(), order }))
+        en_tokens: task.en?.toLowerCase().split(" ").map((token, order) => ({ word: token.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,""), word_transliterated: transliterate(token)?.toLowerCase(), order }))
     }
 
   return NextResponse.json({ task: ideal });
