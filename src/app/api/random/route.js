@@ -1,7 +1,5 @@
 import { NextResponse } from "next/server";
 import { transliterate } from "transliteration";
-import OpenAI from "openai";
-const openai = new OpenAI();
 import tasks from "../add/tasks.json";
 import pronunciation from "./pronunciation.json";
 
@@ -29,6 +27,8 @@ export async function GET(req) {
 			tasks_in_difficulty[
 				Math.floor(Math.random() * tasks_in_difficulty.length)
 			];
+
+      console.log(tasks)
 
 		// const prompt = "Generate a simple Hindi sentence and provide its English translation in JSON format like: { \"hi\": \"HINDI SENTENCE\", \"en\": \"ENGLISH TRANSLATION\" }"
 
@@ -71,6 +71,8 @@ export async function GET(req) {
 					order,
 				})),
 		};
+
+    console.log(ideal)
 
 		return NextResponse.json({ task: ideal });
 	} catch (error) {
