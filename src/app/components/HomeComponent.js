@@ -38,6 +38,9 @@ export default function HomeComponent() {
           difficulty: searchParams.get("difficulty")
         }
       })
+      if(data.error) {
+        throw new Error(data.error)
+      }
       setTask(data.task)
       if (hiToEn) {
         setHiToEn(false)
@@ -48,7 +51,7 @@ export default function HomeComponent() {
         speak(data.task.hi)
       }
     } catch (err) {
-
+      console.log(err.toString())
     }
   }
 
