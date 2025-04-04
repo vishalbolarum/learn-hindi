@@ -75,7 +75,6 @@ export async function GET(req) {
 		return NextResponse.json({ task: ideal });
 	} catch (error) {
 		console.error("API Route Error:", error);
-		// Return detailed error information
 		return NextResponse.json(
 			{
 				error: error.message,
