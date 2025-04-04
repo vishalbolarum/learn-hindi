@@ -1,6 +1,4 @@
 import { NextResponse } from "next/server";
-import OpenAI from "openai";
-const openai = new OpenAI();
 import fs from "fs/promises";
 import axios from "axios";
 import { TranslateClient, TranslateTextCommand } from "@aws-sdk/client-translate";
