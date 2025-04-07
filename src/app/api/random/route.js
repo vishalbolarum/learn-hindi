@@ -71,7 +71,7 @@ export async function GET(req) {
 				})),
 		};
 
-		console.log(ideal);
+		// console.log(ideal);
 
 		return NextResponse.json({ task: ideal });
 	} catch (error) {
