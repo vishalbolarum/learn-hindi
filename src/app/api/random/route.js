@@ -16,11 +16,11 @@ export async function GET(req) {
 			tasks_in_difficulty = tasks.filter((row) => row.hi.length < 30);
 		} else if (difficulty === "medium") {
 			tasks_in_difficulty = tasks.filter(
-				(row) => row.hi.length >= 30 && row.hi.length < 60
+				(row) => row.hi.length < 60
 			);
 		} else if (difficulty === "hard") {
 			tasks_in_difficulty = tasks.filter(
-				(row) => row.hi.length >= 60 && row.hi.length < 90
+				(row) => row.hi.length < 90
 			);
 		}
 
