@@ -2134,5 +2134,1093 @@
   {
     "hi": "जब आप बीमार हों तो आपको गर्म दूध पीना चाहिए।",
     "en": "You should drink warm milk when you are sick."
+  },
+  {
+    "hi": "आज सूरज बहुत चमक रहा है।",
+    "en": "The sun is shining brightly today."
+  },
+  {
+    "hi": "बाहर हलकी बारिश हो रही है।",
+    "en": "It is raining softly outside."
+  },
+  {
+    "hi": "आज सुबह मौसम काफी सर्द है।",
+    "en": "The weather is quite chilly this morning."
+  },
+  {
+    "hi": "आसमान में काले बादल जमा हो रहे हैं।",
+    "en": "There are dark clouds gathering in the sky."
+  },
+  {
+    "hi": "पेड़ों से हल्की हवा बह रही है।",
+    "en": "A gentle breeze is blowing through the trees."
+  },
+  {
+    "hi": "आज दोपहर तापमान तेजी से बढ़ रहा है।",
+    "en": "The temperature is rising quickly this afternoon."
+  },
+  {
+    "hi": "ऐसा लग रहा है कि बाद में बर्फबारी हो सकती है।",
+    "en": "It looks like it might snow later."
+  },
+  {
+    "hi": "कल रात तूफ़ान बहुत तेज़ था।",
+    "en": "The storm last night was very loud."
+  },
+  {
+    "hi": "आज गर्मी और उमस महसूस होती है।",
+    "en": "Today feels hot and humid."
+  },
+  {
+    "hi": "अभी हल्की बूंदाबांदी हो रही है।",
+    "en": "There is a light drizzle falling now."
+  },
+  {
+    "hi": "आज शाम को सूर्यास्त आश्चर्यजनक है।",
+    "en": "The sunset is stunning this evening."
+  },
+  {
+    "hi": "मौसम का पूर्वानुमान कल बारिश की भविष्यवाणी करता है।",
+    "en": "The weather forecast predicts rain tomorrow."
+  },
+  {
+    "hi": "पार्क में टहलने के लिए यह एक आदर्श दिन है।",
+    "en": "It's a perfect day for a walk in the park."
+  },
+  {
+    "hi": "आज रात हवा भयंकर रूप से गरज रही है।",
+    "en": "The wind is howling fiercely tonight."
+  },
+  {
+    "hi": "सड़क पर घना कोहरा छाया हुआ है।",
+    "en": "There's a thick fog covering the road."
+  },
+  {
+    "hi": "आज सुबह हवा कुरकुरी और ताज़ा है।",
+    "en": "The air is crisp and refreshing this morning."
+  },
+  {
+    "hi": "कल दोपहर में आंधी आई थी।",
+    "en": "We had a thunderstorm yesterday afternoon."
+  },
+  {
+    "hi": "बिना कोट के बाहर जाना बहुत ठंडा है।",
+    "en": "It's too cold to go outside without a coat."
+  },
+  {
+    "hi": "साल के इस समय के लिए यह आश्चर्यजनक रूप से गर्म होता है।",
+    "en": "It is surprisingly warm for this time of year."
+  },
+  {
+    "hi": "धूप में बर्फ तेजी से पिघल रही है।",
+    "en": "The snow is melting rapidly in the sun."
+  },
+  {
+    "hi": "बारिश रुकने के बाद एक इंद्रधनुष दिखाई दिया।",
+    "en": "A rainbow appeared after the rain stopped."
+  },
+  {
+    "hi": "अभी मौसम शांत और शांतिपूर्ण महसूस हो रहा है।",
+    "en": "The weather feels calm and peaceful right now."
+  },
+  {
+    "hi": "पूरे दिन भारी बारिश होती रही है।",
+    "en": "Heavy rain has been falling all day."
+  },
+  {
+    "hi": "थोड़ी हवा चल रही है, लेकिन आसमान साफ है।",
+    "en": "It's a bit windy, but the sky is clear."
+  },
+  {
+    "hi": "मेरा परिवार हर वीकेंड पार्क जाता है।",
+    "en": "My family goes to the park every weekend."
+  },
+  {
+    "hi": "पिताजी हर रविवार को हमारे लिए नाश्ता बनाते हैं।",
+    "en": "Dad makes breakfast for us every Sunday."
+  },
+  {
+    "hi": "माँ को पिछवाड़े में बागवानी करना पसंद है।",
+    "en": "Mom loves gardening in the backyard."
+  },
+  {
+    "hi": "मेरी बहन और मैं एक कमरा साझा करते हैं।",
+    "en": "My sister and I share a room."
+  },
+  {
+    "hi": "दादी हमें सोते समय मजेदार कहानियाँ सुनाती हैं।",
+    "en": "Grandma tells us funny stories at bedtime."
+  },
+  {
+    "hi": "मेरा भाई लिविंग रूम में गिटार बजाता है।",
+    "en": "My brother plays the guitar in the living room."
+  },
+  {
+    "hi": "हम हर शुक्रवार को एक बड़ा पारिवारिक डिनर करते हैं।",
+    "en": "We have a big family dinner every Friday."
+  },
+  {
+    "hi": "आंटी लौरा बेहतरीन कुकीज़ बनाती हैं।",
+    "en": "Aunt Laura bakes the best cookies."
+  },
+  {
+    "hi": "गर्मी की छुट्टियों में मेरे चचेरे भाई हमसे मिलने आते हैं।",
+    "en": "My cousins visit us during summer holidays."
+  },
+  {
+    "hi": "अंकल बॉब डैड के साथ खेल देखते हैं।",
+    "en": "Uncle Bob watches sports with Dad."
+  },
+  {
+    "hi": "हमारे परिवार को एक साथ बोर्ड गेम खेलने में मजा आता है।",
+    "en": "Our family enjoys playing board games together."
+  },
+  {
+    "hi": "दादाजी हमें झील पर मछली पकड़ने ले जाते हैं।",
+    "en": "Grandpa takes us fishing at the lake."
+  },
+  {
+    "hi": "मेरी भतीजी को हमारे लिए चित्र बनाना बहुत पसंद है।",
+    "en": "My niece loves drawing pictures for us."
+  },
+  {
+    "hi": "हम एक बड़े केक के साथ जन्मदिन मनाते हैं।",
+    "en": "We celebrate birthdays with a big cake."
+  },
+  {
+    "hi": "हमारा पारिवारिक कुत्ता हमेशा टहलने के लिए हमारे साथ जुड़ता है।",
+    "en": "Our family dog always joins us for walks."
+  },
+  {
+    "hi": "मेरे माता-पिता शाम को किताबें पढ़ना पसंद करते हैं।",
+    "en": "My parents like to read books in the evening."
+  },
+  {
+    "hi": "पेड़ को एक साथ सजाने की हमारी पारिवारिक परंपरा रही है।",
+    "en": "We have a family tradition of decorating the tree together."
+  },
+  {
+    "hi": "मैं और मेरी बहन शनिवार के कामों में मदद करते हैं।",
+    "en": "My sister and I help with the chores on Saturdays."
+  },
+  {
+    "hi": "हमारे परिवार की छुट्टी पिछले साल समुद्र तट पर थी।",
+    "en": "Our family vacation was at the beach last year."
+  },
+  {
+    "hi": "हमें वीकेंड पर एक साथ फिल्में देखने में मजा आता है।",
+    "en": "We enjoy watching movies together on weekends."
+  },
+  {
+    "hi": "माँ शुक्रवार को घर का बना पिज्जा बनाती है।",
+    "en": "Mom makes homemade pizza on Fridays."
+  },
+  {
+    "hi": "मेरे भाई के पास मॉडल हवाई जहाज का संग्रह है।",
+    "en": "My brother has a collection of model airplanes."
+  },
+  {
+    "hi": "पिताजी हमें अपने बचपन के रोमांच के बारे में बताते हैं।",
+    "en": "Dad tells us about his childhood adventures."
+  },
+  {
+    "hi": "हमारा परिवार साल में एक बार चिड़ियाघर जाता है।",
+    "en": "Our family visits the zoo once a year."
+  },
+  {
+    "hi": "मुझे और मेरे चचेरे भाई को रेत के महल बनाना बहुत पसंद है।",
+    "en": "My cousin and I love building sandcastles."
+  },
+  {
+    "hi": "मेरी माँ को कुकीज़ पकाना बहुत पसंद है।",
+    "en": "My mother loves to bake cookies."
+  },
+  {
+    "hi": "हमारे पिता हर शाम गिटार बजाते हैं।",
+    "en": "Our father plays the guitar every evening."
+  },
+  {
+    "hi": "दादी सोने के समय की बेहतरीन कहानियाँ सुनाती हैं।",
+    "en": "Grandma tells the best bedtime stories."
+  },
+  {
+    "hi": "जेन और उसका भाई पार्क में फुटबॉल खेलते हैं।",
+    "en": "Jane and her brother play soccer in the park."
+  },
+  {
+    "hi": "अंकल माइक इस सप्ताह के अंत में हमसे मिलने आ रहे हैं।",
+    "en": "Uncle Mike is visiting us this weekend."
+  },
+  {
+    "hi": "परिवार हर रविवार रात के खाने के लिए इकट्ठा होता है।",
+    "en": "The family gathers for dinner every Sunday."
+  },
+  {
+    "hi": "मेरी बहन ने स्कूल आर्ट प्रतियोगिता जीती।",
+    "en": "My sister won the school art competition."
+  },
+  {
+    "hi": "दादाजी हर सुबह अपने कुत्ते को झील पर ले जाते हैं।",
+    "en": "Grandpa walks his dog to the lake every morning."
+  },
+  {
+    "hi": "हमने पिछली गर्मियों में समुद्र तट की पारिवारिक यात्रा की।",
+    "en": "We took a family trip to the beach last summer."
+  },
+  {
+    "hi": "पिताजी हर शनिवार को नाश्ते के लिए पेनकेक्स बनाते हैं।",
+    "en": "Dad makes pancakes for breakfast every Saturday."
+  },
+  {
+    "hi": "मेरा चचेरा भाई और मैं सबसे अच्छे दोस्त हैं।",
+    "en": "My cousin and I are best friends."
+  },
+  {
+    "hi": "हमारे परिवार को एक साथ फ़िल्में देखने में मजा आता है।",
+    "en": "Our family enjoys watching movies together."
+  },
+  {
+    "hi": "आंटी लिसा बच्चों को पियानो सिखाती हैं।",
+    "en": "Aunt Lisa teaches piano lessons to children."
+  },
+  {
+    "hi": "मेरा भाई पुरानी कॉमिक किताबें इकट्ठा करता है।",
+    "en": "My brother collects old comic books."
+  },
+  {
+    "hi": "दादी का बगीचा खूबसूरत फूलों से भरा हुआ है।",
+    "en": "Grandma's garden is full of beautiful flowers."
+  },
+  {
+    "hi": "हमारे माता-पिता सोने से पहले हमें कहानियाँ पढ़ते हैं।",
+    "en": "Our parents read us stories before bed."
+  },
+  {
+    "hi": "हम हर जुलाई में पार्क में पारिवारिक पिकनिक मनाते हैं।",
+    "en": "We have a family picnic in the park every July."
+  },
+  {
+    "hi": "मेरी बहन ने पिछले सप्ताह बाइक चलाना सीखा।",
+    "en": "My sister learned to ride a bike last week."
+  },
+  {
+    "hi": "अंकल जो पारिवारिक समारोहों में मजेदार चुटकुले सुनाते हैं।",
+    "en": "Uncle Joe tells funny jokes at family gatherings."
+  },
+  {
+    "hi": "हमारे परिवार के घर में एक बड़ा पीला दरवाजा है।",
+    "en": "Our family house has a big yellow door."
+  },
+  {
+    "hi": "दादाजी हमेशा मेरे होमवर्क में मेरी मदद करते हैं।",
+    "en": "Grandpa always helps me with my homework."
+  },
+  {
+    "hi": "हमने अपने चचेरे भाइयों को जन्मदिन की शुभकामनाएं देने के लिए बुलाया।",
+    "en": "We called our cousins to wish them a happy birthday."
+  },
+  {
+    "hi": "मेरे छोटे भाई को चित्र बनाना और पेंट करना बहुत पसंद है।",
+    "en": "My little brother loves to draw and paint."
+  },
+  {
+    "hi": "हमारे परिवार को बारिश के दिनों में बोर्ड गेम खेलने में मजा आता है।",
+    "en": "Our family enjoys playing board games on rainy days."
+  },
+  {
+    "hi": "मेरी बहन को कुकीज़ बनाना बहुत पसंद है।",
+    "en": "My sister loves to bake cookies."
+  },
+  {
+    "hi": "पिताजी शाम को गिटार बजाते हैं।",
+    "en": "Dad plays guitar in the evenings."
+  },
+  {
+    "hi": "माँ को सप्ताहांत में बागवानी करना पसंद है।",
+    "en": "Mom enjoys gardening on weekends."
+  },
+  {
+    "hi": "हम हर रविवार अपने दादा-दादी से मिलने जाते हैं।",
+    "en": "We visit our grandparents every Sunday."
+  },
+  {
+    "hi": "अंकल जो मजेदार कहानियाँ सुनाते हैं।",
+    "en": "Uncle Joe tells funny stories."
+  },
+  {
+    "hi": "मेरे भाई के पास एक प्यारा कुत्ता है।",
+    "en": "My brother has a cute dog."
+  },
+  {
+    "hi": "दादी हमारे लिए गर्म स्वेटर बुनती हैं।",
+    "en": "Grandma knits warm sweaters for us."
+  },
+  {
+    "hi": "हमारा परिवार गर्मियों में समुद्र तट की सैर करता है।",
+    "en": "Our family takes trips to the beach in summer."
+  },
+  {
+    "hi": "मेरा चचेरा भाई पियानो बजाना सीख रहा है।",
+    "en": "My cousin is learning to play the piano."
+  },
+  {
+    "hi": "हम हर शुक्रवार रात एक बड़ा पारिवारिक डिनर करते हैं।",
+    "en": "We have a big family dinner every Friday night."
+  },
+  {
+    "hi": "दादाजी मुझे मछली पकड़ना सिखाते हैं।",
+    "en": "Grandpa teaches me how to fish."
+  },
+  {
+    "hi": "मेरी चाची सुंदर सीपियां इकट्ठा करती हैं।",
+    "en": "My aunt collects beautiful seashells."
+  },
+  {
+    "hi": "मुझे अपने परिवार के साथ फ़िल्में देखने में मजा आता है।",
+    "en": "I enjoy watching movies with my family."
+  },
+  {
+    "hi": "हमारा परिवार हर गर्मियों में पिकनिक मनाता है।",
+    "en": "Our family has a picnic every summer."
+  },
+  {
+    "hi": "मेरी बहन स्कूल के गायक मंडली में गाती है।",
+    "en": "My sister sings in the school choir."
+  },
+  {
+    "hi": "पिताजी और मैं महीने में एक बार हाइकिंग पर जाते हैं।",
+    "en": "Dad and I go hiking once a month."
+  },
+  {
+    "hi": "हम एक साथ जन्मदिन मनाना पसंद करते हैं।",
+    "en": "We love celebrating birthdays together."
+  },
+  {
+    "hi": "माँ सोने से पहले हमें कहानियाँ पढ़ती हैं।",
+    "en": "Mom reads us stories before bed."
+  },
+  {
+    "hi": "हमारे परिवार को बोर्ड गेम खेलना बहुत पसंद है।",
+    "en": "Our family loves playing board games."
+  },
+  {
+    "hi": "मैं और मेरा चचेरा भाई समुद्र तट पर रेत के महल बनाते हैं।",
+    "en": "My cousin and I build sandcastles at the beach."
+  },
+  {
+    "hi": "दादी सबसे अच्छी सेब पाई बनाती हैं।",
+    "en": "Grandma makes the best apple pie."
+  },
+  {
+    "hi": "मैं और मेरा भाई पिछवाड़े में फुटबॉल खेलते हैं।",
+    "en": "My brother and I play soccer in the backyard."
+  },
+  {
+    "hi": "अंकल टिम एक शानदार रसोइया हैं।",
+    "en": "Uncle Tim is a fantastic cook."
+  },
+  {
+    "hi": "मेरे माता-पिता बगीचे में एक साथ काम करते हैं।",
+    "en": "My parents work together in the garden."
+  },
+  {
+    "hi": "हम हर साल परिवार के पुनर्मिलन में शामिल होते हैं।",
+    "en": "We attend family reunions every year."
+  },
+  {
+    "hi": "मैंने नाश्ते में एक रसदार सेब खाया।",
+    "en": "I ate a juicy apple for breakfast."
+  },
+  {
+    "hi": "पिज़्ज़ा के ऊपर बहुत सारा पनीर था।",
+    "en": "The pizza was topped with lots of cheese."
+  },
+  {
+    "hi": "उसे चॉकलेट चिप कुकीज बेक करना बहुत पसंद है।",
+    "en": "She loves to bake chocolate chip cookies."
+  },
+  {
+    "hi": "हमने दोपहर के भोजन के लिए ताजा सलाद खाया।",
+    "en": "We had a fresh salad for lunch."
+  },
+  {
+    "hi": "उन्होंने एक स्वादिष्ट सब्जी का सूप बनाया।",
+    "en": "He made a delicious vegetable soup."
+  },
+  {
+    "hi": "उन्होंने कल रात के खाने के लिए चिकन को ग्रिल किया।",
+    "en": "They grilled chicken for dinner last night."
+  },
+  {
+    "hi": "मैं सुबह एक गर्म कप चाय का आनंद लेता हूं।",
+    "en": "I enjoy a warm cup of tea in the morning."
+  },
+  {
+    "hi": "आइसक्रीम धूप में जल्दी पिघल गई।",
+    "en": "The ice cream melted quickly in the sun."
+  },
+  {
+    "hi": "उसने रेस्तरां में मसालेदार करी ऑर्डर की।",
+    "en": "She ordered a spicy curry at the restaurant."
+  },
+  {
+    "hi": "हमने खेत से पके स्ट्रॉबेरी निकाले।",
+    "en": "We picked ripe strawberries from the farm."
+  },
+  {
+    "hi": "वह लहसुन की चटनी के साथ पास्ता पकाना पसंद करते हैं।",
+    "en": "He likes to cook pasta with garlic sauce."
+  },
+  {
+    "hi": "रोटी अभी भी ओवन से गर्म थी।",
+    "en": "The bread was still warm from the oven."
+  },
+  {
+    "hi": "मैंने कल पहली बार सुशी ट्राई की।",
+    "en": "I tried sushi for the first time yesterday."
+  },
+  {
+    "hi": "उन्होंने एक शानदार जन्मदिन का केक बेक किया।",
+    "en": "They baked a fluffy birthday cake."
+  },
+  {
+    "hi": "हमने फिल्मों में पॉपकॉर्न का एक कटोरा साझा किया।",
+    "en": "We shared a bowl of popcorn at the movies."
+  },
+  {
+    "hi": "उसने मिठास के लिए अपने दलिया में शहद मिलाया।",
+    "en": "She added honey to her oatmeal for sweetness."
+  },
+  {
+    "hi": "फिश टैको स्वाद और उत्साह से भरपूर था।",
+    "en": "The fish taco was full of flavor and zest."
+  },
+  {
+    "hi": "वह ताजे रस के लिए संतरे काट रहा था।",
+    "en": "He was slicing oranges for fresh juice."
+  },
+  {
+    "hi": "उसने ग्रिल करने से पहले स्टेक को पूरी तरह से सीज किया।",
+    "en": "She seasoned the steak perfectly before grilling."
+  },
+  {
+    "hi": "उन्होंने नाश्ते के लिए मेपल सिरप के साथ पेनकेक्स का आनंद लिया।",
+    "en": "They enjoyed pancakes with maple syrup for breakfast."
+  },
+  {
+    "hi": "हमने चिमनी के पास गर्म कोको पिया।",
+    "en": "We drank hot cocoa by the fireplace."
+  },
+  {
+    "hi": "उन्होंने आलू और पनीर के साथ एक स्वादिष्ट पाई बनाई।",
+    "en": "He made a savory pie with potatoes and cheese."
+  },
+  {
+    "hi": "केले और जामुन के साथ स्मूदी बनाई गई थी।",
+    "en": "The smoothie was made with bananas and berries."
+  },
+  {
+    "hi": "उसने भोजन के बीच एक कुरकुरा ग्रेनोला बार खाया।",
+    "en": "She ate a crunchy granola bar between meals."
+  },
+  {
+    "hi": "उन्होंने भुनी हुई सब्जियों को साइड डिश के रूप में परोसा।",
+    "en": "They served roasted vegetables as a side dish."
+  },
+  {
+    "hi": "मुझे रात के खाने के लिए स्पेगेटी बनाना बहुत पसंद है।",
+    "en": "I love making spaghetti for dinner."
+  },
+  {
+    "hi": "केले पोटैशियम का बेहतरीन स्रोत हैं।",
+    "en": "Bananas are a great source of potassium."
+  },
+  {
+    "hi": "वह हर सुबह एक गर्म कप कॉफी का आनंद लेते हैं।",
+    "en": "He enjoys a hot cup of coffee every morning."
+  },
+  {
+    "hi": "हमने सैंडविच और चिप्स के साथ पिकनिक मनाई।",
+    "en": "We had a picnic with sandwiches and chips."
+  },
+  {
+    "hi": "चॉकलेट केक मेरी पसंदीदा मिठाई है।",
+    "en": "Chocolate cake is my favorite dessert."
+  },
+  {
+    "hi": "वह हमेशा अपनी चाय में शहद मिलाती हैं।",
+    "en": "She always adds honey to her tea."
+  },
+  {
+    "hi": "ताजी रोटी से अद्भुत खुशबू आती है।",
+    "en": "Fresh bread smells wonderful."
+  },
+  {
+    "hi": "सूप अभी खाने के लिए बहुत गर्म है।",
+    "en": "The soup is too hot to eat right now."
+  },
+  {
+    "hi": "उन्होंने पार्टी के लिए बर्गर को ग्रिल किया।",
+    "en": "They grilled burgers for the party."
+  },
+  {
+    "hi": "सोया सॉस के साथ सुशी को सबसे अच्छा परोसा जाता है।",
+    "en": "Sushi is best served with soy sauce."
+  },
+  {
+    "hi": "मैं हर दिन आइसक्रीम खा सकता था।",
+    "en": "I could eat ice cream every day."
+  },
+  {
+    "hi": "वह अपने अंडे तले हुए पसंद करती है।",
+    "en": "She likes her eggs scrambled."
+  },
+  {
+    "hi": "अतिरिक्त चीज़ के साथ पिज़्ज़ा का स्वाद बेहतर होता है।",
+    "en": "Pizza tastes better with extra cheese."
+  },
+  {
+    "hi": "तरबूज रसदार और ताज़ा होता है।",
+    "en": "The watermelon is juicy and refreshing."
+  },
+  {
+    "hi": "हमने खेत में स्ट्रॉबेरी चुनी।",
+    "en": "We picked strawberries in the field."
+  },
+  {
+    "hi": "उनका पसंदीदा स्नैक पॉपकॉर्न है।",
+    "en": "His favorite snack is popcorn."
+  },
+  {
+    "hi": "चिकन करी बहुत मसालेदार थी।",
+    "en": "The chicken curry was very spicy."
+  },
+  {
+    "hi": "मुझे वीकेंड पर कुकीज पकाने में मजा आता है।",
+    "en": "I enjoy baking cookies on weekends."
+  },
+  {
+    "hi": "अंगूर एक स्वस्थ नाश्ता बनाते हैं।",
+    "en": "Grapes make a healthy snack."
+  },
+  {
+    "hi": "नींबू पानी ठंडा और ताज़ा था।",
+    "en": "The lemonade was cool and refreshing."
+  },
+  {
+    "hi": "वह नाश्ते के साथ संतरे का रस पसंद करती है।",
+    "en": "She prefers orange juice with breakfast."
+  },
+  {
+    "hi": "स्टेक पूरी तरह से पकाया गया था।",
+    "en": "The steak was cooked perfectly."
+  },
+  {
+    "hi": "उन्होंने पास्ता में कुछ चिली फ्लेक्स मिलाए।",
+    "en": "He added some chili flakes to the pasta."
+  },
+  {
+    "hi": "सलाद ताजी सब्जियों से भरा हुआ था।",
+    "en": "The salad was full of fresh vegetables."
+  },
+  {
+    "hi": "आपका मनपसंद फल कौनसा है?",
+    "en": "What is your favorite fruit?"
+  },
+  {
+    "hi": "क्या आपको चाय पसंद है या कॉफ़ी?",
+    "en": "Do you prefer tea or coffee?"
+  },
+  {
+    "hi": "आपको पके हुए अंडे कैसे पसंद हैं?",
+    "en": "How do you like your eggs cooked?"
+  },
+  {
+    "hi": "पिज्जा टॉपिंग का आपका पसंदीदा प्रकार क्या है?",
+    "en": "What is your favorite type of pizza topping?"
+  },
+  {
+    "hi": "क्या आपने कभी सुशी की कोशिश की है?",
+    "en": "Have you ever tried sushi?"
+  },
+  {
+    "hi": "आपका पसंदीदा आइसक्रीम का स्वाद क्या है?",
+    "en": "What is your favorite ice cream flavor?"
+  },
+  {
+    "hi": "आप रेस्तराँ में कितनी बार बाहर खाना खाते हैं?",
+    "en": "How often do you eat out at restaurants?"
+  },
+  {
+    "hi": "क्या आप मसालेदार या हल्का खाना पसंद करते हैं?",
+    "en": "Do you prefer spicy or mild food?"
+  },
+  {
+    "hi": "आपकी मनपसंद सब्जी कौन सी है?",
+    "en": "What is your favorite vegetable?"
+  },
+  {
+    "hi": "क्या आपने कभी अपनी जड़ी-बूटियाँ या सब्जियाँ उगाई हैं?",
+    "en": "Have you ever grown your own herbs or vegetables?"
+  },
+  {
+    "hi": "क्या आप नए खाद्य पदार्थों को आजमाना पसंद करते हैं?",
+    "en": "Do you like to try new foods?"
+  },
+  {
+    "hi": "आपकी पसंदीदा मिठाई कौन सी है?",
+    "en": "What is your favorite dessert?"
+  },
+  {
+    "hi": "क्या आपने कभी शाकाहारी भोजन की कोशिश की है?",
+    "en": "Have you ever tried a vegan meal?"
+  },
+  {
+    "hi": "आपका पसंदीदा बचपन का नाश्ता क्या है?",
+    "en": "What is your favorite childhood snack?"
+  },
+  {
+    "hi": "क्या आप मीठे या नमकीन स्नैक्स पसंद करते हैं?",
+    "en": "Do you prefer sweet or salty snacks?"
+  },
+  {
+    "hi": "आपका गो-टू ब्रेकफ़ास्ट क्या है?",
+    "en": "What is your go-to breakfast?"
+  },
+  {
+    "hi": "क्या आपका कोई पसंदीदा घर का बना व्यंजन है?",
+    "en": "Do you have a favorite homemade dish?"
+  },
+  {
+    "hi": "आपको पका हुआ स्टेक कैसा लगता है?",
+    "en": "How do you like your steak cooked?"
+  },
+  {
+    "hi": "आपकी पसंदीदा रोटी कौन सी है?",
+    "en": "What is your favorite type of bread?"
+  },
+  {
+    "hi": "क्या आपको खाना बनाना या पकाना ज्यादा पसंद है?",
+    "en": "Do you enjoy cooking or baking more?"
+  },
+  {
+    "hi": "आपने अब तक का सबसे अजीब खाना कौन सा खाया है?",
+    "en": "What is the strangest food you have ever eaten?"
+  },
+  {
+    "hi": "क्या आपका कोई पसंदीदा व्यंजन है?",
+    "en": "Do you have a favorite cuisine?"
+  },
+  {
+    "hi": "आपका पसंदीदा सूप कौन सा है?",
+    "en": "What is your favorite soup?"
+  },
+  {
+    "hi": "क्या आप स्मूदी या मिल्कशेक पसंद करते हैं?",
+    "en": "Do you prefer smoothies or milkshakes?"
+  },
+  {
+    "hi": "ऐसा कौन सा खाना है जिसे आप रोज खा सकते हैं?",
+    "en": "What is a food you could eat every day?"
+  },
+  {
+    "hi": "आज का मौसम कैसा है?",
+    "en": "What is the weather like today?"
+  },
+  {
+    "hi": "क्या कल बारिश होने वाली है?",
+    "en": "Is it going to rain tomorrow?"
+  },
+  {
+    "hi": "क्या आप धूप या बादल वाले दिन पसंद करते हैं?",
+    "en": "Do you prefer sunny or cloudy days?"
+  },
+  {
+    "hi": "आपके क्षेत्र में कितनी बार बर्फबारी होती है?",
+    "en": "How often does it snow in your area?"
+  },
+  {
+    "hi": "आपके द्वारा अनुभव किया गया उच्चतम तापमान क्या है?",
+    "en": "What's the highest temperature you've experienced?"
+  },
+  {
+    "hi": "क्या आपको लगता है कि बाद में हवा चलेगी?",
+    "en": "Do you think it will be windy later?"
+  },
+  {
+    "hi": "आप कैसे तय करते हैं कि मौसम के आधार पर क्या पहनना है?",
+    "en": "How do you decide what to wear based on the weather?"
+  },
+  {
+    "hi": "आपका पसंदीदा मौसम कौनसा है?",
+    "en": "What's your favorite weather?"
+  },
+  {
+    "hi": "तुम जहाँ रहते हो, वहाँ क्या कभी जय होती है?",
+    "en": "Does it ever hail where you live?"
+  },
+  {
+    "hi": "हीटवेव के दौरान आप कैसे शांत रहते हैं?",
+    "en": "How do you stay cool during a heatwave?"
+  },
+  {
+    "hi": "आप किस सबसे ठंडे मौसम में रहे हैं?",
+    "en": "What's the coldest weather you've been in?"
+  },
+  {
+    "hi": "क्या आप आंधी तूफान का आनंद लेते हैं?",
+    "en": "Do you enjoy thunderstorms?"
+  },
+  {
+    "hi": "मौसम आपकी योजनाओं को कैसे प्रभावित करता है?",
+    "en": "How does the weather affect your plans?"
+  },
+  {
+    "hi": "बरसात के दिन के लिए सबसे अच्छी गतिविधि क्या है?",
+    "en": "What's the best activity for a rainy day?"
+  },
+  {
+    "hi": "क्या मौसम आपके मूड को प्रभावित करता है?",
+    "en": "Does the weather influence your mood?"
+  },
+  {
+    "hi": "आप खुद को धूप से कैसे बचा सकते हैं?",
+    "en": "How do you protect yourself from the sun?"
+  },
+  {
+    "hi": "क्या आप मौसम का पूर्वानुमान सुनते हैं?",
+    "en": "Do you listen to the weather forecast?"
+  },
+  {
+    "hi": "मौसम आपके आवागमन को कैसे प्रभावित करता है?",
+    "en": "How does the weather impact your commute?"
+  },
+  {
+    "hi": "आपके द्वारा अनुभव किया गया सबसे लंबा सूखा कौन सा है?",
+    "en": "What's the longest drought you've experienced?"
+  },
+  {
+    "hi": "क्या आप कोई ऐसा पौधा उगाते हैं जो मौसम के प्रति संवेदनशील हो?",
+    "en": "Do you grow any plants that are sensitive to weather?"
+  },
+  {
+    "hi": "आपके क्षेत्र के जानवर मौसम परिवर्तन पर कैसे प्रतिक्रिया करते हैं?",
+    "en": "How do animals in your area react to weather changes?"
+  },
+  {
+    "hi": "क्या आप एक गंभीर मौसम की घटना को याद कर सकते हैं जिसका आपने अनुभव किया था?",
+    "en": "Can you remember a severe weather event you experienced?"
+  },
+  {
+    "hi": "आपने सबसे असामान्य मौसम कौन सा देखा है?",
+    "en": "What's the most unusual weather you've seen?"
+  },
+  {
+    "hi": "आप भारी बर्फीले तूफान की तैयारी कैसे करते हैं?",
+    "en": "How do you prepare for a heavy snowstorm?"
+  },
+  {
+    "hi": "आपको कौन सा मौसम सबसे ज्यादा पसंद है और क्यों?",
+    "en": "What season do you like the most and why? "
+  },
+  {
+    "hi": "आज का मौसम कैसा है?",
+    "en": "What's the weather like today?"
+  },
+  {
+    "hi": "क्या बाद में बारिश होने वाली है?",
+    "en": "Is it going to rain later?"
+  },
+  {
+    "hi": "बाहर कितनी गर्मी है?",
+    "en": "How hot is it outside?"
+  },
+  {
+    "hi": "क्या कल धूप होगी?",
+    "en": "Will it be sunny tomorrow?"
+  },
+  {
+    "hi": "क्या इस सप्ताह हिमपात होने की संभावना है?",
+    "en": "Is there a chance of snow this week?"
+  },
+  {
+    "hi": "क्या आपको आज छतरी की ज़रूरत है?",
+    "en": "Do you need an umbrella today?"
+  },
+  {
+    "hi": "अभी तापमान क्या है?",
+    "en": "What's the temperature right now?"
+  },
+  {
+    "hi": "आज कितनी हवा चल रही है?",
+    "en": "How windy is it today?"
+  },
+  {
+    "hi": "क्या आप आसमान में कोई बादल देख सकते हैं?",
+    "en": "Can you see any clouds in the sky?"
+  },
+  {
+    "hi": "यहाँ कितनी बार बारिश होती है?",
+    "en": "How often does it rain here?"
+  },
+  {
+    "hi": "आपका पसंदीदा मौसम कौन सा है?",
+    "en": "What's your favorite kind of weather?"
+  },
+  {
+    "hi": "क्या आपने कभी तूफान देखा है?",
+    "en": "Have you ever seen a hurricane?"
+  },
+  {
+    "hi": "क्या बाहर नमी है?",
+    "en": "Is it humid outside?"
+  },
+  {
+    "hi": "कल का मौसम कैसा था?",
+    "en": "What was the weather like yesterday?"
+  },
+  {
+    "hi": "क्या आप कभी आंधी में फँसे हैं?",
+    "en": "Have you ever been caught in a thunderstorm?"
+  },
+  {
+    "hi": "क्या अभी टहलने जाना सुरक्षित है?",
+    "en": "Is it safe to go for a walk right now?"
+  },
+  {
+    "hi": "आज हवा की गुणवत्ता कैसी है?",
+    "en": "How is the air quality today?"
+  },
+  {
+    "hi": "क्या आप गर्म या ठंडा मौसम पसंद करते हैं?",
+    "en": "Do you prefer warm or cold weather?"
+  },
+  {
+    "hi": "सर्दियों में कितनी ठंड पड़ती है?",
+    "en": "How cold does it get in winter?"
+  },
+  {
+    "hi": "क्या आज के लिए मौसम का अलर्ट है?",
+    "en": "Is there a weather alert for today?"
+  },
+  {
+    "hi": "आप आमतौर पर बारिश के मौसम के लिए कैसे कपड़े पहनते हैं?",
+    "en": "How do you usually dress for rainy weather?"
+  },
+  {
+    "hi": "क्या आपने कभी इंद्रधनुष देखा है?",
+    "en": "Have you ever seen a rainbow?"
+  },
+  {
+    "hi": "क्या मौसम की कोई चेतावनी जारी की गई है?",
+    "en": "Are there any weather warnings issued?"
+  },
+  {
+    "hi": "यहाँ अब तक का सबसे अधिक तापमान क्या दर्ज किया गया है?",
+    "en": "What's the highest temperature ever recorded here?"
+  },
+  {
+    "hi": "क्या आप समाचार पर मौसम की रिपोर्ट सुनते हैं?",
+    "en": "Do you listen to the weather report on the news?"
+  },
+  {
+    "hi": "आपकी माँ का नाम क्या है?",
+    "en": "What is your mother's name?"
+  },
+  {
+    "hi": "आपके कितने भाई-बहन हैं?",
+    "en": "How many siblings do you have?"
+  },
+  {
+    "hi": "क्या आपके कोई बच्चे हैं?",
+    "en": "Do you have any children?"
+  },
+  {
+    "hi": "तुम्हारे पिता जीविका के लिए क्या करते हैं?",
+    "en": "What does your father do for a living?"
+  },
+  {
+    "hi": "आपके परिवार में सबसे बुजुर्ग व्यक्ति कौन है?",
+    "en": "Who is the oldest person in your family?"
+  },
+  {
+    "hi": "क्या आपके पास कोई पालतू जानवर है?",
+    "en": "Do you have any pets?"
+  },
+  {
+    "hi": "आपका परिवार कहाँ रहता है?",
+    "en": "Where does your family live?"
+  },
+  {
+    "hi": "आप अपने दादा-दादी से कितनी बार मिलने जाते हैं?",
+    "en": "How often do you visit your grandparents?"
+  },
+  {
+    "hi": "आपका परिवार बड़ा है या छोटा परिवार?",
+    "en": "Do you have a big family or a small family?"
+  },
+  {
+    "hi": "आपकी पसंदीदा पारिवारिक परंपरा क्या है?",
+    "en": "What is your favorite family tradition?"
+  },
+  {
+    "hi": "आपके कितने चचेरे भाई हैं?",
+    "en": "How many cousins do you have?"
+  },
+  {
+    "hi": "क्या आप अपने माता-पिता से मिलते-जुलते हैं?",
+    "en": "Do you resemble your parents?"
+  },
+  {
+    "hi": "आपका परिवार एक साथ कौन सी छुट्टियां मनाता है?",
+    "en": "What holidays does your family celebrate together?"
+  },
+  {
+    "hi": "क्या आपका परिवार धार्मिक है?",
+    "en": "Is your family religious?"
+  },
+  {
+    "hi": "आपका परिवार कितनी बार एक साथ मिलता है?",
+    "en": "How often does your family get together?"
+  },
+  {
+    "hi": "आपके परिवार में कौन सी भाषाएं बोली जाती हैं?",
+    "en": "What languages are spoken in your family?"
+  },
+  {
+    "hi": "आपके लिए परिवार का क्या मतलब है?",
+    "en": "What does family mean to you?"
+  },
+  {
+    "hi": "आपके परिवार में सबसे मजेदार व्यक्ति कौन है?",
+    "en": "Who is the funniest person in your family?"
+  },
+  {
+    "hi": "क्या आपके परिवार के सदस्य दूसरे देशों में रहते हैं?",
+    "en": "Do you have family members living in other countries?"
+  },
+  {
+    "hi": "आपको अपने परिवार के साथ कौन सी गतिविधियाँ करने में मज़ा आता है?",
+    "en": "What activities do you enjoy doing with your family?"
+  },
+  {
+    "hi": "क्या आपका नाम आपके परिवार में किसी के नाम पर रखा गया है?",
+    "en": "Are you named after anyone in your family?"
+  },
+  {
+    "hi": "क्या आप अपने भाई-बहनों के साथ कोई शौक साझा करते हैं?",
+    "en": "Do you share any hobbies with your siblings?"
+  },
+  {
+    "hi": "आपके द्वारा ली गई एक यादगार पारिवारिक छुट्टी क्या है?",
+    "en": "What is a memorable family vacation you've taken?"
+  },
+  {
+    "hi": "आपके परिवार में आप किसके सबसे करीब हैं?",
+    "en": "Who in your family are you closest to?"
+  },
+  {
+    "hi": "आप आमतौर पर अपने परिवार में जन्मदिन कैसे मनाते हैं?",
+    "en": "How do you usually celebrate birthdays in your family?"
+  },
+  {
+    "hi": "आज आपको कैसा लग रहा है?",
+    "en": "How do you feel today?"
+  },
+  {
+    "hi": "आपको किस बात से खुशी मिलती है?",
+    "en": "What makes you happy?"
+  },
+  {
+    "hi": "आपको किस बात का डर है?",
+    "en": "What are you afraid of?"
+  },
+  {
+    "hi": "आप गुस्से को कैसे व्यक्त करते हैं?",
+    "en": "How do you express anger?"
+  },
+  {
+    "hi": "किस बात से आपको प्यार महसूस होता है?",
+    "en": "What makes you feel loved?"
+  },
+  {
+    "hi": "पिछली बार कब आप वास्तव में उत्साहित थे?",
+    "en": "When was the last time you were really excited?"
+  },
+  {
+    "hi": "जब आप दुखी होते हैं तो आप क्या करते हैं?",
+    "en": "What do you do when you feel sad?"
+  },
+  {
+    "hi": "संगीत आपके मूड को कैसे प्रभावित करता है?",
+    "en": "How does music affect your mood?"
+  },
+  {
+    "hi": "आपको किस वजह से तनाव होता है?",
+    "en": "What causes you stress?"
+  },
+  {
+    "hi": "जब आप चिंतित होते हैं तो आप अपने आप को कैसे शांत करते हैं?",
+    "en": "How do you calm yourself down when you're anxious?"
+  },
+  {
+    "hi": "आराम करने का आपका पसंदीदा तरीका क्या है?",
+    "en": "What is your favorite way to relax?"
+  },
+  {
+    "hi": "आप बदलाव के बारे में कैसा महसूस करते हैं?",
+    "en": "How do you feel about change?"
+  },
+  {
+    "hi": "ऐसी कौन सी याद है जो आपको मुस्कुरा देती है?",
+    "en": "What is a memory that makes you smile?"
+  },
+  {
+    "hi": "आप निराशा का सामना कैसे करते हैं?",
+    "en": "How do you cope with disappointment?"
+  },
+  {
+    "hi": "कौन सी गतिविधि आपको शांति का एहसास कराती है?",
+    "en": "What activity makes you feel at peace?"
+  },
+  {
+    "hi": "आप दूसरों के साथ संघर्ष को कैसे संभालते हैं?",
+    "en": "How do you handle conflict with others?"
+  },
+  {
+    "hi": "जब आप उदास महसूस कर रहे होते हैं तो आपको क्या खुशी होती है?",
+    "en": "What cheers you up when you're feeling down?"
+  },
+  {
+    "hi": "जब आपको वेंट करने की ज़रूरत होती है तो आप किससे बात करते हैं?",
+    "en": "Who do you talk to when you need to vent?"
+  },
+  {
+    "hi": "आप डर को कैसे दूर करते हैं?",
+    "en": "How do you overcome fear?"
+  },
+  {
+    "hi": "आपको किस बात की सराहना महसूस होती है?",
+    "en": "What makes you feel appreciated?"
+  },
+  {
+    "hi": "आप आमतौर पर आलोचना का जवाब कैसे देते हैं?",
+    "en": "How do you usually respond to criticism?"
+  },
+  {
+    "hi": "ऐसी कौन सी चीज है जो आपकी आत्माओं को ऊपर उठाने में कभी असफल नहीं होती है?",
+    "en": "What is something that never fails to lift your spirits?"
+  },
+  {
+    "hi": "आप जोखिम लेने के बारे में कैसा महसूस करते हैं?",
+    "en": "How do you feel about taking risks?"
+  },
+  {
+    "hi": "क्या कोई किताब या फिल्म है जिसने जीवन के बारे में आपका दृष्टिकोण बदल दिया है?",
+    "en": "Is there a book or movie that changed your outlook on life?"
+  },
+  {
+    "hi": "आपको कैसे पता चलेगा कि आप वास्तव में कब खुश हैं?",
+    "en": "How do you know when you're truly happy?"
   }
 ]
