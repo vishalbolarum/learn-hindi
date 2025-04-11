@@ -3,6 +3,7 @@ import axios from "axios"
 export default function FixPronunciation({ close }) {
 
     const handleSubmit = async e => {
+        e.preventDefault()
         try {
             await axios({
                 method: "post",
