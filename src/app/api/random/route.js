@@ -12,11 +12,11 @@ export async function GET(req) {
 
 		let task
 		if (difficulty === "easy" || !difficulty) {
-			task = await knex("tasks").where("hi_length", "<", 30).select().orderByRaw("RANDOM()").first()
+			task = await knex("tasks").where("hi_length", "<", 35).select().orderByRaw("RANDOM()").first()
 		} else if (difficulty === "medium") {
-			task = await knex("tasks").where("hi_length", "<", 60).select().orderByRaw("RANDOM()").first()
+			task = await knex("tasks").where("hi_length", "<", 70).select().orderByRaw("RANDOM()").first()
 		} else if (difficulty === "hard") {
-			task = await knex("tasks").where("hi_length", "<", 90).select().orderByRaw("RANDOM()").first()
+			task = await knex("tasks").where("hi_length", "<", 105).select().orderByRaw("RANDOM()").first()
 		}
 
 		const tokenizer = new natural.AggressiveTokenizer();
