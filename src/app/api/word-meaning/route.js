@@ -45,9 +45,18 @@ export async function GET(req) {
 			});
 		}
 	} catch (err) {
-		console.log(err.toString());
+		console.log("Environment check:", {
+			regionDefined: !!process.env.NEXT_AWS_REGION,
+			keyIdDefined: !!process.env.NEXT_AWS_ACCESS_KEY_ID,
+			secretDefined: !!process.env.NEXT_AWS_SECRET_ACCESS_KEY,
+		});
 		return NextResponse.json({
 			err: err.toString(),
+			env: {
+				regionDefined: !!process.env.NEXT_AWS_REGION,
+				keyIdDefined: !!process.env.NEXT_AWS_ACCESS_KEY_ID,
+				secretDefined: !!process.env.NEXT_AWS_SECRET_ACCESS_KEY,
+			},
 		});
 	}
 }

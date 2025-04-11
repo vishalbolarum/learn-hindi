@@ -134,7 +134,7 @@ export default function HomeComponent() {
 		if (data.word_translated) {
 			alert(data.word_translated);
 		} else {
-			alert(data.err);
+			alert(data.err, data.env);
 		}
 	};
 
