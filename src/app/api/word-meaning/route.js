@@ -1,6 +1,4 @@
 import { NextResponse } from "next/server";
-import axios from "axios";
-import pronunciation from "../random/pronunciation.json";
 import {
 	TranslateClient,
 	TranslateTextCommand,
@@ -23,27 +21,20 @@ export async function GET(req) {
 		let source = searchParams.get("source")?.trim()?.toLowerCase();
 		let target = searchParams.get("target")?.trim()?.toLowerCase();
 
-		const actual = pronunciation.find((p) => p.hi === word)?.en;
-		if (actual) {
-			return NextResponse.json({
-				word,
-				word_translated: actual[0],
-			});
-		} else {
-			const response = await translateClient.send(
-				new TranslateTextCommand({
-					Text: word,
-					SourceLanguageCode: "hi", // e.g., "en"
-					TargetLanguageCode: "en", // e.g., "es"
-				})
-			);
+		const response = await translateClient.send(
+			new TranslateTextCommand({
+				Text: word,
+				SourceLanguageCode: "hi", // e.g., "en"
+				TargetLanguageCode: "en", // e.g., "es"
+			})
+		);
 
-			return NextResponse.json({
-				word,
-				word_translated:
-					response?.TranslatedText?.toLowerCase()?.trim(),
-			});
-		}
+		return NextResponse.json({
+			word,
+			word_translated:
+				response?.TranslatedText?.toLowerCase()?.trim(),
+		});
+		
 	} catch (err) {
 		console.log("Environment check:", {
 			regionDefined: !!process.env.NEXT_AWS_REGION,
