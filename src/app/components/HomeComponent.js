@@ -55,7 +55,7 @@ export default function HomeComponent() {
 				setOptions(
 					data.task.en_tokens?.sort(() => Math.random() - 0.5)
 				);
-				// speak(data.task.hi);
+				speak(data.task.hi);
 			}
 		} catch (err) {
 			console.log(err.toString());
