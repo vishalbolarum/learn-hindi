@@ -135,7 +135,7 @@ export default function HomeComponent() {
 			alert(data.word_translated);
 		} else {
 			console.log(JSON.stringify(data.env));
-			alert(data.err, JSON.stringify(data.env));
+			alert(JSON.stringify(data.env));
 		}
 	};
 
