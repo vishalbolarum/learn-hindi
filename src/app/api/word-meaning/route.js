@@ -54,8 +54,11 @@ export async function GET(req) {
 			err: err.toString(),
 			env: {
 				regionDefined: !!process.env.NEXT_AWS_REGION,
+				regionDefinedValue: process.env.NEXT_AWS_REGION,
 				keyIdDefined: !!process.env.NEXT_AWS_ACCESS_KEY_ID,
+				keyIdDefinedValue: process.env.NEXT_AWS_ACCESS_KEY_ID,
 				secretDefined: !!process.env.NEXT_AWS_SECRET_ACCESS_KEY,
+				secretDefinedValue: process.env.NEXT_AWS_SECRET_ACCESS_KEY,
 			},
 		});
 	}
