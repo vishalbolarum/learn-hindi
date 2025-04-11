@@ -1,8 +1,7 @@
 import { NextResponse } from "next/server";
 import { transliterate } from "transliteration";
-import tasks from "../add/tasks.json";
-import pronunciation from "./pronunciation.json";
 import natural from "natural";
+import knex from "../_database/knex";
 
 // Reference: https://www.jagranjosh.com/articles/hindi-to-english-sentences-translation-1727443305-1
 
@@ -11,23 +10,14 @@ export async function GET(req) {
 		const { searchParams } = new URL(req.url);
 		let difficulty = searchParams.get("difficulty");
 
-		let tasks_in_difficulty;
+		let task
 		if (difficulty === "easy" || !difficulty) {
-			tasks_in_difficulty = tasks.filter((row) => row.hi.length < 30);
+			task = await knex("tasks").where("hi_length", "<", 30).select().orderByRaw("RANDOM()").first()
 		} else if (difficulty === "medium") {
-			tasks_in_difficulty = tasks.filter(
-				(row) => row.hi.length < 60
-			);
+			task = await knex("tasks").where("hi_length", "<", 60).select().orderByRaw("RANDOM()").first()
 		} else if (difficulty === "hard") {
-			tasks_in_difficulty = tasks.filter(
-				(row) => row.hi.length < 90
-			);
+			task = await knex("tasks").where("hi_length", "<", 90).select().orderByRaw("RANDOM()").first()
 		}
-
-		const task =
-			tasks_in_difficulty[
-				Math.floor(Math.random() * tasks_in_difficulty.length)
-			];
 
 		const tokenizer = new natural.AggressiveTokenizer();
 		// const prompt = "Generate a simple Hindi sentence and provide its English translation in JSON format like: { \"hi\": \"HINDI SENTENCE\", \"en\": \"ENGLISH TRANSLATION\" }"
@@ -44,13 +34,15 @@ export async function GET(req) {
 		//     // Ensure response is valid JSON
 		// const task = JSON.parse(aiResponse?.replace(/```json|```/g, ''));
 
+		const hi_pronunciation = await knex("pronunciation").whereIn("hi", task.hi?.replace(/[।.,?]/g, "")?.split(" ")).select()
+
 		const ideal = {
 			hi: task.hi,
 			hi_tokens: task.hi
 				?.replace(/[।.,]/g, "")
 				?.split(" ")
 				.map((token, order) => {
-					const target = pronunciation.find(
+					const target = hi_pronunciation.find(
 						(obj) => obj.hi === token?.replace(/[?]/g, "")
 					);
 					return {
@@ -70,8 +62,6 @@ export async function GET(req) {
 					order,
 				})),
 		};
-
-		// console.log(ideal);
 
 		return NextResponse.json({ task: ideal });
 	} catch (error) {

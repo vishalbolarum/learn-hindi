@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import { useSearchParams, useRouter, usePathname } from "next/navigation";
+import FixPronunciation from "./FixPronunciation"
 
 export default function HomeComponent() {
 	const pathname = usePathname();
@@ -16,6 +17,8 @@ export default function HomeComponent() {
 	const [options, setOptions] = useState([]);
 
 	const [hiToEn, setHiToEn] = useState(false);
+
+	const [showFixPronunciation, toggleFixPronunciation] = useState()
 
 	const speak = (message) => {
 		if (typeof window !== "undefined" && "speechSynthesis" in window) {
@@ -52,7 +55,7 @@ export default function HomeComponent() {
 				setOptions(
 					data.task.en_tokens?.sort(() => Math.random() - 0.5)
 				);
-				speak(data.task.hi);
+				// speak(data.task.hi);
 			}
 		} catch (err) {
 			console.log(err.toString());
@@ -145,10 +148,17 @@ export default function HomeComponent() {
 
 	return (
 		<main className="px-4 min-h-screen">
-			<div className="py-6">
-				<h1 className="my-2 text-5xl">Learn Hindi</h1>
-				<div className="my-2 text-slate-400">
-					Translate this Hindi sentence into English.
+			{showFixPronunciation && <FixPronunciation close={() => toggleFixPronunciation(false)}/>}
+			<div className="py-6 flex justify-between">
+				<div>
+					<h1 className="my-2 text-5xl">Learn Hindi</h1>
+						<div className="my-2 text-slate-400">
+							Translate this Hindi sentence into English.
+						</div>
+				</div>
+				<div className="flex gap-2">
+					<button className="bg-slate-800 h-fit px-2 py-1 rounded" onClick={() => toggleFixPronunciation(true)}>Fix Pronunciation</button>
+					<button className="bg-slate-600 h-fit px-2 py-1 rounded">Add Sentence</button>
 				</div>
 			</div>
 
@@ -269,7 +279,7 @@ export default function HomeComponent() {
 				)}
 
 				<div className="flex justify-between mt-32 fixed bottom-0 left-0 p-4 w-full">
-					<button className="bg-red-700 p-2 rounded-lg">Skip</button>
+					<button className="bg-red-700 p-2 rounded-lg" type="button">Skip</button>
 					<button
 						className="bg-green-700 p-2 rounded-lg"
 						type="submit"
