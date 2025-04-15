@@ -4,6 +4,7 @@ import { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import { useSearchParams, useRouter, usePathname } from "next/navigation";
 import FixPronunciation from "./FixPronunciation"
+import AddSentence from "./AddSentence"
 
 export default function HomeComponent() {
 	const pathname = usePathname();
@@ -19,6 +20,7 @@ export default function HomeComponent() {
 	const [hiToEn, setHiToEn] = useState(false);
 
 	const [showFixPronunciation, toggleFixPronunciation] = useState()
+	const [showAddSentence, toggleAddSentence] = useState()
 
 	const speak = (message) => {
 		if (typeof window !== "undefined" && "speechSynthesis" in window) {
@@ -149,6 +151,7 @@ export default function HomeComponent() {
 	return (
 		<main className="px-4 min-h-screen">
 			{showFixPronunciation && <FixPronunciation close={() => toggleFixPronunciation(false)}/>}
+			{showAddSentence && <AddSentence close={() => toggleAddSentence(false)}/>}
 			<div className="py-6 flex justify-between">
 				<div>
 					<h1 className="my-2 text-5xl">Learn Hindi</h1>
@@ -158,7 +161,7 @@ export default function HomeComponent() {
 				</div>
 				<div className="flex gap-2">
 					<button className="bg-slate-800 h-fit px-2 py-1 rounded" onClick={() => toggleFixPronunciation(true)}>Fix Pronunciation</button>
-					<button className="bg-slate-600 h-fit px-2 py-1 rounded">Add Sentence</button>
+					<button className="bg-slate-600 h-fit px-2 py-1 rounded" onClick={() => toggleAddSentence(true)}>Add Sentence</button>
 				</div>
 			</div>
 

@@ -13,8 +13,8 @@ const translateClient = new TranslateClient({
 // Reference: https://www.jagranjosh.com/articles/hindi-to-english-sentences-translation-1727443305-1
 
 export async function POST(req) {
-  const formData = await req.formData()
-  const en = formData.get("en")?.trim()
+  const body = await req.json()
+  let en = body.en?.trim()
   
   const task = {
     hi: null,
@@ -24,8 +24,8 @@ export async function POST(req) {
   try {
     const response = await translateClient.send(new TranslateTextCommand({
       Text: task.en,
-      SourceLanguageCode: "en", // e.g., "en"
-      TargetLanguageCode: "hi", // e.g., "es"
+      SourceLanguageCode: "en",
+      TargetLanguageCode: "hi"
   }))
 
     task.hi = response?.TranslatedText?.trim()
