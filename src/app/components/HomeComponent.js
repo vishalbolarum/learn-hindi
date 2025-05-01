@@ -245,7 +245,6 @@ export default function HomeComponent() {
 				setOptions(
 					data.en_tokens?.sort(() => Math.random() - 0.5)
 				);
-				speak(data.hi);
 			} else {
 				setOptions(
 					data.hi_tokens?.sort(() => Math.random() - 0.5)
