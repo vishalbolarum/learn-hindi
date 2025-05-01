@@ -1,6 +1,6 @@
 import axios from "axios"
 
-export default function FixPronunciation({ close }) {
+export default function FixPronunciation({ close, resetTask }) {
 
     const handleSubmit = async e => {
         e.preventDefault()
@@ -10,6 +10,7 @@ export default function FixPronunciation({ close }) {
                 url: "/api/add-pronunciation",
                 data: Object.fromEntries(new FormData(e.target))
             })
+            await resetTask()
             close()
         } catch (err) {
             alert(err?.message, err?.response?.data)

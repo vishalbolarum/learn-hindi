@@ -12,10 +12,100 @@ export default function HomeComponent() {
 	const searchParams = useSearchParams();
 	const formRef = useRef(null);
 
-	const [task, setTask] = useState();
+	const [task, setTask] = useState(
+		// {
+		// 	"hi": "हर दिन खूब पानी पिएं।",
+		// 	"hi_tokens": [
+		// 		{
+		// 			"word": "हर",
+		// 			"word_transliterated": "har",
+		// 			"order": 0
+		// 		},
+		// 		{
+		// 			"word": "दिन",
+		// 			"word_transliterated": "din",
+		// 			"order": 1
+		// 		},
+		// 		{
+		// 			"word": "खूब",
+		// 			"word_transliterated": "khuub",
+		// 			"order": 2
+		// 		},
+		// 		{
+		// 			"word": "पानी",
+		// 			"word_transliterated": "paanee",
+		// 			"order": 3
+		// 		},
+		// 		{
+		// 			"word": "पिएं",
+		// 			"word_transliterated": "pien",
+		// 			"order": 4
+		// 		}
+		// 	],
+		// 	"en": "Drink plenty of water every day.",
+		// 	"en_tokens": [
+		// 		{
+		// 			"word": "drink",
+		// 			"word_transliterated": "drink",
+		// 			"order": 0
+		// 		},
+		// 		{
+		// 			"word": "plenty",
+		// 			"word_transliterated": "plenty",
+		// 			"order": 1
+		// 		},
+		// 		{
+		// 			"word": "of",
+		// 			"word_transliterated": "of",
+		// 			"order": 2
+		// 		},
+		// 		{
+		// 			"word": "water",
+		// 			"word_transliterated": "water",
+		// 			"order": 3
+		// 		},
+		// 		{
+		// 			"word": "every",
+		// 			"word_transliterated": "every",
+		// 			"order": 4
+		// 		},
+		// 		{
+		// 			"word": "day",
+		// 			"word_transliterated": "day",
+		// 			"order": 5
+		// 		}
+		// 	]
+		// }
+	);
 
 	const [answer, setAnswer] = useState([]);
-	const [options, setOptions] = useState([]);
+	const [options, setOptions] = useState([
+		// {
+		// 	"word": "हर",
+		// 	"word_transliterated": "har",
+		// 	"order": 0
+		// },
+		// {
+		// 	"word": "दिन",
+		// 	"word_transliterated": "din",
+		// 	"order": 1
+		// },
+		// {
+		// 	"word": "खूब",
+		// 	"word_transliterated": "khuub",
+		// 	"order": 2
+		// },
+		// {
+		// 	"word": "पानी",
+		// 	"word_transliterated": "paanee",
+		// 	"order": 3
+		// },
+		// {
+		// 	"word": "पिएं",
+		// 	"word_transliterated": "pien",
+		// 	"order": 4
+		// }
+	]);
 
 	const [hiToEn, setHiToEn] = useState(false);
 
@@ -38,26 +128,23 @@ export default function HomeComponent() {
 		setOptions([]);
 		try {
 			const { data } = await axios({
-				url: "/api/random",
+				url: "/api/tasks",
 				params: {
 					difficulty: searchParams.get("difficulty"),
 				},
 			});
-			if (data.error) {
-				throw new Error(data.error);
-			}
-			setTask(data.task);
+			setTask(data);
 			if (hiToEn) {
 				setHiToEn(false);
 				setOptions(
-					data.task.hi_tokens?.sort(() => Math.random() - 0.5)
+					data.hi_tokens?.sort(() => Math.random() - 0.5)
 				);
 			} else {
 				setHiToEn(true);
 				setOptions(
-					data.task.en_tokens?.sort(() => Math.random() - 0.5)
+					data.en_tokens?.sort(() => Math.random() - 0.5)
 				);
-				speak(data.task.hi);
+				speak(data.hi);
 			}
 		} catch (err) {
 			console.log(err.toString());
@@ -144,13 +231,38 @@ export default function HomeComponent() {
 		}
 	};
 
+	const resetTask = async () => {
+		setAnswer([]);
+		try {
+			const { data } = await axios({
+				url: "/api/tasks",
+				params: {
+					id: task.id,
+				}
+			});
+			setTask(data);
+			if (hiToEn) {
+				setOptions(
+					data.en_tokens?.sort(() => Math.random() - 0.5)
+				);
+				speak(data.hi);
+			} else {
+				setOptions(
+					data.hi_tokens?.sort(() => Math.random() - 0.5)
+				);
+			}
+		} catch (err) {
+			console.log(err.toString());
+		}
+	}
+
 	useEffect(() => {
 		fetchTask();
 	}, []);
 
 	return (
 		<main className="px-4 min-h-screen">
-			{showFixPronunciation && <FixPronunciation close={() => toggleFixPronunciation(false)}/>}
+			{showFixPronunciation && <FixPronunciation close={() => toggleFixPronunciation(false)} resetTask={resetTask}/>}
 			{showAddSentence && <AddSentence close={() => toggleAddSentence(false)}/>}
 			<div className="py-6 flex justify-between">
 				<div>
@@ -170,7 +282,7 @@ export default function HomeComponent() {
 			{hiToEn ? (
 				<div className="flex gap-4">
 					<div className="text-3xl">
-						{task?.hi_tokens?.map((obj) => (
+						{task?.hi_tokens?.sort((a, b) => a.order - b.order)?.map((obj) => (
 							<div
 								className="inline-block mr-4"
 								key={obj.order}
@@ -216,37 +328,49 @@ export default function HomeComponent() {
 
 				{!hiToEn && (
 					<div>
-						<div className="flex flex-wrap gap-2 p-2 my-6 w-full min-h-32 border border-slate-500">
-							{answer?.map((obj) => (
-								<div
-									className="h-fit cursor-pointer select-none"
-									key={obj.order}
-								>
+						<div className="p-2 my-6 w-full min-h-32 border border-slate-500 flex gap-4">
+							<div className="flex flex-wrap gap-2 min-h-full w-full">
+								{answer?.map((obj) => (
 									<div
-										className="bg-slate-800 h-fit rounded px-2 py-2 cursor-pointer select-none"
-										onClick={() => removeWord(obj)}
+										className="h-fit cursor-pointer select-none"
+										key={obj.order}
 									>
-										<div className="text-2xl text-center">
-											{obj.word}
+										<div
+											className="bg-slate-800 h-fit rounded px-2 py-2 cursor-pointer select-none"
+											onClick={() => removeWord(obj)}
+										>
+											<div className="text-2xl text-center">
+												{obj.word}
+											</div>
+											{!hiToEn && (
+												<div className="text-center text-xs text-slate-300 select-none">
+													{obj?.word_transliterated}
+												</div>
+											)}
 										</div>
 										{!hiToEn && (
-											<div className="text-center text-xs text-slate-300 select-none">
-												{obj?.word_transliterated}
-											</div>
+											<Image
+												className="invert h-4 w-4 mx-auto my-2 opacity-30 hover:opacity-100 cursor-pointer"
+												src="https://cdn-icons-png.flaticon.com/512/59/59284.png"
+												width={0}
+												height={0}
+												alt=""
+												onClick={() => copyText(obj.word)}
+											/>
 										)}
 									</div>
-									{!hiToEn && (
-										<Image
-											className="invert h-4 w-4 mx-auto my-2 opacity-30 hover:opacity-100 cursor-pointer"
-											src="https://cdn-icons-png.flaticon.com/512/9321/9321839.png"
-											width={0}
-											height={0}
-											alt=""
-											onClick={() => copyText(obj.word)}
-										/>
-									)}
-								</div>
-							))}
+								))}
+							</div>
+							<div>
+								<Image
+									className="invert h-6 w-6 mx-auto opacity-30 hover:opacity-100 cursor-pointer"
+									src="https://cdn-icons-png.flaticon.com/512/59/59284.png"
+									width={0}
+									height={0}
+									alt=""
+									onClick={() => speak(answer.map(obj => obj.word).join())}
+								/>
+							</div>
 						</div>
 
 						<div className="flex flex-wrap gap-2">
@@ -268,7 +392,7 @@ export default function HomeComponent() {
 									{!hiToEn && (
 										<Image
 											className="invert h-4 w-4 mx-auto my-2 opacity-30 hover:opacity-100 cursor-pointer"
-											src="https://cdn-icons-png.flaticon.com/512/9321/9321839.png"
+											src="https://cdn-icons-png.flaticon.com/512/59/59284.png"
 											width={0}
 											height={0}
 											alt=""

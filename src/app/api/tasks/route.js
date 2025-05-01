@@ -9,14 +9,17 @@ export async function GET(req) {
 	try {
 		const { searchParams } = new URL(req.url);
 		let difficulty = searchParams.get("difficulty");
+		let id = searchParams.get("id")
 
 		let task
-		if (difficulty === "easy" || !difficulty) {
-			task = await knex("tasks").where("hi_length", "<", 35).select().orderByRaw("RANDOM()").first()
+		if (id) {
+			task = await knex("tasks").where({ id }).first()
+		} else if (difficulty === "easy" || !difficulty) {
+			task = await knex("tasks").where("hi_length", "<", 35).orderByRaw("RANDOM()").first()
 		} else if (difficulty === "medium") {
-			task = await knex("tasks").where("hi_length", "<", 70).select().orderByRaw("RANDOM()").first()
+			task = await knex("tasks").where("hi_length", "<", 70).orderByRaw("RANDOM()").first()
 		} else if (difficulty === "hard") {
-			task = await knex("tasks").where("hi_length", "<", 105).select().orderByRaw("RANDOM()").first()
+			task = await knex("tasks").where("hi_length", "<", 105).orderByRaw("RANDOM()").first()
 		}
 
 		const tokenizer = new natural.AggressiveTokenizer();
@@ -37,7 +40,7 @@ export async function GET(req) {
 		const hi_pronunciation = await knex("pronunciation").whereIn("hi", task.hi?.replace(/[।.,?]/g, "")?.split(" ")).select()
 
 		const ideal = {
-			hi: task.hi,
+			...task,
 			hi_tokens: task.hi
 				?.replace(/[।.,]/g, "")
 				?.split(" ")
@@ -53,7 +56,6 @@ export async function GET(req) {
 						order,
 					};
 				}),
-			en: task.en,
 			en_tokens: tokenizer
 				.tokenize(task.en?.toLowerCase())
 				.map((token, order) => ({
@@ -63,7 +65,7 @@ export async function GET(req) {
 				})),
 		};
 
-		return NextResponse.json({ task: ideal });
+		return NextResponse.json(ideal);
 	} catch (error) {
 		console.error("API Route Error:", error);
 		return NextResponse.json(
