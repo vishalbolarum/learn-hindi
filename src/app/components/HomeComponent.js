@@ -155,7 +155,7 @@ export default function HomeComponent() {
 		if (!hiToEn) {
 			speak(obj.word);
 		}
-		setOptions((prev) => prev.filter((ob) => ob.order !== obj.order));
+		setOptions((prev) => options?.filter((ob) => ob.order !== obj.order));
 		setAnswer((prev) => [...prev, obj]);
 	};
 
@@ -367,7 +367,7 @@ export default function HomeComponent() {
 									width={0}
 									height={0}
 									alt=""
-									onClick={() => speak(answer.map(obj => obj.word).join())}
+									onClick={() => speak(answer.map(obj => obj.word).join(" "))}
 								/>
 							</div>
 						</div>
