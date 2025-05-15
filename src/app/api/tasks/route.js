@@ -8,13 +8,13 @@ import knex from "../_database/knex";
 export async function GET(req) {
 	try {
 		const { searchParams } = new URL(req.url);
-		let difficulty = searchParams.get("difficulty");
+		let difficulty = searchParams.get("difficulty") || "medium";
 		let id = searchParams.get("id")
 
 		let task
 		if (id) {
 			task = await knex("tasks").where({ id }).first()
-		} else if (difficulty === "easy" || !difficulty) {
+		} else if (difficulty === "easy") {
 			task = await knex("tasks").where("hi_length", "<", 35).orderByRaw("RANDOM()").first()
 		} else if (difficulty === "medium") {
 			task = await knex("tasks").where("hi_length", "<", 70).orderByRaw("RANDOM()").first()
