@@ -44,7 +44,7 @@ export async function GET(req) {
 			hi_tokens: task.hi
 				?.replace(/[।.,]/g, "")
 				?.split(" ")
-				.map((token, order) => {
+				.map((token, index) => {
 					const target = hi_pronunciation.find(
 						(obj) => obj.hi === token?.replace(/[?]/g, "")
 					);
@@ -53,9 +53,10 @@ export async function GET(req) {
 						word_transliterated:
 							target?.en_transliteration ||
 							transliterate(token)?.toLowerCase(),
-						order,
+						order: index,
 					};
-				}),
+				})
+				.sort(() => Math.random() - 0.5),
 			en_tokens: tokenizer
 				.tokenize(task.en?.toLowerCase())
 				.map((token, order) => ({
@@ -64,7 +65,6 @@ export async function GET(req) {
 					order,
 				})),
 		};
-
 		return NextResponse.json(ideal);
 	} catch (error) {
 		console.error("API Route Error:", error);
