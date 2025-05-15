@@ -155,7 +155,7 @@ export default function HomeComponent() {
 		if (!hiToEn) {
 			speak(obj.word);
 		}
-		setOptions((prev) => prev?.filter((ob) => ob.order !== obj.order)?.sort(() => Math.random() - 0.5));
+		setOptions((prev) => prev?.filter((ob) => ob.order !== obj.order));
 		setAnswer((prev) => [...prev, obj]);
 	};
 
