@@ -137,7 +137,7 @@ export default function HomeComponent() {
 			if (hiToEn) {
 				setHiToEn(false);
 				setOptions(
-					data.hi_tokens?.sort(() => Math.random() - 0.5)
+					data.hi_tokens?.sort((a, b) => a.random_order - b.random_order)
 				);
 			} else {
 				setHiToEn(true);
@@ -155,7 +155,7 @@ export default function HomeComponent() {
 		if (!hiToEn) {
 			speak(obj.word);
 		}
-		setOptions((prev) => prev?.filter((ob) => ob.order !== obj.order));
+		setOptions((prev) => prev?.filter((ob) => ob.order !== obj.order).sort((a, b) => a.random_order - b.random_order));
 		setAnswer((prev) => [...prev, obj]);
 	};
 
@@ -247,7 +247,7 @@ export default function HomeComponent() {
 				);
 			} else {
 				setOptions(
-					data.hi_tokens?.sort(() => Math.random() - 0.5)
+					data.hi_tokens?.sort((a, b) => a.random_order - b.random_order)
 				);
 			}
 		} catch (err) {

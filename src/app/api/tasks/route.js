@@ -55,8 +55,7 @@ export async function GET(req) {
 							transliterate(token)?.toLowerCase(),
 						order: index,
 					};
-				})
-				.sort(() => Math.random() - 0.5),
+				}),
 			en_tokens: tokenizer
 				.tokenize(task.en?.toLowerCase())
 				.map((token, order) => ({
@@ -65,6 +64,11 @@ export async function GET(req) {
 					order,
 				})),
 		};
+
+		const random_order = Array.from({ length: ideal.hi_tokens.length + 1 }, (_, i) => i).sort(() => Math.random() - 0.5)
+
+		ideal.hi_tokens = ideal.hi_tokens.map((token, index) => ({ ...token, random_order: random_order[index] }))
+
 		return NextResponse.json(ideal);
 	} catch (error) {
 		console.error("API Route Error:", error);
