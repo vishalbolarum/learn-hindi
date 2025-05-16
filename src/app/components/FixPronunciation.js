@@ -24,11 +24,11 @@ export default function FixPronunciation({ close, resetTask }) {
                 <div className="flex gap-2 my-8">
                     <div>
                         <div className="text-slate-400">Hi</div>
-                        <input className="bg-transparent border border-slate-500 px-2 py-1" name="hi" required/>
+                        <input className="bg-transparent border border-slate-500 px-2 py-1" name="hi" type="text" autoComplete="off" required/>
                     </div>
                     <div>
                         <div className="text-slate-400">Pronunciation</div>
-                        <input className="bg-transparent border border-slate-500 px-2 py-1" name="en_transliteration" required/>
+                        <input className="bg-transparent border border-slate-500 px-2 py-1" name="en_transliteration" type="text" autoComplete="off" required/>
                     </div>
                 </div>
                 <div className="flex justify-between gap-4">
