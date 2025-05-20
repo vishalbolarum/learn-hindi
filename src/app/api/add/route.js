@@ -15,10 +15,13 @@ const translateClient = new TranslateClient({
 export async function POST(req) {
   const body = await req.json()
   let en = body.en?.trim()
+  let category = body.category?.trim() || null
+  if (category === "random") category = null
   
   const task = {
     hi: null,
-    en
+    en,
+    category
   };
 
   try {

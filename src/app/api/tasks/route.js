@@ -9,17 +9,20 @@ export async function GET(req) {
 	try {
 		const { searchParams } = new URL(req.url);
 		let difficulty = searchParams.get("difficulty") || "medium";
+		let category = searchParams.get("category");
 		let id = searchParams.get("id")
 
 		let task
+		let query = knex("tasks")
+		if (category && category !== "random") query.where({ category })
 		if (id) {
-			task = await knex("tasks").where({ id }).first()
+			task = await query.where({ id }).first()
 		} else if (difficulty === "easy") {
-			task = await knex("tasks").where("hi_length", "<", 35).orderByRaw("RANDOM()").first()
+			task = await query.where("hi_length", "<", 35).orderByRaw("RANDOM()").first()
 		} else if (difficulty === "medium") {
-			task = await knex("tasks").where("hi_length", "<", 70).orderByRaw("RANDOM()").first()
+			task = await query.where("hi_length", "<", 70).orderByRaw("RANDOM()").first()
 		} else if (difficulty === "hard") {
-			task = await knex("tasks").where("hi_length", "<", 105).orderByRaw("RANDOM()").first()
+			task = await query.where("hi_length", "<", 105).orderByRaw("RANDOM()").first()
 		}
 
 		const tokenizer = new natural.AggressiveTokenizer();

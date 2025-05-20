@@ -5,6 +5,7 @@ import axios from "axios";
 import { useSearchParams, useRouter, usePathname } from "next/navigation";
 import FixPronunciation from "./FixPronunciation"
 import AddSentence from "./AddSentence"
+import categories from "./categories.json"
 
 export default function HomeComponent() {
 	const pathname = usePathname();
@@ -131,6 +132,7 @@ export default function HomeComponent() {
 				url: "/api/tasks",
 				params: {
 					difficulty: searchParams.get("difficulty"),
+					category: searchParams.get("category")
 				},
 			});
 			setTask(data);
@@ -257,10 +259,16 @@ export default function HomeComponent() {
 
 	useEffect(() => {
 		fetchTask();
-	}, []);
+	}, [searchParams]);
 
 	return (
-		<main className="px-4 min-h-screen">
+		<main className="min-h-screen flex">
+			<div className="w-48 border-r py-8 border-slate-800 bg-slate-950">
+				{categories.map((category, i) => (
+					<div className="w-full px-4 py-2 capitalize cursor-pointer border-b border-slate-800 hover:bg-slate-800" key={i} onClick={() => router.push(pathname + `?category=${category}`)}>{category}</div>
+				))}
+			</div>
+			<div className="px-8 w-full">
 			{showFixPronunciation && <FixPronunciation close={() => toggleFixPronunciation(false)} resetTask={resetTask}/>}
 			{showAddSentence && <AddSentence close={() => toggleAddSentence(false)}/>}
 			<div className="py-6 flex justify-between">
@@ -404,8 +412,8 @@ export default function HomeComponent() {
 					</div>
 				)}
 
-				<div className="flex justify-between mt-32 fixed bottom-0 left-0 p-4 w-full">
-					<button className="bg-red-700 p-2 rounded-lg" type="button">Skip</button>
+				<div className="flex justify-end mt-32 fixed bottom-0 left-0 p-4 w-full">
+					{/* <button className="bg-red-700 p-2 rounded-lg" type="button"></button> */}
 					<button
 						className="bg-green-700 p-2 rounded-lg"
 						type="submit"
@@ -414,6 +422,7 @@ export default function HomeComponent() {
 					</button>
 				</div>
 			</form>
+			</div>
 		</main>
 	);
 }
