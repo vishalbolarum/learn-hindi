@@ -48,7 +48,7 @@ export default function AddSentence({ close }) {
             <select className="w-full border border-slate-500 h-8" name="category">
               <option value=""></option>
               {categories.map((category, i) => (
-                <option key={i} value={category}>{category}</option>
+                <option key={i} value={category.name}>{category.name}</option>
               ))}
             </select>
           </div>
