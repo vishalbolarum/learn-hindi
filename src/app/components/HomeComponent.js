@@ -5,6 +5,7 @@ import axios from "axios";
 import { useSearchParams, useRouter, usePathname } from "next/navigation";
 import FixPronunciation from "./FixPronunciation"
 import AddSentence from "./AddSentence"
+import TimeTracking from "./TimeTracking"
 import categories from "./categories.json"
 
 export default function HomeComponent() {
@@ -112,15 +113,16 @@ export default function HomeComponent() {
 
 	const [showFixPronunciation, toggleFixPronunciation] = useState()
 	const [showAddSentence, toggleAddSentence] = useState()
+	const [showTimeTracking, toggleTimeTracking] = useState()
 
 	const speak = (message) => {
-		if (typeof window !== "undefined" && "speechSynthesis" in window) {
-			const utterance = new SpeechSynthesisUtterance(message);
-			utterance.lang = "hi-IN";
-			window.speechSynthesis.speak(utterance);
-		} else {
-			console.error("Speech Synthesis not supported in this browser.");
-		}
+		// if (typeof window !== "undefined" && "speechSynthesis" in window) {
+		// 	const utterance = new SpeechSynthesisUtterance(message);
+		// 	utterance.lang = "hi-IN";
+		// 	window.speechSynthesis.speak(utterance);
+		// } else {
+		// 	console.error("Speech Synthesis not supported in this browser.");
+		// }
 	};
 
 	const fetchTask = async () => {
@@ -274,6 +276,7 @@ export default function HomeComponent() {
 			<div className="px-8 w-full">
 			{showFixPronunciation && <FixPronunciation close={() => toggleFixPronunciation(false)} resetTask={resetTask}/>}
 			{showAddSentence && <AddSentence close={() => toggleAddSentence(false)}/>}
+			{showTimeTracking && <TimeTracking close={() => toggleTimeTracking(false)}/>}
 			<div className="py-6 flex justify-between">
 				<div>
 					<h1 className="my-2 text-5xl">Learn Hindi</h1>
@@ -282,6 +285,7 @@ export default function HomeComponent() {
 						</div>
 				</div>
 				<div className="flex gap-2">
+					<Image className="invert w-4 h-4 my-2 cursor-pointer hover:opacity-80" src="https://cdn-icons-png.flaticon.com/512/15339/15339188.png" onClick={() => toggleTimeTracking(true)} width={0} height={0} alt=""/>
 					<button className="bg-slate-800 h-fit px-2 py-1 rounded" onClick={() => toggleFixPronunciation(true)}>Fix Pronunciation</button>
 					<button className="bg-slate-600 h-fit px-2 py-1 rounded" onClick={() => toggleAddSentence(true)}>Add Sentence</button>
 				</div>
