@@ -116,13 +116,13 @@ export default function HomeComponent() {
 	const [showTimeTracking, toggleTimeTracking] = useState()
 
 	const speak = (message) => {
-		// if (typeof window !== "undefined" && "speechSynthesis" in window) {
-		// 	const utterance = new SpeechSynthesisUtterance(message);
-		// 	utterance.lang = "hi-IN";
-		// 	window.speechSynthesis.speak(utterance);
-		// } else {
-		// 	console.error("Speech Synthesis not supported in this browser.");
-		// }
+		if (typeof window !== "undefined" && "speechSynthesis" in window) {
+			const utterance = new SpeechSynthesisUtterance(message);
+			utterance.lang = "hi-IN";
+			window.speechSynthesis.speak(utterance);
+		} else {
+			console.error("Speech Synthesis not supported in this browser.");
+		}
 	};
 
 	const fetchTask = async () => {
