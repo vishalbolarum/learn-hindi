@@ -1,6 +1,9 @@
 import axios from "axios"
+import React from "react"
 
 export default function FixPronunciation({ close, resetTask }) {
+
+    const formRef = React.useRef(null)
 
     const handleSubmit = async e => {
         e.preventDefault()
@@ -11,6 +14,7 @@ export default function FixPronunciation({ close, resetTask }) {
                 data: Object.fromEntries(new FormData(e.target))
             })
             await resetTask()
+            formRef.current?.reset();
             close()
         } catch (err) {
             alert(err?.message, err?.response?.data)
@@ -19,7 +23,7 @@ export default function FixPronunciation({ close, resetTask }) {
 
     return (
         <div className="fixed left-0 top-0 h-screen w-screen backdrop-blur bg-white/20 flex items-center justify-center z-10">
-            <form className="bg-black p-4" onSubmit={handleSubmit}>
+            <form className="bg-black p-4" onSubmit={handleSubmit} ref={formRef}>
                 <h2 className="text-2xl">Fix Pronunciation</h2>
                 <div className="flex gap-2 my-8">
                     <div>

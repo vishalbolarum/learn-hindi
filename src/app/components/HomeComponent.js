@@ -298,7 +298,7 @@ export default function HomeComponent() {
 					<div className="text-3xl">
 						{task?.hi_tokens?.sort((a, b) => a.order - b.order)?.map((obj) => (
 							<div
-								className="inline-block mr-4"
+								className="inline-block mr-2"
 								key={obj.order}
 								onClick={() => copyTranslateSpeak(obj)}
 							>
