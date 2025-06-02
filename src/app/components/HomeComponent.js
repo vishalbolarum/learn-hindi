@@ -7,6 +7,7 @@ import FixPronunciation from "./FixPronunciation"
 import AddSentence from "./AddSentence"
 import TimeTracking from "./TimeTracking"
 import categories from "./categories.json"
+import stop_words from "./stop_words.json"
 
 export default function HomeComponent() {
 	const pathname = usePathname();
@@ -171,33 +172,31 @@ export default function HomeComponent() {
 	const check = (e) => {
 		e.preventDefault();
 		const formData = Object.fromEntries(new FormData(e.target));
+		let actual_answer = task[hiToEn ? "en_tokens" : "hi_tokens"]
+				.sort((a, b) => a.order - b.order)
+				.map((obj) => obj.word)
+				.filter(word => !stop_words.includes(word))
+				.join(" ");
 		if (hiToEn) {
 			let user_answer = formData.user_answer
 				?.replace(/[।.,?]/g, "")
 				?.replace(/\s+/g, " ")
 				?.toLowerCase()
-				?.trim();
-			let actual_answer = task[hiToEn ? "en_tokens" : "hi_tokens"]
-				.sort((a, b) => a.order - b.order)
-				.map((obj) => obj.word)
-				.join(" ");
+				?.trim()
+				?.split(" ")
+				?.filter(word => !stop_words.includes(word))
+				?.join(" ");
 			if (user_answer === actual_answer) {
 				alert("Correct!");
 				formRef.current.reset();
 				fetchTask();
 			} else {
 				alert(
-					`Wrong! Correct answer is:\n${task.en_tokens
-						.map((token) => token.word)
-						.join(" ")}`
+					`Wrong! Correct answer is:\n${task.en}`
 				);
 			}
 		} else {
 			let user_answer = answer.map((obj) => obj.word).join(" ");
-			let actual_answer = task[hiToEn ? "en_tokens" : "hi_tokens"]
-				.sort((a, b) => a.order - b.order)
-				.map((obj) => obj.word)
-				.join(" ");
 			if (user_answer === actual_answer) {
 				alert("Correct!");
 				fetchTask();
