@@ -120,6 +120,7 @@ export default function HomeComponent() {
 		if (typeof window !== "undefined" && "speechSynthesis" in window) {
 			const utterance = new SpeechSynthesisUtterance(message);
 			utterance.lang = "hi-IN";
+			window.speechSynthesis.cancel()
 			window.speechSynthesis.speak(utterance);
 		} else {
 			console.error("Speech Synthesis not supported in this browser.");
