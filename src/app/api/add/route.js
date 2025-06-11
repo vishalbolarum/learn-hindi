@@ -14,27 +14,26 @@ const translateClient = new TranslateClient({
 
 export async function POST(req) {
   const body = await req.json()
+  let hi = body.hi?.trim()
   let en = body.en?.trim()
-  let category = body.category?.trim() || null
-  if (category === "random") category = null
   
   const task = {
-    hi: null,
+    hi,
     en,
-    category
+    hi_length: hi.length
   };
 
   try {
-    const response = await translateClient.send(new TranslateTextCommand({
-      Text: task.en,
-      SourceLanguageCode: "en",
-      TargetLanguageCode: "hi"
-  }))
+  //   const response = await translateClient.send(new TranslateTextCommand({
+  //     Text: task.en,
+  //     SourceLanguageCode: "en",
+  //     TargetLanguageCode: "hi"
+  // }))
 
-    task.hi = response?.TranslatedText?.trim()
-    task.hi_length = response?.TranslatedText?.trim()?.length
+  //   task.hi = response?.TranslatedText?.trim()
+  //   task.hi_length = response?.TranslatedText?.trim()?.length
     if (task.hi) {
-      await knex("tasks").insert(task).onConflict().ignore()
+      await knex("tasks").insert(task).onConflict("hi").merge(["en"])
     }
   } catch (err) {
     console.log(err?.response)

@@ -1,10 +1,9 @@
 import axios from "axios";
-import categories from "./categories.json";
 
-export default function AddSentence({ close }) {
+export default function AddSentence({ close, resetTask }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const { en, category } = Object.fromEntries(new FormData(e.target));
+    const { en, hi } = Object.fromEntries(new FormData(e.target));
     try {
       if (![".", "?"].includes(en?.trim()?.slice(-1)))
         throw new Error(
@@ -19,9 +18,10 @@ export default function AddSentence({ close }) {
         url: "/api/add",
         data: {
           en,
-          category,
+          hi,
         },
       });
+      await resetTask()
       close();
     } catch (err) {
       alert(err?.message, err?.response?.data);
@@ -34,6 +34,16 @@ export default function AddSentence({ close }) {
         <h2 className="text-2xl">Add Sentence</h2>
         <div className="my-8">
           <div className="my-4">
+            <div className="text-slate-400 my-1">Hindi</div>
+            <input
+              className="bg-transparent border border-slate-500 px-2 py-1 w-full"
+              name="hi"
+              autoComplete="off"
+              minLength={3}
+              required
+            />
+          </div>
+          <div className="my-4">
             <div className="text-slate-400 my-1">English</div>
             <input
               className="bg-transparent border border-slate-500 px-2 py-1 w-full"
@@ -42,15 +52,6 @@ export default function AddSentence({ close }) {
               minLength={3}
               required
             />
-          </div>
-          <div className="my-4">
-            <div className="text-slate-400 my-1">Category</div>
-            <select className="w-full border border-slate-500 h-8" name="category">
-              <option value=""></option>
-              {categories.map((category, i) => (
-                <option key={i} value={category.name}>{category.name}</option>
-              ))}
-            </select>
           </div>
         </div>
 

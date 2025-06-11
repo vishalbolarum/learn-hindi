@@ -9,12 +9,10 @@ export async function GET(req) {
 	try {
 		const { searchParams } = new URL(req.url);
 		let difficulty = searchParams.get("difficulty") || "medium";
-		let category = searchParams.get("category");
 		let id = searchParams.get("id")
 
 		let task
 		let query = knex("tasks")
-		if (category && category !== "random") query.where({ category })
 		if (id) {
 			task = await query.where({ id }).first()
 		} else if (difficulty === "easy") {

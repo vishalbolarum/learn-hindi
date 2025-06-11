@@ -6,7 +6,6 @@ import { useSearchParams, useRouter, usePathname } from "next/navigation";
 import FixPronunciation from "./FixPronunciation"
 import AddSentence from "./AddSentence"
 import TimeTracking from "./TimeTracking"
-import categories from "./categories.json"
 import stop_words from "./stop_words.json"
 
 export default function HomeComponent() {
@@ -264,18 +263,10 @@ export default function HomeComponent() {
 	}, [searchParams]);
 
 	return (
-		<main className="min-h-screen flex">
-			<div className="w-48 border-r py-8 border-zinc-800 bg-zinc-950">
-				{categories.map((category, i) => (
-					<div className={`w-full px-4 py-2 flex gap-2 cursor-pointer border-b border-slate-800 hover:bg-slate-800 ${searchParams.get("category") === category.name ? "bg-blue-800" : ""} ${(!searchParams.get("category") && category.name === "random") ? "bg-blue-800" : ""}`} key={i} onClick={() => router.push(pathname + `?category=${category.name}`)}>
-						<Image className="invert w-4 h-4 my-0.5" src={category.icon} alt="" width={0} height={0}/>
-						<div className="capitalize">{category.name}</div>
-					</div>
-				))}
-			</div>
+		<main>
 			<div className="px-8 w-full">
 			{showFixPronunciation && <FixPronunciation close={() => toggleFixPronunciation(false)} resetTask={resetTask}/>}
-			{showAddSentence && <AddSentence close={() => toggleAddSentence(false)}/>}
+			{showAddSentence && <AddSentence close={() => toggleAddSentence(false)} resetTask={resetTask}/>}
 			{showTimeTracking && <TimeTracking close={() => toggleTimeTracking(false)}/>}
 			<div className="py-6 flex justify-between">
 				<div>
@@ -314,7 +305,7 @@ export default function HomeComponent() {
 					</div>
 					<div
 						className="bg-slate-700 w-fit h-fit p-4 rounded-lg cursor-pointer active:bg-slate-800"
-						onClick={() => speak(task.hi)}
+						onClick={() => {copyText(task.hi);speak(task.hi)}}
 					>
 						<Image
 							className="w-6 h-6 invert"
