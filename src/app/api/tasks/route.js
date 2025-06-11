@@ -54,6 +54,7 @@ export async function GET(req) {
 						word_transliterated:
 							target?.en_transliteration ||
 							transliterate(token)?.toLowerCase(),
+						verified_pronunciation: target ? true : false,
 						order: index,
 					};
 				}),

@@ -294,7 +294,7 @@ export default function HomeComponent() {
 								onClick={() => copyTranslateSpeak(obj)}
 							>
 								<div>{obj?.word}</div>
-								<div className="text-sm text-slate-400 text-center select-none">
+								<div className={`${obj.verified_pronunciation ? "text-slate-400" : "text-sky-400"} select-none text-center text-sm`}>
 									{obj?.word_transliterated}
 								</div>
 								<div className="text-sm my-2 text-center select-none text-green-500">
@@ -348,7 +348,7 @@ export default function HomeComponent() {
 												{obj.word}
 											</div>
 											{!hiToEn && (
-												<div className="text-center text-xs text-slate-300 select-none">
+												<div className={`${obj.verified_pronunciation ? "text-slate-400" : "text-sky-400"} text-center text-xs`}>
 													{obj?.word_transliterated}
 												</div>
 											)}
@@ -389,7 +389,7 @@ export default function HomeComponent() {
 											{obj.word}
 										</div>
 										{!hiToEn && (
-											<div className="text-center text-xs text-slate-300">
+											<div className={`${obj.verified_pronunciation ? "text-slate-400" : "text-sky-400"} text-center text-xs`}>
 												{obj?.word_transliterated}
 											</div>
 										)}
