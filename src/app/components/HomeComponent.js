@@ -266,7 +266,7 @@ export default function HomeComponent() {
 		<main>
 			<div className="px-8 w-full">
 			{showFixPronunciation && <FixPronunciation close={() => toggleFixPronunciation(false)} resetTask={resetTask}/>}
-			{showAddSentence && <AddSentence close={() => toggleAddSentence(false)} resetTask={resetTask}/>}
+			{showAddSentence && <AddSentence close={() => toggleAddSentence(false)} resetTask={resetTask} task={task}/>}
 			{showTimeTracking && <TimeTracking close={() => toggleTimeTracking(false)}/>}
 			<div className="py-6 flex justify-between">
 				<div>
@@ -322,7 +322,7 @@ export default function HomeComponent() {
 
 			<form ref={formRef} onSubmit={check}>
 				{hiToEn && (
-					<div className="my-8">
+					<div className="my-4">
 						<input
 							className="bg-transparent border border-slate-500 w-full p-2"
 							name="user_answer"

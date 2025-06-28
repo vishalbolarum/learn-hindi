@@ -14,6 +14,7 @@ const translateClient = new TranslateClient({
 
 export async function POST(req) {
   const body = await req.json()
+  let id = Number(body?.id) || null
   let hi = body.hi?.trim()
   let en = body.en?.trim()
   
@@ -32,7 +33,9 @@ export async function POST(req) {
 
   //   task.hi = response?.TranslatedText?.trim()
   //   task.hi_length = response?.TranslatedText?.trim()?.length
-    if (task.hi) {
+    if (task.id) {
+      await knex("tasks").where({ id }).update(task)
+    } else {
       await knex("tasks").insert(task).onConflict("hi").merge(["en"])
     }
   } catch (err) {
