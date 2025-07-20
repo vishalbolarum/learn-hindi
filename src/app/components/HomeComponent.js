@@ -414,7 +414,7 @@ export default function HomeComponent() {
 				<div className="flex justify-end mt-32 fixed bottom-0 left-0 p-4 w-full">
 					{/* <button className="bg-red-700 p-2 rounded-lg" type="button"></button> */}
 					<button
-						className="bg-green-700 p-2 rounded-lg"
+						className="bg-slate-500 p-2 rounded-lg"
 						type="submit"
 					>
 						Check

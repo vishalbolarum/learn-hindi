@@ -1,5 +1,4 @@
 "use client"
-import { useEffect } from "react"
 
 export default function SuccessMessage({ close, fetchTask }) {
 
@@ -8,22 +7,13 @@ export default function SuccessMessage({ close, fetchTask }) {
         fetchTask()
     }
 
-    useEffect(() => {
-        const handleKey = (e) => {
-            if (e.key === 'Enter') nextTask();
-        };
-        window?.addEventListener("keydown", handleKey);
-        return () => window?.removeEventListener("keydown", handleKey);
-    }, []);
-
     return (
-        <div className="fixed left-0 top-0 h-screen w-screen backdrop-blur bg-white/20 flex items-center justify-center z-10">
-            <div className="bg-black p-4 min-w-96">
+        <div className="flex bg-[green] justify-end mt-32 fixed bottom-0 left-0 p-4 w-full z-10">
+            <div className="bg-[green] w-full">
                 <h2 className="text-2xl">Correct!</h2>
                 <div className="py-4"></div>
-                <div className="flex justify-between gap-4">
-                    <button className="px-2 py-1 border border-slate-500 h-fit rounded" onClick={close}>Close</button>
-                    <button className="px-2 py-1 bg-slate-700 h-fit rounded" onClick={nextTask}>Next</button>
+                <div className="flex justify-end gap-4">
+                    <button className="p-2 bg-slate-700 h-fit rounded-lg" onClick={nextTask}>Next</button>
                 </div>
             </div>
         </div>
