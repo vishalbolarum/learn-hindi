@@ -6,6 +6,7 @@ import { useSearchParams, useRouter, usePathname } from "next/navigation";
 import FixPronunciation from "./FixPronunciation"
 import AddSentence from "./AddSentence"
 import TimeTracking from "./TimeTracking"
+import SuccessMessage from "./SuccessMessage"
 import stop_words from "./stop_words.json"
 
 export default function HomeComponent() {
@@ -114,6 +115,7 @@ export default function HomeComponent() {
 	const [showFixPronunciation, toggleFixPronunciation] = useState()
 	const [showAddSentence, toggleAddSentence] = useState()
 	const [showTimeTracking, toggleTimeTracking] = useState()
+	const [showSuccessMessage, toggleSuccessMessage] = useState()
 
 	const speak = (message) => {
 		if (typeof window !== "undefined" && "speechSynthesis" in window) {
@@ -188,9 +190,7 @@ export default function HomeComponent() {
 				?.filter(word => !stop_words.includes(word))
 				?.join(" ");
 			if (user_answer === actual_answer) {
-				alert("Correct!");
-				formRef.current.reset();
-				fetchTask();
+				toggleSuccessMessage(true)
 			} else {
 				alert(
 					`Wrong! Correct answer is:\n${task.en}`
@@ -199,8 +199,7 @@ export default function HomeComponent() {
 		} else {
 			let user_answer = answer.map((obj) => obj.word).join(" ");
 			if (user_answer === actual_answer) {
-				alert("Correct!");
-				fetchTask();
+				toggleSuccessMessage(true)
 			} else {
 				alert(
 					`Wrong! Correct answer is:\n${task.hi_tokens
@@ -269,6 +268,7 @@ export default function HomeComponent() {
 			{showFixPronunciation && <FixPronunciation close={() => toggleFixPronunciation(false)} resetTask={resetTask}/>}
 			{showAddSentence && <AddSentence close={() => toggleAddSentence(false)} resetTask={resetTask} task={task}/>}
 			{showTimeTracking && <TimeTracking close={() => toggleTimeTracking(false)}/>}
+			{showSuccessMessage && <SuccessMessage close={() => toggleSuccessMessage(false)} fetchTask={fetchTask} />}
 			<div className="py-6 flex justify-between">
 				<div>
 					<h1 className="my-2 text-5xl">Learn Hindi</h1>
