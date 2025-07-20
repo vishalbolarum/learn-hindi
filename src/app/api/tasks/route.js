@@ -61,9 +61,8 @@ export async function GET(req) {
 			en_tokens: tokenizer
 				.tokenize(task.en?.toLowerCase())
 				.map((token, order) => ({
-					word: token,
-					word_transliterated: transliterate(token)?.toLowerCase(),
-					order,
+					word: token?.replace(/-/g, " "),
+					order
 				})),
 		};
 

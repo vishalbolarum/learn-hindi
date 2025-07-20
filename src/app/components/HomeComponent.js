@@ -180,6 +180,7 @@ export default function HomeComponent() {
 		if (hiToEn) {
 			let user_answer = formData.user_answer
 				?.replace(/[।.,?]/g, "")
+				?.replace(/-/g, " ")
 				?.replace(/\s+/g, " ")
 				?.toLowerCase()
 				?.trim()
