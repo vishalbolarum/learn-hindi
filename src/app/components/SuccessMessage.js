@@ -1,4 +1,5 @@
-
+"use client"
+import { useEffect } from "react"
 
 export default function SuccessMessage({ close, fetchTask }) {
 
@@ -7,8 +8,16 @@ export default function SuccessMessage({ close, fetchTask }) {
         fetchTask()
     }
 
+    useEffect(() => {
+        const handleKey = (e) => {
+            if (e.key === 'Enter') nextTask();
+        };
+        window?.addEventListener("keydown", handleKey);
+        return () => window?.removeEventListener("keydown", handleKey);
+    }, []);
+
     return (
-        <div className="fixed left-0 top-0 h-screen w-screen backdrop-blur bg-white/20 flex items-center justify-center z-10" onKeyDown={e => e.key === "Enter" ? nextTask() : ""}>
+        <div className="fixed left-0 top-0 h-screen w-screen backdrop-blur bg-white/20 flex items-center justify-center z-10">
             <div className="bg-black p-4 min-w-96">
                 <h2 className="text-2xl">Correct!</h2>
                 <div className="py-4"></div>
