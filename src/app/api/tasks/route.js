@@ -66,9 +66,11 @@ export async function GET(req) {
 				})),
 		};
 
-		const random_order = Array.from({ length: ideal.hi_tokens.length + 1 }, (_, i) => i).sort(() => Math.random() - 0.5)
+		const random_order_hi = Array.from({ length: ideal.hi_tokens.length + 1 }, (_, i) => i).sort(() => Math.random() - 0.5)
+		ideal.hi_tokens = ideal.hi_tokens.map((token, index) => ({ ...token, random_order: random_order_hi[index] }))
 
-		ideal.hi_tokens = ideal.hi_tokens.map((token, index) => ({ ...token, random_order: random_order[index] }))
+		const random_order_en = Array.from({ length: ideal.en_tokens.length + 1 }, (_, i) => i).sort(() => Math.random() - 0.5)
+		ideal.en_tokens = ideal.en_tokens.map((token, index) => ({ ...token, random_order: random_order_en[index] }))
 
 		return NextResponse.json(ideal);
 	} catch (error) {
