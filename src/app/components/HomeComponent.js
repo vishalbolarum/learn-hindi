@@ -226,7 +226,7 @@ export default function HomeComponent() {
 			setTask(data);
 			if (hiToEn) {
 				setOptions(
-					data.en_tokens?.sort(() => Math.random() - 0.5)
+					data.en_tokens?.sort((a, b) => a.random_order - b.random_order)
 				);
 			} else {
 				setOptions(
