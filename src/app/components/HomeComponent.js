@@ -253,7 +253,7 @@ export default function HomeComponent() {
 				<div>
 					<h1 className="my-2 text-5xl">Learn Hindi</h1>
 						<div className="my-2 text-slate-400">
-							Translate this Hindi sentence into English.
+							{hiToEn ? "Translate this Hindi sentence into English." : "Translate this English sentence into Hindi."} {task?.google_verified && <span className="text-green-400">✔</span>}
 						</div>
 				</div>
 				<div className="flex gap-2">
