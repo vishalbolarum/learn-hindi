@@ -38,23 +38,29 @@ export async function GET(req) {
 		//     // Ensure response is valid JSON
 		// const task = JSON.parse(aiResponse?.replace(/```json|```/g, ''));
 
-		const hi_pronunciation = await knex("pronunciation").whereIn("hi", task.hi?.replace(/[।.,?]/g, "")?.split(" ")).select()
+		const hi_pronunciation = await knex("pronunciation").whereIn("hi", task.hi?.replace(/[।.,?]/g, "")?.replace(/-/g, " ")?.replace(/\s+/g, " ")?.trim()?.split(" ")).select()
 
 		const ideal = {
 			...task,
 			hi_tokens: task.hi
-				?.replace(/[।.,]/g, "")
+				?.replace(/[.,]/g, "")
+				?.replace(/\s+/g, " ")
+				?.trim()
 				?.split(" ")
 				.map((token, index) => {
-					const target = hi_pronunciation.find(
-						(obj) => obj.hi === token?.replace(/[?]/g, "")
-					);
+					let pronunciation
+					let parts = token?.replace(/[।?]/g, "")?.split("-")
+					for (const part of parts) {
+						const match = hi_pronunciation.find(obj => obj.hi === part)?.en_transliteration
+						if (match && !pronunciation) pronunciation = match
+						else if (match) pronunciation += `-${match}`
+					}
 					return {
 						word: token,
 						word_transliterated:
-							target?.en_transliteration ||
+							pronunciation ||
 							transliterate(token)?.toLowerCase(),
-						verified_pronunciation: target ? true : false,
+						verified_pronunciation: !!pronunciation,
 						order: index,
 					};
 				}),
