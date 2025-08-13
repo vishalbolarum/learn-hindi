@@ -12,7 +12,7 @@ export async function GET(req) {
 		let id = searchParams.get("id")
 
 		let task
-		let query = knex("tasks")
+		let query = knex("tasks").whereNotNull("en")
 		if (id) {
 			task = await query.where({ id }).first()
 		} else if (difficulty === "easy") {
