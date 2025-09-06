@@ -4,7 +4,7 @@ import { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import { useSearchParams, useRouter, usePathname } from "next/navigation";
 import FixPronunciation from "./FixPronunciation"
-import AddSentence from "./AddSentence"
+import FixSentence from "./FixSentence"
 import TimeTracking from "./TimeTracking"
 import SuccessMessage from "./SuccessMessage"
 import stop_words from "./stop_words.json"
@@ -113,7 +113,7 @@ export default function HomeComponent() {
 	const [hiToEn, setHiToEn] = useState(false);
 
 	const [showFixPronunciation, toggleFixPronunciation] = useState()
-	const [showAddSentence, toggleAddSentence] = useState()
+	const [showFixSentence, toggleFixSentence] = useState()
 	const [showTimeTracking, toggleTimeTracking] = useState()
 	const [showSuccessMessage, toggleSuccessMessage] = useState()
 
@@ -246,7 +246,7 @@ export default function HomeComponent() {
 		<main>
 			<div className="px-8 w-full">
 			{showFixPronunciation && <FixPronunciation close={() => toggleFixPronunciation(false)} resetTask={resetTask}/>}
-			{showAddSentence && <AddSentence close={() => toggleAddSentence(false)} resetTask={resetTask} task={task}/>}
+			{showFixSentence && <FixSentence close={() => toggleFixSentence(false)} resetTask={resetTask} task={task}/>}
 			{showTimeTracking && <TimeTracking close={() => toggleTimeTracking(false)}/>}
 			{showSuccessMessage && <SuccessMessage close={() => toggleSuccessMessage(false)} fetchTask={fetchTask} />}
 			<div className="py-6 flex justify-between">
@@ -259,7 +259,7 @@ export default function HomeComponent() {
 				<div className="flex gap-2">
 					<Image className="invert w-4 h-4 my-2 cursor-pointer hover:opacity-80" src="https://cdn-icons-png.flaticon.com/512/15339/15339188.png" onClick={() => toggleTimeTracking(true)} width={0} height={0} alt=""/>
 					<button className="bg-slate-800 h-fit px-2 py-1 rounded" onClick={() => toggleFixPronunciation(true)}>Fix Pronunciation</button>
-					<button className="bg-slate-600 h-fit px-2 py-1 rounded" onClick={() => toggleAddSentence(true)}>Add Sentence</button>
+					<button className="bg-slate-600 h-fit px-2 py-1 rounded" onClick={() => toggleFixSentence(true)}>Fix Sentence</button>
 				</div>
 			</div>
 
