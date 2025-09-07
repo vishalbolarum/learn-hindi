@@ -35,9 +35,9 @@ export async function POST(req) {
   //   task.hi = response?.TranslatedText?.trim()
   //   task.hi_length = response?.TranslatedText?.trim()?.length
     if (id) {
-      await knex("tasks").where({ id }).update(task)
+      await knex("sentences").where({ id }).update(task)
     } else {
-      await knex("tasks").insert(task).onConflict("hi").merge(["en"])
+      await knex("sentences").insert(task).onConflict("hi").merge(["en"])
     }
   } catch (err) {
     console.log(err?.response)
