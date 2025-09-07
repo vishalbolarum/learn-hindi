@@ -5,8 +5,8 @@ export default function FixSentence({ close, resetTask, task }) {
 
   const [loading, setLoading] = useState(false)
   const [defaultValues, setDefaultValues] = useState({
-    hi: task.en,
-    en: task.hi
+    hi: task.hi,
+    en: task.en
   })
 
   const handleSubmit = async (e) => {
