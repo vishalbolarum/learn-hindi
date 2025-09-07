@@ -6,7 +6,7 @@ export async function POST(req) {
     let { hi, en_transliteration } = body
     hi = hi?.trim()
     en_transliteration = en_transliteration?.trim()?.toLowerCase()
-    await knex("pronunciation").insert({ hi, en_transliteration }).onConflict().ignore()
+    await knex("words").insert({ hi, en_transliteration }).onConflict().ignore()
     return NextResponse.json({
       hi,
       en_transliteration

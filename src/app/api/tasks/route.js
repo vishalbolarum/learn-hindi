@@ -38,7 +38,7 @@ export async function GET(req) {
 		//     // Ensure response is valid JSON
 		// const task = JSON.parse(aiResponse?.replace(/```json|```/g, ''));
 
-		const hi_pronunciation = await knex("pronunciation").whereIn("hi", task.hi?.replace(/[।.,?]/g, "")?.replace(/-/g, " ")?.replace(/\s+/g, " ")?.trim()?.split(" ")).select()
+		const hi_pronunciation = await knex("words").whereIn("hi", task.hi?.replace(/[।.,?]/g, "")?.replace(/-/g, " ")?.replace(/\s+/g, " ")?.trim()?.split(" ")).select()
 
 		const ideal = {
 			...task,
