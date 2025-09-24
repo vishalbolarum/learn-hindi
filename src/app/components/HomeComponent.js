@@ -122,7 +122,7 @@ export default function HomeComponent() {
 			const utterance = new SpeechSynthesisUtterance(message);
 			utterance.lang = "hi-IN";
 			window.speechSynthesis.cancel()
-			// window.speechSynthesis.speak(utterance);
+			window.speechSynthesis.speak(utterance);
 		} else {
 			console.error("Speech Synthesis not supported in this browser.");
 		}
