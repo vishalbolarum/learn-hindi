@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import { useSearchParams, useRouter, usePathname } from "next/navigation";
@@ -8,6 +7,7 @@ import FixSentence from "./FixSentence"
 import TimeTracking from "./TimeTracking"
 import SuccessMessage from "./SuccessMessage"
 import stop_words from "./stop_words.json"
+import { Volume2 } from "lucide-react";
 
 export default function HomeComponent() {
 	const pathname = usePathname();
@@ -122,7 +122,7 @@ export default function HomeComponent() {
 			const utterance = new SpeechSynthesisUtterance(message);
 			utterance.lang = "hi-IN";
 			window.speechSynthesis.cancel()
-			window.speechSynthesis.speak(utterance);
+			// window.speechSynthesis.speak(utterance);
 		} else {
 			console.error("Speech Synthesis not supported in this browser.");
 		}
@@ -244,164 +244,153 @@ export default function HomeComponent() {
 
 	return (
 		<main>
-			<div className="px-8 w-full">
 			{showFixPronunciation && <FixPronunciation close={() => toggleFixPronunciation(false)} resetTask={resetTask}/>}
 			{showFixSentence && <FixSentence close={() => toggleFixSentence(false)} resetTask={resetTask} task={task}/>}
 			{showTimeTracking && <TimeTracking close={() => toggleTimeTracking(false)}/>}
 			{showSuccessMessage && <SuccessMessage close={() => toggleSuccessMessage(false)} fetchTask={fetchTask} />}
-			<div className="py-6 flex justify-between">
-				<div>
-					<h1 className="my-2 text-5xl">Learn Hindi</h1>
-						<div className="my-2 text-slate-400">
-							{hiToEn ? "Translate this Hindi sentence into English." : "Translate this English sentence into Hindi."} {task?.google_verified && <span className="text-green-400">✔</span>}
+			<div className="min-h-screen w-full">
+				<div className="px-4">
+					<div className="py-4 flex justify-between">
+						<div>
+							<h1 className="my-2 text-3xl">Learn Hindi</h1>
+								<div className="my-2 text-slate-400">
+									{hiToEn ? "Translate this Hindi sentence into English." : "Translate this English sentence into Hindi."} {task?.google_verified && <span className="text-green-400">✔</span>}
+								</div>
 						</div>
-				</div>
-				<div className="flex gap-2">
-					<Image className="invert w-4 h-4 my-2 cursor-pointer hover:opacity-80" src="https://cdn-icons-png.flaticon.com/512/15339/15339188.png" onClick={() => toggleTimeTracking(true)} width={0} height={0} alt=""/>
-					<button className="bg-slate-800 h-fit px-2 py-1 rounded" onClick={() => toggleFixPronunciation(true)}>Fix Pronunciation</button>
-					<button className="bg-slate-600 h-fit px-2 py-1 rounded" onClick={() => toggleFixSentence(true)}>Fix Sentence</button>
-				</div>
-			</div>
-
-			<div className="py-2"></div>
-
-			{hiToEn ? (
-				<div className="flex gap-4">
-					<div className="text-3xl">
-						{task?.hi_tokens?.sort((a, b) => a.order - b.order)?.map((obj) => (
-							<div
-								className="inline-block mr-2"
-								key={obj.order}
-								onClick={() => copyTranslateSpeak(obj)}
-							>
-								<div>{obj?.word}</div>
-								<div className={`${obj.verified_pronunciation ? "text-slate-400" : "text-sky-400"} select-none text-center text-sm`}>
-									{obj?.word_transliterated}
-								</div>
-								<div className="text-sm my-2 text-center select-none text-green-500">
-									{obj?.word_translated}
-								</div>
-							</div>
-						))}
+						<div className="flex flex-wrap gap-2">
+							{/* <Image className="invert w-4 h-4 my-2 cursor-pointer hover:opacity-80" src="https://cdn-icons-png.flaticon.com/512/15339/15339188.png" onClick={() => toggleTimeTracking(true)} width={0} height={0} alt=""/> */}
+							<button className="bg-slate-800 h-fit px-2 py-1 rounded" onClick={() => toggleFixPronunciation(true)}>Fix Pronunciation</button>
+							<button className="bg-slate-600 h-fit px-2 py-1 rounded" onClick={() => toggleFixSentence(true)}>Fix Sentence</button>
+						</div>
 					</div>
-					<div
-						className="bg-slate-700 w-fit h-fit p-4 rounded-lg cursor-pointer active:bg-slate-800"
-						onClick={() => {copyText(task.hi);speak(task.hi)}}
-					>
-						<Image
-							className="w-6 h-6 invert"
-							src="https://cdn-icons-png.flaticon.com/512/59/59284.png"
-							alt=""
-							width={0}
-							height={0}
-						/>
-					</div>
-				</div>
-			) : (
-				<div className="text-2xl">{task?.en}</div>
-			)}
 
-			<form ref={formRef} onSubmit={check}>
-				{/* {hiToEn && (
-					<div className="my-4">
-						<input
-							className="bg-transparent border border-slate-500 w-full p-2"
-							name="user_answer"
-							autoComplete="off"
-						></input>
-					</div>
-				)} */}
+					<div className="py-2"></div>
 
-
-					<div>
-						<div className="p-2 my-6 w-full min-h-32 border border-slate-500 flex gap-4">
-							<div className="flex flex-wrap gap-2 min-h-full w-full">
-								{answer?.map((obj) => (
+					{hiToEn ? (
+						<div className="flex gap-4">
+							<div className="text-3xl">
+								{task?.hi_tokens?.sort((a, b) => a.order - b.order)?.map((obj) => (
 									<div
-										className="h-fit cursor-pointer select-none"
+										className="inline-block mr-2"
 										key={obj.order}
+										onClick={() => copyTranslateSpeak(obj)}
 									>
-										<div
-											className="bg-slate-800 h-fit rounded px-2 py-2 cursor-pointer select-none"
-											onClick={() => removeWord(obj)}
-										>
-											<div className={`${hiToEn ? "" : "text-2xl"} text-center`}>
-												{obj.word}
-											</div>
-											{!hiToEn && (
-												<div className={`${obj.verified_pronunciation ? "text-slate-400" : "text-sky-400"} text-center text-xs`}>
-													{obj?.word_transliterated}
-												</div>
-											)}
+										<div>{obj?.word}</div>
+										<div className={`${obj.verified_pronunciation ? "text-slate-400" : "text-sky-400"} select-none text-center text-sm`}>
+											{obj?.word_transliterated}
 										</div>
-										{!hiToEn && (
-											<Image
-												className="invert h-4 w-4 mx-auto my-2 opacity-30 hover:opacity-100 cursor-pointer"
-												src="https://cdn-icons-png.flaticon.com/512/59/59284.png"
-												width={0}
-												height={0}
-												alt=""
-												onClick={() => copyText(obj.word)}
-											/>
-										)}
+										<div className="text-sm my-2 text-center select-none text-green-500">
+											{obj?.word_translated}
+										</div>
 									</div>
 								))}
 							</div>
-							{!hiToEn && (				
-								<div>
-									<Image
-										className="invert h-6 w-6 mx-auto opacity-30 hover:opacity-100 cursor-pointer"
-										src="https://cdn-icons-png.flaticon.com/512/59/59284.png"
-										width={0}
-										height={0}
-										alt=""
-										onClick={() => speak(answer.map(obj => obj.word).join(" "))}
-									/>
-								</div>
-							)}
+							<div
+								className="bg-slate-700 w-fit h-fit p-4 rounded-lg cursor-pointer active:bg-slate-800"
+								onClick={() => {copyText(task.hi);speak(task.hi)}}
+							>
+								<Volume2
+									size={24}
+								/>
+							</div>
 						</div>
+					) : (
+						<div className="text-2xl">{task?.en}</div>
+					)}
 
-						<div className="flex flex-wrap gap-2">
-							{options?.map((obj) => (
-								<div key={obj.order}>
-									<div
-										className="bg-slate-800 h-fit rounded px-2 py-2 cursor-pointer select-none"
-										onClick={() => chooseWord(obj)}
-									>
-										<div className={`${hiToEn ? "" : "text-2xl"} text-center`}>
-											{obj.word}
-										</div>
-										{!hiToEn && (
-											<div className={`${obj.verified_pronunciation ? "text-slate-400" : "text-sky-400"} text-center text-xs`}>
-												{obj?.word_transliterated}
+					<form ref={formRef} onSubmit={check}>
+						{/* {hiToEn && (
+							<div className="my-4">
+								<input
+									className="bg-transparent border border-slate-500 w-full p-2"
+									name="user_answer"
+									autoComplete="off"
+								></input>
+							</div>
+						)} */}
+
+
+							<div>
+								<div className="p-2 my-4 w-full min-h-32 border border-slate-500 flex gap-4">
+									<div className="flex flex-wrap gap-2 min-h-full w-full">
+										{answer?.map((obj) => (
+											<div
+												className="h-fit cursor-pointer select-none"
+												key={obj.order}
+											>
+												<div
+													className="bg-slate-800 h-fit rounded px-2 py-2 cursor-pointer select-none"
+													onClick={() => removeWord(obj)}
+												>
+													<div className={`${hiToEn ? "" : "text-2xl"} text-center`}>
+														{obj.word}
+													</div>
+													{!hiToEn && (
+														<div className={`${obj.verified_pronunciation ? "text-slate-400" : "text-sky-400"} text-center text-xs`}>
+															{obj?.word_transliterated}
+														</div>
+													)}
+												</div>
+												{!hiToEn && (
+													<Volume2
+														className="mx-auto my-2 opacity-30 hover:opacity-100 cursor-pointer"
+														size={16}
+														onClick={() => copyText(obj.word)}
+													/>
+												)}
 											</div>
-										)}
+										))}
 									</div>
-									{!hiToEn && (
-										<Image
-											className="invert h-4 w-4 mx-auto my-2 opacity-30 hover:opacity-100 cursor-pointer"
-											src="https://cdn-icons-png.flaticon.com/512/59/59284.png"
-											width={0}
-											height={0}
-											alt=""
-											onClick={() => copyText(obj.word)}
-										/>
+									{!hiToEn && (				
+										<div>
+											<Volume2
+												className="mx-auto opacity-30 hover:opacity-100 cursor-pointer"
+												size={24}
+												onClick={() => speak(answer.map(obj => obj.word).join(" "))}
+											/>
+										</div>
 									)}
 								</div>
-							))}
-						</div>
-					</div>
 
-				<div className="flex justify-end mt-32 fixed bottom-0 left-0 p-4 w-full">
-					{/* <button className="bg-red-700 p-2 rounded-lg" type="button"></button> */}
-					<button
-						className="bg-slate-500 p-2 rounded-lg"
-						type="submit"
-					>
-						Check
-					</button>
+								<div className="flex flex-wrap gap-2">
+									{options?.map((obj) => (
+										<div key={obj.order}>
+											<div
+												className="bg-slate-800 h-fit rounded px-2 py-2 cursor-pointer select-none"
+												onClick={() => chooseWord(obj)}
+											>
+												<div className={`${hiToEn ? "" : "text-2xl"} text-center`}>
+													{obj.word}
+												</div>
+												{!hiToEn && (
+													<div className={`${obj.verified_pronunciation ? "text-slate-400" : "text-sky-400"} text-center text-xs`}>
+														{obj?.word_transliterated}
+													</div>
+												)}
+											</div>
+											{!hiToEn && (
+												<Volume2
+													className="mx-auto my-2 opacity-30 hover:opacity-100 cursor-pointer"
+													size={16}
+													onClick={() => copyText(obj.word)}
+												/>
+											)}
+										</div>
+									))}
+								</div>
+							</div>
+
+						<div className="fixed bottom-0 right-0">
+							{/* <button className="bg-red-700 p-2 rounded-lg" type="button"></button> */}
+							<button
+								className="bg-slate-500 p-2 rounded-lg m-4"
+								type="submit"
+							>
+								Check
+							</button>
+						</div>
+					</form>
 				</div>
-			</form>
 			</div>
 		</main>
 	);
