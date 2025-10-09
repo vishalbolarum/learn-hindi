@@ -333,7 +333,7 @@ export default function HomeComponent() {
 												</div>
 												{!hiToEn && (
 													<Volume2
-														className="mx-auto my-2 opacity-30 hover:opacity-100 cursor-pointer"
+														className="mx-auto mt-2 opacity-30 hover:opacity-100 cursor-pointer"
 														size={16}
 														onClick={() => copyText(obj.word)}
 													/>
@@ -370,7 +370,7 @@ export default function HomeComponent() {
 											</div>
 											{!hiToEn && (
 												<Volume2
-													className="mx-auto my-2 opacity-30 hover:opacity-100 cursor-pointer"
+													className="mx-auto mt-2 opacity-30 hover:opacity-100 cursor-pointer"
 													size={16}
 													onClick={() => copyText(obj.word)}
 												/>
