@@ -253,7 +253,7 @@ export default function HomeComponent() {
 					<div className="py-4 flex justify-between">
 						<div>
 							<h1 className="my-2 text-3xl">Learn Hindi</h1>
-								<div className="my-2 text-slate-400">
+								<div className="my-2 text-sm text-slate-400">
 									{hiToEn ? "Translate this Hindi sentence into English." : "Translate this English sentence into Hindi."} {task?.google_verified && <span className="text-green-400">✔</span>}
 								</div>
 						</div>
@@ -268,10 +268,10 @@ export default function HomeComponent() {
 
 					{hiToEn ? (
 						<div className="flex gap-4">
-							<div className="text-3xl">
+							<div>
 								{task?.hi_tokens?.sort((a, b) => a.order - b.order)?.map((obj) => (
 									<div
-										className="inline-block mr-2"
+										className="inline-block text-2xl mr-2"
 										key={obj.order}
 										onClick={() => copyTranslateSpeak(obj)}
 									>
@@ -295,7 +295,7 @@ export default function HomeComponent() {
 							</div>
 						</div>
 					) : (
-						<div className="text-2xl">{task?.en}</div>
+						<div className="text-xl">{task?.en}</div>
 					)}
 
 					<form ref={formRef} onSubmit={check}>
@@ -322,7 +322,7 @@ export default function HomeComponent() {
 													className="bg-slate-800 h-fit rounded px-2 py-2 cursor-pointer select-none"
 													onClick={() => removeWord(obj)}
 												>
-													<div className={`${hiToEn ? "" : "text-2xl"} text-center`}>
+													<div className={`${hiToEn ? "" : "text-xl"} text-center`}>
 														{obj.word}
 													</div>
 													{!hiToEn && (
@@ -359,7 +359,7 @@ export default function HomeComponent() {
 												className="bg-slate-800 h-fit rounded px-2 py-2 cursor-pointer select-none"
 												onClick={() => chooseWord(obj)}
 											>
-												<div className={`${hiToEn ? "" : "text-2xl"} text-center`}>
+												<div className={`${hiToEn ? "" : "text-xl"} text-center`}>
 													{obj.word}
 												</div>
 												{!hiToEn && (
