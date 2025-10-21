@@ -23,16 +23,16 @@ export default function FixPronunciation({ close, resetTask }) {
 
     return (
         <div className="fixed left-0 top-0 h-screen w-screen backdrop-blur bg-white/20 flex items-center justify-center z-10">
-            <form className="bg-black p-4" onSubmit={handleSubmit} ref={formRef}>
+            <form className="bg-black max-w-64 w-full p-4" onSubmit={handleSubmit} ref={formRef}>
                 <h2 className="text-2xl">Fix Pronunciation</h2>
                 <div className="flex gap-2 my-8">
                     <div>
                         <div className="text-slate-400">Hi</div>
-                        <input className="bg-transparent border border-slate-500 px-2 py-1" name="hi" type="text" autoComplete="off" required/>
+                        <input className="bg-transparent border w-full border-slate-500 px-2 py-1" name="hi" type="text" autoComplete="off" required/>
                     </div>
                     <div>
                         <div className="text-slate-400">Pronunciation</div>
-                        <input className="bg-transparent border border-slate-500 px-2 py-1" name="en_transliteration" type="text" autoComplete="off" required/>
+                        <input className="bg-transparent border w-full border-slate-500 px-2 py-1" name="en_transliteration" type="text" autoComplete="off" required/>
                     </div>
                 </div>
                 <div className="flex justify-between gap-4">

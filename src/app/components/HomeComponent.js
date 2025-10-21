@@ -250,7 +250,7 @@ export default function HomeComponent() {
 			{showSuccessMessage && <SuccessMessage close={() => toggleSuccessMessage(false)} fetchTask={fetchTask} />}
 			<div className="min-h-screen w-full">
 				<div className="px-4">
-					<div className="py-4 flex justify-between">
+					<div className="py-4 flex gap-2 justify-between">
 						<div>
 							<h1 className="my-2 text-3xl">Learn Hindi</h1>
 								<div className="my-2 text-sm text-slate-400">
@@ -259,15 +259,15 @@ export default function HomeComponent() {
 						</div>
 						<div className="flex flex-wrap gap-2">
 							{/* <Image className="invert w-4 h-4 my-2 cursor-pointer hover:opacity-80" src="https://cdn-icons-png.flaticon.com/512/15339/15339188.png" onClick={() => toggleTimeTracking(true)} width={0} height={0} alt=""/> */}
-							<button className="bg-slate-800 h-fit px-2 py-1 rounded" onClick={() => toggleFixPronunciation(true)}>Fix Pronunciation</button>
-							<button className="bg-slate-600 h-fit px-2 py-1 rounded" onClick={() => toggleFixSentence(true)}>Fix Sentence</button>
+							<button className="bg-slate-800 h-fit px-2 py-1 rounded text-sm" onClick={() => toggleFixPronunciation(true)}>Fix Pronunciation</button>
+							<button className="bg-slate-600 h-fit px-2 py-1 rounded text-sm" onClick={() => toggleFixSentence(true)}>Fix Sentence</button>
 						</div>
 					</div>
 
 					<div className="py-2"></div>
 
 					{hiToEn ? (
-						<div className="flex gap-4">
+						<div className="flex gap-2">
 							<div>
 								{task?.hi_tokens?.sort((a, b) => a.order - b.order)?.map((obj) => (
 									<div
@@ -275,8 +275,8 @@ export default function HomeComponent() {
 										key={obj.order}
 										onClick={() => copyTranslateSpeak(obj)}
 									>
-										<div>{obj?.word}</div>
-										<div className={`${obj.verified_pronunciation ? "text-slate-400" : "text-sky-400"} select-none text-center text-sm`}>
+										<div className="text-xl">{obj?.word}</div>
+										<div className={`${obj.verified_pronunciation ? "text-slate-400" : "text-sky-400"} select-none text-center text-xs`}>
 											{obj?.word_transliterated}
 										</div>
 										<div className="text-sm my-2 text-center select-none text-green-500">
@@ -286,11 +286,11 @@ export default function HomeComponent() {
 								))}
 							</div>
 							<div
-								className="bg-slate-700 w-fit h-fit p-4 rounded-lg cursor-pointer active:bg-slate-800"
+								className="bg-slate-700 w-fit h-fit p-3 rounded-lg cursor-pointer active:bg-slate-800"
 								onClick={() => {copyText(task.hi);speak(task.hi)}}
 							>
 								<Volume2
-									size={24}
+									size={20}
 								/>
 							</div>
 						</div>
@@ -322,7 +322,7 @@ export default function HomeComponent() {
 													className="bg-slate-800 h-fit rounded px-2 py-2 cursor-pointer select-none"
 													onClick={() => removeWord(obj)}
 												>
-													<div className={`${hiToEn ? "" : "text-xl"} text-center`}>
+													<div className={`${hiToEn ? "text-sm" : "text-xl"} text-center`}>
 														{obj.word}
 													</div>
 													{!hiToEn && (
@@ -359,7 +359,7 @@ export default function HomeComponent() {
 												className="bg-slate-800 h-fit rounded px-2 py-2 cursor-pointer select-none"
 												onClick={() => chooseWord(obj)}
 											>
-												<div className={`${hiToEn ? "" : "text-xl"} text-center`}>
+												<div className={`${hiToEn ? "text-sm" : "text-xl"} text-center`}>
 													{obj.word}
 												</div>
 												{!hiToEn && (

@@ -3,6 +3,7 @@ import {
 	TranslateClient,
 	TranslateTextCommand,
 } from "@aws-sdk/client-translate";
+import knex from "../_database/knex";
 
 const translateClient = new TranslateClient({
 	region: process.env.NEXT_AWS_REGION,
@@ -12,15 +13,23 @@ const translateClient = new TranslateClient({
 	},
 });
 
-// Reference: https://www.jagranjosh.com/articles/hindi-to-english-sentences-translation-1727443305-1
-
 export async function GET(req) {
 	try {
 		const { searchParams } = new URL(req.url);
-		let word = searchParams.get("word")?.trim();
+		let word = searchParams.get("word")?.replace(/[।.,?]/g, "")?.trim();
 		let source = searchParams.get("source")?.trim()?.toLowerCase();
 		let target = searchParams.get("target")?.trim()?.toLowerCase();
 
+		// 1. First check if the definition of the word is already in the database.
+		const match = await knex("words").where({ hi: word }).whereNotNull("en").first()
+		if (match) {
+			return NextResponse.json({
+				word,
+				word_translated: match.en,
+			});
+		}
+
+		// 2. If there's nothing found, use Amazon translate.
 		const response = await translateClient.send(
 			new TranslateTextCommand({
 				Text: word,
