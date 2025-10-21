@@ -335,7 +335,7 @@ export default function HomeComponent() {
 													<Volume2
 														className="mx-auto mt-2 opacity-30 hover:opacity-100 cursor-pointer"
 														size={16}
-														onClick={() => copyText(obj.word)}
+														onClick={() => {copyText(obj.word);speak(obj.word)}}
 													/>
 												)}
 											</div>
@@ -372,7 +372,7 @@ export default function HomeComponent() {
 												<Volume2
 													className="mx-auto mt-2 opacity-30 hover:opacity-100 cursor-pointer"
 													size={16}
-													onClick={() => copyText(obj.word)}
+													onClick={() => {copyText(obj.word);speak(obj.word)}}
 												/>
 											)}
 										</div>
