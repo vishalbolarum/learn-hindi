@@ -192,7 +192,6 @@ export default function HomeComponent() {
 
 	const copyText = async (text) => {
 		await navigator.clipboard.writeText(text);
-		speak(text);
 	};
 
 	const copyTranslateSpeak = async (obj) => {
@@ -335,7 +334,7 @@ export default function HomeComponent() {
 													<Volume2
 														className="mx-auto mt-2 opacity-30 hover:opacity-100 cursor-pointer"
 														size={16}
-														onClick={() => {copyText(obj.word);speak(obj.word)}}
+														onClick={() => {copyTranslateSpeak(obj.word)}}
 													/>
 												)}
 											</div>
@@ -372,7 +371,7 @@ export default function HomeComponent() {
 												<Volume2
 													className="mx-auto mt-2 opacity-30 hover:opacity-100 cursor-pointer"
 													size={16}
-													onClick={() => {copyText(obj.word);speak(obj.word)}}
+													onClick={() => {copyTranslateSpeak(obj.word)}}
 												/>
 											)}
 										</div>
