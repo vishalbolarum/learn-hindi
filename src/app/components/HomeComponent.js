@@ -110,7 +110,7 @@ export default function HomeComponent() {
 		// }
 	]);
 
-	const [hiToEn, setHiToEn] = useState(false);
+	const [hiToEn, setHiToEn] = useState(true);
 
 	const [showFixPronunciation, toggleFixPronunciation] = useState()
 	const [showFixSentence, toggleFixSentence] = useState()
@@ -205,6 +205,7 @@ export default function HomeComponent() {
 				word: obj.word,
 			},
 		});
+		console.log(data)
 		if (data.word_translated) {
 			alert(data.word_translated);
 		} else {
@@ -334,7 +335,7 @@ export default function HomeComponent() {
 													<Volume2
 														className="mx-auto mt-2 opacity-30 hover:opacity-100 cursor-pointer"
 														size={16}
-														onClick={() => {copyTranslateSpeak(obj.word)}}
+														onClick={() => {copyTranslateSpeak(obj)}}
 													/>
 												)}
 											</div>
@@ -371,7 +372,7 @@ export default function HomeComponent() {
 												<Volume2
 													className="mx-auto mt-2 opacity-30 hover:opacity-100 cursor-pointer"
 													size={16}
-													onClick={() => {copyTranslateSpeak(obj.word)}}
+													onClick={() => {copyTranslateSpeak(obj)}}
 												/>
 											)}
 										</div>
