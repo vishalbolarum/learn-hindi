@@ -322,7 +322,7 @@ export default function HomeComponent() {
 													className="bg-slate-800 h-fit rounded px-2 py-2 cursor-pointer select-none"
 													onClick={() => removeWord(obj)}
 												>
-													<div className={`${hiToEn ? "text-sm" : "text-xl"} text-center`}>
+													<div className={`${hiToEn ? "text-sm" : "text-base"} text-center`}>
 														{obj.word}
 													</div>
 													{!hiToEn && (
