@@ -7,7 +7,7 @@ import FixSentence from "./FixSentence"
 import TimeTracking from "./TimeTracking"
 import SuccessMessage from "./SuccessMessage"
 import stop_words from "./stop_words.json"
-import { Languages, Volume2 } from "lucide-react";
+import { Languages, Pause, Play, Volume2 } from "lucide-react";
 
 export default function HomeComponent() {
 	const pathname = usePathname();
@@ -114,7 +114,7 @@ export default function HomeComponent() {
 
 	const [showFixPronunciation, toggleFixPronunciation] = useState()
 	const [showFixSentence, toggleFixSentence] = useState()
-	const [showTimeTracking, toggleTimeTracking] = useState()
+	const [open_session, set_open_session] = useState()
 	const [showSuccessMessage, toggleSuccessMessage] = useState()
 
 	const speak = (message) => {
@@ -242,11 +242,50 @@ export default function HomeComponent() {
 		fetchTask();
 	}, [searchParams]);
 
+	const checkTimeTracking = async () => {
+		try {
+			const { data } = await axios({
+				method: "get",
+				url: "/api/time"
+			});
+			set_open_session(data.open_session)
+		} catch (err) {
+			console.log(err.response.data);
+		}
+	}
+
+	const startTimeTracking = async () => {
+		try {
+			await axios({
+				method: "post",
+				url: "/api/time"
+			});
+			set_open_session(true)
+		} catch (err) {
+			console.log(err.response.data);
+		}
+	}
+
+	const stopTimeTracking = async () => {
+		try {
+			await axios({
+				method: "put",
+				url: "/api/time"
+			});
+			set_open_session(false)
+		} catch (err) {
+			console.log(err.response.data);
+		}
+	}
+
+	useEffect(() => {
+		checkTimeTracking()
+	}, [])
+
 	return (
 		<main>
 			{showFixPronunciation && <FixPronunciation close={() => toggleFixPronunciation(false)} resetTask={resetTask}/>}
 			{showFixSentence && <FixSentence close={() => toggleFixSentence(false)} resetTask={resetTask} task={task}/>}
-			{showTimeTracking && <TimeTracking close={() => toggleTimeTracking(false)}/>}
 			{showSuccessMessage && <SuccessMessage close={() => toggleSuccessMessage(false)} fetchTask={fetchTask} />}
 			<div className="min-h-screen w-full">
 				<div className="px-4">
@@ -257,7 +296,8 @@ export default function HomeComponent() {
 									{hiToEn ? "Translate this Hindi sentence into English." : "Translate this English sentence into Hindi."} {task?.google_verified && <span className="text-green-400">✔</span>}
 								</div>
 						</div>
-						<div className="flex flex-wrap gap-2">
+						<div className="flex flex-wrap gap-2 justify-end">
+							{open_session === undefined ? <></> : open_session === true ? <Pause className="cursor-pointer my-0.5" color="red" onClick={() => stopTimeTracking()}/> : <Play className="cursor-pointer my-0.5" color="green" onClick={() => startTimeTracking()}/>}
 							{/* <Image className="invert w-4 h-4 my-2 cursor-pointer hover:opacity-80" src="https://cdn-icons-png.flaticon.com/512/15339/15339188.png" onClick={() => toggleTimeTracking(true)} width={0} height={0} alt=""/> */}
 							<button className="bg-slate-800 h-fit px-2 py-1 rounded text-sm" onClick={() => toggleFixPronunciation(true)}>Fix Pronunciation</button>
 							<button className="bg-slate-600 h-fit px-2 py-1 rounded text-sm" onClick={() => toggleFixSentence(true)}>Fix Sentence</button>
