@@ -3,7 +3,7 @@ import knex from "../_database/knex";
 
 export async function GET(req) {
   try {
-    let open_session = await knex("time_sessions")
+    let open_session = await knex("logs")
       .where({ user_id: 1 })
       .whereNull("end_time")
       .first();
@@ -16,13 +16,13 @@ export async function GET(req) {
 
 export async function POST(req) {
   try {
-    let open_session = await knex("time_sessions")
+    let open_session = await knex("logs")
       .where({ user_id: 1 })
       .whereNull("end_time")
       .first();
     open_session = !!open_session;
     if (open_session) throw new Error("An open session already exists!");
-    await knex("time_sessions").insert({ user_id: 1 });
+    await knex("logs").insert({ user_id: 1 });
     return NextResponse.json({ message: "Done!" });
   } catch (err) {
     return NextResponse.json({ message: err.message });
@@ -31,7 +31,7 @@ export async function POST(req) {
 
 export async function PUT(req) {
   try {
-    await knex("time_sessions")
+    await knex("logs")
       .where({ user_id: 1 })
       .whereNull("end_time")
       .update({ end_time: new Date() });

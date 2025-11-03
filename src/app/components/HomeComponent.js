@@ -7,7 +7,8 @@ import FixSentence from "./FixSentence"
 import TimeTracking from "./TimeTracking"
 import SuccessMessage from "./SuccessMessage"
 import stop_words from "./stop_words.json"
-import { Languages, Pause, Play, Volume2 } from "lucide-react";
+import { Languages, Pause, Play, Volume2, Logs } from "lucide-react";
+import Link from "next/link";
 
 export default function HomeComponent() {
 	const pathname = usePathname();
@@ -116,6 +117,7 @@ export default function HomeComponent() {
 	const [showFixSentence, toggleFixSentence] = useState()
 	const [open_session, set_open_session] = useState()
 	const [showSuccessMessage, toggleSuccessMessage] = useState()
+	const [showTimeTracking, toggleTimeTracking] = useState()
 
 	const speak = (message) => {
 		if (typeof window !== "undefined" && "speechSynthesis" in window) {
@@ -287,20 +289,22 @@ export default function HomeComponent() {
 			{showFixPronunciation && <FixPronunciation close={() => toggleFixPronunciation(false)} resetTask={resetTask}/>}
 			{showFixSentence && <FixSentence close={() => toggleFixSentence(false)} resetTask={resetTask} task={task}/>}
 			{showSuccessMessage && <SuccessMessage close={() => toggleSuccessMessage(false)} fetchTask={fetchTask} />}
+			{showTimeTracking && <TimeTracking close={() => toggleTimeTracking(false)} />}
 			<div className="min-h-screen w-full">
 				<div className="px-4">
 					<div className="py-4 flex gap-2 justify-between">
 						<div>
 							<h1 className="my-2 text-3xl">Learn Hindi</h1>
 								<div className="my-2 text-sm text-slate-400">
-									{hiToEn ? "Translate this Hindi sentence into English." : "Translate this English sentence into Hindi."} {task?.google_verified && <span className="text-green-400">✔</span>}
+									{hiToEn ? "Translate this Hindi sentence into English." : "Translate this English sentence into Hindi."}
 								</div>
 						</div>
-						<div className="flex flex-wrap gap-2 justify-end">
+						<div className="flex flex-wrap gap-3 justify-end flex-col md:flex-row">
 							{open_session === undefined ? <></> : open_session === true ? <Pause className="cursor-pointer my-0.5" color="red" onClick={() => stopTimeTracking()}/> : <Play className="cursor-pointer my-0.5" color="green" onClick={() => startTimeTracking()}/>}
+							<Logs className="cursor-pointer my-0.5" size={24} onClick={() => toggleTimeTracking(true)}/>
 							{/* <Image className="invert w-4 h-4 my-2 cursor-pointer hover:opacity-80" src="https://cdn-icons-png.flaticon.com/512/15339/15339188.png" onClick={() => toggleTimeTracking(true)} width={0} height={0} alt=""/> */}
-							<button className="bg-slate-800 h-fit px-2 py-1 rounded text-sm" onClick={() => toggleFixPronunciation(true)}>Fix Pronunciation</button>
-							<button className="bg-slate-600 h-fit px-2 py-1 rounded text-sm" onClick={() => toggleFixSentence(true)}>Fix Sentence</button>
+							<button className="bg-slate-800 h-fit px-2 py-1 rounded text-sm hidden md:block" onClick={() => toggleFixPronunciation(true)}>Fix Pronunciation</button>
+							<button className="bg-slate-600 h-fit px-2 py-1 rounded text-sm hidden md:block" onClick={() => toggleFixSentence(true)}>Fix Sentence</button>
 						</div>
 					</div>
 
