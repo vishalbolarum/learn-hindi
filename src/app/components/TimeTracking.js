@@ -38,7 +38,7 @@ export default function Page({ close }) {
                     <div>
                         <div className="text-slate-400 text-sm">All time total:</div>
                         <div className="my-2">
-                            <span className="text-4xl">{beautifyDuration(allTimeTotal).hours}</span> hours {beautifyDuration(allTimeTotal).hours} minutes.
+                            <span className="text-4xl">{beautifyDuration(allTimeTotal).hours}</span> hours {beautifyDuration(allTimeTotal).minutes} minutes.
                         </div>
                     </div>
                     <div className="text-[red] text-2xl cursor-pointer opacity-75" onClick={() => close()}>╳</div>

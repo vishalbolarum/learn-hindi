@@ -36,11 +36,11 @@ export async function GET(req) {
     const result = await knex("logs")
         .where({ user_id: 1 })
         .sum({
-            all_time_total: knex.raw("EXTRACT(EPOCH FROM (COALESCE(end_time, NOW()) - start_time))")
+            all_time_total: knex.raw("EXTRACT(EPOCH FROM (end_time - start_time)) * 1000")
         })
         .first();
 
-    return NextResponse.json({ logs: results, all_time_total: result.all_time_total * 1000 });
+    return NextResponse.json({ logs: results, all_time_total: result.all_time_total });
   } catch (err) {
     return NextResponse.json({ message: err?.message });
   }
