@@ -112,6 +112,7 @@ export default function HomeComponent() {
 	]);
 
 	const [hiToEn, setHiToEn] = useState(true);
+	const [counter, setCounter] = useState(0)
 
 	const [showFixPronunciation, toggleFixPronunciation] = useState()
 	const [showFixSentence, toggleFixSentence] = useState()
@@ -139,7 +140,7 @@ export default function HomeComponent() {
 				url: "/api/tasks",
 				params: {
 					difficulty: searchParams.get("difficulty"),
-					category: searchParams.get("category")
+					statement_or_question: counter % 3 === 0 ? "question" : "statement",
 				},
 			});
 			setTask(data);
@@ -155,6 +156,7 @@ export default function HomeComponent() {
 				);
 				speak(data.hi);
 			}
+			setCounter(prev => prev + 1)
 		} catch (err) {
 			console.log(err.toString());
 		}
