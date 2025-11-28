@@ -8,20 +8,33 @@ import knex from "../_database/knex";
 export async function GET(req) {
 	try {
 		const { searchParams } = new URL(req.url);
-		let difficulty = searchParams.get("difficulty") || "medium";
-		let id = searchParams.get("id")
+		let { id, difficulty, statement_or_question } = Object.fromEntries(searchParams)
+		difficulty = difficulty || "medium"
 
 		let task
-		let query = knex("sentences").whereNotNull("google_verified")
-		if (id) {
-			task = await query.where({ id }).first()
-		} else if (difficulty === "easy") {
-			task = await query.where("hi_length", "<", 35).orderByRaw("RANDOM()").first()
-		} else if (difficulty === "medium") {
-			task = await query.where("hi_length", "<", 70).orderByRaw("RANDOM()").first()
-		} else if (difficulty === "hard") {
-			task = await query.where("hi_length", "<", 105).orderByRaw("RANDOM()").first()
+		let query = knex("sentences").whereNotNull("google_verified").orderByRaw("RANDOM()").first()
+			
+
+		if (id) query.where({ id })
+		else {
+			if (difficulty === "easy") {
+				query.where("hi_length", "<", 35)
+			} else if (difficulty === "medium") {
+				query.where("hi_length", "<", 70)
+			} else if (difficulty === "hard") {
+				query.where("hi_length", "<", 105)
+			}
+
+			if (statement_or_question === "statement") {
+				query.whereLike("en", "%.")
+			} else if (statement_or_question === "question") {
+				query.whereLike("en", "%?")
+			}
 		}
+
+		
+
+		task = await query
 
 		const tokenizer = new natural.AggressiveTokenizer();
 		// const prompt = "Generate a simple Hindi sentence and provide its English translation in JSON format like: { \"hi\": \"HINDI SENTENCE\", \"en\": \"ENGLISH TRANSLATION\" }"
