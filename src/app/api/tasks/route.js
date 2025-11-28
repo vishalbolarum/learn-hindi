@@ -3,8 +3,6 @@ import { transliterate } from "transliteration";
 import natural from "natural";
 import knex from "../_database/knex";
 
-// Reference: https://www.jagranjosh.com/articles/hindi-to-english-sentences-translation-1727443305-1
-
 export async function GET(req) {
 	try {
 		const { searchParams } = new URL(req.url);
