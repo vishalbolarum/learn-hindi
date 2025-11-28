@@ -15,22 +15,13 @@ export async function GET(req) {
 
 		if (id) query.where({ id })
 		else {
-			if (difficulty === "easy") {
-				query.where("hi_length", "<", 35)
-			} else if (difficulty === "medium") {
-				query.where("hi_length", "<", 70)
-			} else if (difficulty === "hard") {
-				query.where("hi_length", "<", 105)
-			}
+			if (difficulty === "easy") query.where("hi_length", "<", 35)
+			else if (difficulty === "medium") query.where("hi_length", "<", 70)
+			else if (difficulty === "hard") query.where("hi_length", "<", 105)
 
-			if (statement_or_question === "statement") {
-				query.whereLike("en", "%.")
-			} else if (statement_or_question === "question") {
-				query.whereLike("en", "%?")
-			}
+			if (statement_or_question === "statement") query.whereLike("en", "%.")
+			else if (statement_or_question === "question") query.whereLike("en", "%?")
 		}
-
-		
 
 		task = await query
 
