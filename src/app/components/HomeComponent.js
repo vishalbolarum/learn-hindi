@@ -296,8 +296,8 @@ export default function HomeComponent() {
 				<div className="px-4">
 					<div className="py-4 flex gap-2 justify-between">
 						<div>
-							<h1 className="my-2 text-3xl">Learn Hindi</h1>
-								<div className="my-2 text-sm text-slate-400">
+							<h1 className="my-2 text-2xl">Learn Hindi</h1>
+								<div className="my-2 text-sm text-slate-500">
 									{hiToEn ? "Translate this Hindi sentence into English." : "Translate this English sentence into Hindi."}
 								</div>
 						</div>
@@ -341,7 +341,7 @@ export default function HomeComponent() {
 							</div>
 						</div>
 					) : (
-						<div className="text-xl">{task?.en}</div>
+						<div className="text-base">{task?.en}</div>
 					)}
 
 					<form ref={formRef} onSubmit={check}>
@@ -357,8 +357,8 @@ export default function HomeComponent() {
 
 
 							<div>
-								<div className="p-2 my-4 w-full min-h-32 border border-slate-500 flex gap-4">
-									<div className="flex flex-wrap gap-2 min-h-full w-full">
+								<div className="p-1 my-4 w-full min-h-32 border border-slate-500 flex gap-4">
+									<div className="flex flex-wrap gap-1 min-h-full w-full">
 										{answer?.map((obj) => (
 											<div
 												className="h-fit cursor-pointer select-none"
@@ -398,7 +398,7 @@ export default function HomeComponent() {
 									)}
 								</div>
 
-								<div className="flex flex-wrap gap-2">
+								<div className="flex flex-wrap gap-1">
 									{options?.map((obj) => (
 										<div key={obj.order}>
 											<div
