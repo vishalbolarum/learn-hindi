@@ -321,7 +321,7 @@ export default function HomeComponent() {
 										key={obj.order}
 										onClick={() => copyTranslateSpeak(obj)}
 									>
-										<div className="text-xl">{obj?.word}</div>
+										<div className="text-xl text-center">{obj?.word}</div>
 										<div className={`${obj.verified_pronunciation ? "text-slate-400" : "text-sky-400"} select-none text-center text-xs`}>
 											{obj?.word_transliterated}
 										</div>
@@ -365,7 +365,7 @@ export default function HomeComponent() {
 												key={obj.order}
 											>
 												<div
-													className="bg-slate-800 h-fit rounded px-2 py-2 cursor-pointer select-none"
+													className="bg-slate-800 h-fit rounded px-2 py-1 cursor-pointer select-none"
 													onClick={() => removeWord(obj)}
 												>
 													<div className={`${hiToEn ? "text-sm" : "text-base"} text-center`}>
@@ -402,7 +402,7 @@ export default function HomeComponent() {
 									{options?.map((obj) => (
 										<div key={obj.order}>
 											<div
-												className="bg-slate-800 h-fit rounded px-2 py-2 cursor-pointer select-none"
+												className="bg-slate-800 h-fit rounded px-2 py-1 cursor-pointer select-none"
 												onClick={() => chooseWord(obj)}
 											>
 												<div className={`${hiToEn ? "text-sm" : "text-base"} text-center`}>
