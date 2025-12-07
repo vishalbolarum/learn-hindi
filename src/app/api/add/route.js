@@ -13,14 +13,15 @@ export async function POST(req) {
     google_verified: true
   };
 
+  let rows
   try {
     if (id) {
-      await knex("sentences").where({ id }).update(task)
+      rows = await knex("sentences").where({ id }).update(task).returning("*")
     } else {
-      await knex("sentences").insert(task).onConflict("hi").merge(["en"])
+      rows = await knex("sentences").insert(task).onConflict("hi").merge(["en"]).returning("*")
     }
   } catch (err) {
     console.log(err?.response)
   }
-  return NextResponse.json({ task });
+  return NextResponse.json({ rows });
 }
