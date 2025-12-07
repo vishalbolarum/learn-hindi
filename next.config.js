@@ -14,7 +14,7 @@ const nextConfig = {
           }
       ]
   },
-  serverExternalPackages: ["knex", "natural"],
+  serverExternalPackages: ["knex", "natural", "pg"],
   eslint: {
     ignoreDuringBuilds: true
   }
