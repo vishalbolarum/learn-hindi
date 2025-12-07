@@ -10,7 +10,6 @@ export async function POST(req) {
   const task = {
     hi,
     en,
-    hi_length: hi.length,
     google_verified: true
   };
 
