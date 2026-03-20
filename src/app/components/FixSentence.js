@@ -38,13 +38,13 @@ export default function FixSentence({ close, resetTask, task }) {
   };
 
   return (
-    <div className="fixed left-0 top-0 h-screen w-screen backdrop-blur bg-white/20 flex items-center justify-center z-10">
+    <div className="fixed px-2 left-0 top-0 h-screen w-screen backdrop-blur bg-white/20 flex items-center justify-center z-10">
       <form className="bg-black p-4 max-w-lg w-full" onSubmit={handleSubmit}>
         <h2 className="text-2xl">Add Sentence</h2>
         <div className="my-8">
           <div>
-            <div className="text-slate-400 my-1">Task ID</div>
-            <select className="px-2 py-1 border border-slate-400" name="id">
+            <div className="text-sm text-slate-400 my-1">Task ID</div>
+            <select className="px-2 py-1 border text-sm border-slate-400" name="id">
               <option value={task.id}>{task.id}</option>
             </select>
           </div>
@@ -52,9 +52,9 @@ export default function FixSentence({ close, resetTask, task }) {
           {loading ? <></> : (
             <>
               <div className="my-4">
-              <div className="text-slate-400 my-1">Hindi</div>
+              <div className="text-sm text-slate-400 my-1">Hindi</div>
               <input
-                className="bg-transparent border border-slate-500 px-2 py-1 w-full"
+                className="bg-transparent text-sm border border-slate-500 px-2 py-1 w-full"
                 name="hi"
                 autoComplete="off"
                 minLength={3}
@@ -63,9 +63,9 @@ export default function FixSentence({ close, resetTask, task }) {
               />
             </div>
             <div className="my-4">
-              <div className="text-slate-400 my-1">English</div>
+              <div className="text-sm text-slate-400 my-1">English</div>
               <input
-                className="bg-transparent border border-slate-500 px-2 py-1 w-full"
+                className="bg-transparent border text-sm border-slate-500 px-2 py-1 w-full"
                 name="en"
                 autoComplete="off"
                 minLength={3}

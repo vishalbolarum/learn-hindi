@@ -7,7 +7,7 @@ import FixSentence from "./FixSentence"
 import TimeTracking from "./TimeTracking"
 import SuccessMessage from "./SuccessMessage"
 import stop_words from "./stop_words.json"
-import { Languages, Pause, Play, Volume2, Logs } from "lucide-react";
+import { Languages, Pause, Play, Volume2, Logs, SquarePen } from "lucide-react";
 import Link from "next/link";
 
 export default function HomeComponent() {
@@ -305,6 +305,7 @@ export default function HomeComponent() {
 							{open_session === undefined ? <></> : open_session === true ? <Pause className="cursor-pointer my-0.5" color="red" onClick={() => stopTimeTracking()}/> : <Play className="cursor-pointer my-0.5" color="green" onClick={() => startTimeTracking()}/>}
 							<Logs className="cursor-pointer my-0.5" size={24} onClick={() => toggleTimeTracking(true)}/>
 							{/* <Image className="invert w-4 h-4 my-2 cursor-pointer hover:opacity-80" src="https://cdn-icons-png.flaticon.com/512/15339/15339188.png" onClick={() => toggleTimeTracking(true)} width={0} height={0} alt=""/> */}
+							<SquarePen className="md:hidden" size={24} onClick={() => toggleFixSentence(true)}/>
 							<button className="bg-slate-800 h-fit px-2 py-1 rounded text-sm hidden md:block" onClick={() => toggleFixPronunciation(true)}>Fix Pronunciation</button>
 							<button className="bg-slate-600 h-fit px-2 py-1 rounded text-sm hidden md:block" onClick={() => toggleFixSentence(true)}>Fix Sentence</button>
 						</div>
