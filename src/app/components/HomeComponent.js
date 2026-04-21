@@ -147,12 +147,12 @@ export default function HomeComponent() {
 			if (hiToEn) {
 				setHiToEn(false);
 				setOptions(
-					data.hi_tokens?.sort((a, b) => a.random_order - b.random_order)
+					[...data.hi_tokens]?.sort((a, b) => a.random_order - b.random_order)
 				);
 			} else {
 				setHiToEn(true);
 				setOptions(
-					data.en_tokens?.sort((a, b) => a.random_order - b.random_order)
+					[...data.en_tokens]?.sort((a, b) => a.random_order - b.random_order)
 				);
 				speak(data.hi);
 			}
@@ -166,7 +166,7 @@ export default function HomeComponent() {
 		if (!hiToEn) {
 			speak(obj.word);
 		}
-		setOptions((prev) => prev?.filter((ob) => ob.order !== obj.order).sort((a, b) => a.random_order - b.random_order));
+		setOptions((prev) => [...prev?.filter((ob) => ob.order !== obj.order)].sort((a, b) => a.random_order - b.random_order));
 		setAnswer((prev) => [...prev, obj]);
 	};
 
@@ -178,7 +178,7 @@ export default function HomeComponent() {
 	const check = (e) => {
 		e.preventDefault();
 		const formData = Object.fromEntries(new FormData(e.target));
-		let actual_answer = task[hiToEn ? "en_tokens" : "hi_tokens"]
+		let actual_answer = [...task[hiToEn ? "en_tokens" : "hi_tokens"]]
 				.sort((a, b) => a.order - b.order)
 				.map((obj) => obj.word)
 				.join(" ");
@@ -230,11 +230,11 @@ export default function HomeComponent() {
 			setTask(data);
 			if (hiToEn) {
 				setOptions(
-					data.en_tokens?.sort((a, b) => a.random_order - b.random_order)
+					[...data.en_tokens]?.sort((a, b) => a.random_order - b.random_order)
 				);
 			} else {
 				setOptions(
-					data.hi_tokens?.sort((a, b) => a.random_order - b.random_order)
+					[...data.hi_tokens]?.sort((a, b) => a.random_order - b.random_order)
 				);
 			}
 		} catch (err) {
@@ -316,7 +316,7 @@ export default function HomeComponent() {
 					{hiToEn ? (
 						<div className="flex gap-2">
 							<div>
-								{task?.hi_tokens?.sort((a, b) => a.order - b.order)?.map((obj) => (
+								{[...task?.hi_tokens]?.sort((a, b) => a.order - b.order)?.map((obj) => (
 									<div
 										className="inline-block text-2xl mr-1"
 										key={obj.order}
