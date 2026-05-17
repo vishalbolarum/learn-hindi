@@ -7,7 +7,7 @@ import FixSentence from "./FixSentence"
 import TimeTracking from "./TimeTracking"
 import SuccessMessage from "./SuccessMessage"
 import stop_words from "./stop_words.json"
-import { Languages, Pause, Play, Volume2, Logs, SquarePen } from "lucide-react";
+import { Languages, Pause, Play, Volume1, Volume2, Logs, SquarePen } from "lucide-react";
 import Link from "next/link";
 
 export default function HomeComponent() {
@@ -120,10 +120,11 @@ export default function HomeComponent() {
 	const [showSuccessMessage, toggleSuccessMessage] = useState()
 	const [showTimeTracking, toggleTimeTracking] = useState()
 
-	const speak = (message) => {
+	const speak = (message, rate = 1) => {
 		if (typeof window !== "undefined" && "speechSynthesis" in window) {
 			const utterance = new SpeechSynthesisUtterance(message);
 			utterance.lang = "hi-IN";
+			utterance.rate = rate;
 			window.speechSynthesis.cancel()
 			window.speechSynthesis.speak(utterance);
 		} else {
@@ -144,18 +145,18 @@ export default function HomeComponent() {
 				},
 			});
 			setTask(data);
-			if (hiToEn) {
-				setHiToEn(false);
-				setOptions(
-					[...data.hi_tokens]?.sort((a, b) => a.random_order - b.random_order)
-				);
-			} else {
+			// if (hiToEn) {
+			// 	setHiToEn(false);
+			// 	setOptions(
+			// 		[...data.hi_tokens]?.sort((a, b) => a.random_order - b.random_order)
+			// 	);
+			// } else {
 				setHiToEn(true);
 				setOptions(
 					[...data.en_tokens]?.sort((a, b) => a.random_order - b.random_order)
 				);
 				speak(data.hi);
-			}
+			// }
 			setCounter(prev => prev + 1)
 		} catch (err) {
 			console.log(err.toString());
@@ -314,7 +315,7 @@ export default function HomeComponent() {
 					<div className="py-2"></div>
 
 					{hiToEn ? (
-						<div className="flex gap-2">
+						<div className="flex gap-4">
 							<div>
 								{task && [...task?.hi_tokens]?.sort((a, b) => a.order - b.order)?.map((obj) => (
 									<div
@@ -332,14 +333,25 @@ export default function HomeComponent() {
 									</div>
 								))}
 							</div>
-							<div
-								className="bg-slate-700 w-fit h-fit p-3 rounded-lg cursor-pointer active:bg-slate-800"
-								onClick={() => {copyText(task.hi);speak(task.hi)}}
-							>
-								<Volume2
-									size={20}
-								/>
+							<div className="flex flex-col md:flex-row gap-2">
+								<div
+									className="bg-slate-800 w-fit h-fit p-2 rounded-lg cursor-pointer active:bg-slate-800"
+									onClick={() => {copyText(task.hi);speak(task.hi)}}
+								>
+									<Volume2
+										size={20}
+									/>
+								</div>
+								<div
+									className="bg-slate-800 w-fit h-fit p-2 rounded-lg cursor-pointer active:bg-slate-800"
+									onClick={() => {copyText(task.hi);speak(task.hi, 0.5)}}
+								>
+									<Volume1
+										size={20}
+									/>
+								</div>
 							</div>
+				
 						</div>
 					) : (
 						<div className="text-base">{task?.en}</div>
@@ -393,7 +405,12 @@ export default function HomeComponent() {
 											<Volume2
 												className="mx-auto opacity-30 hover:opacity-100 cursor-pointer"
 												size={24}
-												onClick={() => speak(answer.map(obj => obj.word).join(" "))}
+												onClick={() => speak(answer.map(obj => obj.word).join(" "), 1)}
+											/>
+											<Volume1
+												className="mx-auto my-2 opacity-30 hover:opacity-100 cursor-pointer"
+												size={24}
+												onClick={() => speak(answer.map(obj => obj.word).join(" "), 0.5)}
 											/>
 										</div>
 									)}
