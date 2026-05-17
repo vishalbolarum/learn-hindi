@@ -145,18 +145,18 @@ export default function HomeComponent() {
 				},
 			});
 			setTask(data);
-			// if (hiToEn) {
-			// 	setHiToEn(false);
-			// 	setOptions(
-			// 		[...data.hi_tokens]?.sort((a, b) => a.random_order - b.random_order)
-			// 	);
-			// } else {
+			if (hiToEn) {
+				setHiToEn(false);
+				setOptions(
+					[...data.hi_tokens]?.sort((a, b) => a.random_order - b.random_order)
+				);
+			} else {
 				setHiToEn(true);
 				setOptions(
 					[...data.en_tokens]?.sort((a, b) => a.random_order - b.random_order)
 				);
 				speak(data.hi);
-			// }
+			}
 			setCounter(prev => prev + 1)
 		} catch (err) {
 			console.log(err.toString());
